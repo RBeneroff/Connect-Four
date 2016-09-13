@@ -1,19 +1,41 @@
 # Unit Spec : `UI`
 
+### `axis & settings`
+1. Define the x and y axis and how many tokens to declare a win
+var settings = {
+  xAxis: 7, (horizontal)
+  yAxis: 6, (vertical)
+  tokensToWin: 4,
+  playerOne: 'black',
+  playerTwo: 'red'
+};
 
-### `playerOne`
-if (player === red) { player = black }
-else { player = red }
+var gameBoard = [ [0,0,0,0,0,0,0],
+                  [0,0,0,0,0,0,0],
+                  [0,0,0,0,0,0,0],
+                  [0,0,0,0,0,0,0],
+                  [0,0,0,0,0,0,0],
+                  [0,0,0,0,0,0,0], ]
 
-### `playerTwo`
-if (player === black) { player = red }
-else { player = red }
+### `addTokenToBoard`
+function addTokenToBoard(playerSpot,xPos, yPos) {
+  gameBoard[yPos][xPos] = playerSpot;
+}
+
+### `changePlayer` - DONE
+if (currentPlayer === red) {
+  currentPlayer = black
+} else {
+  currentPlayer = red
+}
+
+var currentPlayer = ${playerOne} or ${playerTwo}
 
 ### `computerAI` -- REACH
 
-### `updateTurn` - JS code
+<!-- ### `updateTurn` - JS code
 1. Default starts with playerOne
-2. if !playerOne, then playerTwo
+2. if !playerOne, then playerTwo -->
 
 ### `updateWinner`
 1. Return true if any of the check for wins returns a win
@@ -21,23 +43,96 @@ else { player = red }
 
 ## Checking for wins
 
-### `checkVerticalWin`
-When a player clicks on a column:
-1. if tokens of same color === 4; return ###updateWinner true
-2. else if (tokens < 4), update the ###updateDataIndex and ###updateColumnArray
-3. else if (column === full) { do ###fullColumnCheck}
+### `checkVerticalWin` -- check for current player ONLY
+
+1. check for wins vertically for player that just went
+
+  for (i = 0; i < xAxis-3; i++) {
+    for (j=0; j < yAxis; j++) {
+      if (gameBoard[i][j] != 0 && gameBoard[i][j] == board[i+1][j] && gameBoard[i][j] == board[i+2][j]) && gameBoard[i][j] == gameBoard[i+3][j])
+      return true;
+    }
+  } else {
+    return false;
+  }
+
+<!--
+function checkVerticalWin(token, column, data-index) {
+  if (column[i][index] < axis.xAxis) {
+    for (var i = 0; i < axis.xAxis; i++) {
+      if ( tokens[black] < 4) {
+        tokens[black]++ (updateDataIndex)
+        array.push(); (updateColumnArray)
+      } else if (tokens === 4) {
+        array.push();
+        return updateWinner;
+      } else if (column[i][index] === 7) {
+        return fullColumnCheck;
+      }
+    }
+  }
+} -->
 
 ### `checkHorizontalWin`
-When a player clicks on a column:
-1. if tokens of same color === 4; return ###updateWinner true
-2. else if (tokens < 4), update the ###updateDataIndex and ###updateColumnArray
-3. else if (column === full) { do ###fullColumnCheck}
+1. check for horizontal wins for specific player
 
-### `checkDiagonalWin` -- split up?
-When a player clicks on a column:
-1. if tokens of same color === 4; return ###updateWinner true
-2. else if (tokens < 4), update the ###updateDataIndex and ###updateColumnArray
-3. else if (column === full) { do ###fullColumnCheck}
+for (i = 0; i < xAxis; i++) {
+  for (j=0; j < yAxis-3; j++) {
+    if (gameBoard[i][j] != 0 && gameBoard[i][j] == board[i][j+1] && gameBoard[i][j] == board[i][j+2]) && gameBoard[i][j] == gameBoard[i][j+3])
+    return true;
+  }
+} else {
+  return false;
+}
+
+OR
+
+for (var y = 0; y <= 5; y++) {
+        for (var x = 0; x <= 6; x++) {
+            currentValue = board[y][x];
+            if (currentValue === previousValue && currentValue !== 0) {
+                tokens += 1;
+            } else {
+                // Reset the count if you find a gap.
+                tokens = 0;
+            }
+            if (tokens === 4) {
+                return true;
+            }
+            previousValue = currentValue;
+        }
+
+        // After each row, reset the tokens and previous value.
+        tokens = 0;
+        previousValue = 0;
+    }
+
+    // No horizontal win was found.
+    return false;
+}
+
+### `checkDiagonalWin`
+1. check for diagonal wins for specific player
+
+check right diagonal:
+for (i = 0; i < xAxis-3; i++) {
+  for (j=0; j < yAxis-3; j++) {
+    if (gameBoard[i][j] != 0 && gameBoard[i][j] == board[i+1][j+1] && gameBoard[i][j] == board[i+2][j+2]) && gameBoard[i][j] == gameBoard[i+3][j+3])
+    return true;
+  }
+} else {
+  return false;
+}
+
+check left diagonal:
+for (i = 0; i < xAxis-3; i++) {
+  for (j=0; j < yAxis-3; j++) {
+    if (gameBoard[i][j] != 0 && gameBoard[i][j] == board[i+1][j-1] && gameBoard[i][j] == board[i+2][j-2]) && gameBoard[i][j] == gameBoard[i+3][j-3])
+    return true;
+  }
+} else {
+  return false;
+}
 
 
 ## Core Functions
@@ -45,14 +140,29 @@ When a player clicks on a column:
 ### `updateDataIndex`
 1. When a column is clicked, update the data-index of that column +1
 2. if that column array === 7, do nothing
+tokens = tokens + 1;
 
 ### `fullColumnCheck`
 1. If data-index on a column === 7 && player clicks on that column
 return ###warningDisplay
 
-### `updateColumnArray`
+### `updateColumnArray` -- update Board
 1. When a column is clicked, +1 to that column's array
 2. If column array === 7, do nothing
+  while (board[i][index] !== 7) {
+    if (board[i][index] < 7) {
+      add to array
+      board[i].push();
+    }
+  }
+
+for (var y = 0; y <= 5; y++) {
+  for (var x = 0; x <= 6; x++) {
+    if (gameBoard[y][x] !== 0) {
+      var spot = $('')
+    }
+  }
+}
 
 
 ## Event handlers
@@ -62,6 +172,7 @@ return ###warningDisplay
     start game
 2. If game has started, do nothing
 3. prevents page from reloading
+
 
 ### `onClickReset`
 1. clears the game -- ###updateColumnDisplay to empty
@@ -81,4 +192,4 @@ return ###warningDisplay
 2. When mouse is not over arrow, hide that arrow
 
 ### `startAnimation` - REACH
-1. When start button is clicked, do some animation 
+1. When start button is clicked, do some animation

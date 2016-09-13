@@ -1,5 +1,6 @@
 # Unit Spec : `App` / `Display`
 
+
 ### `updateColumnDisplay`
 1. Displays the tokens in each column
 2. When player clicks column, display is updated and new token is shown
