@@ -1,12 +1,12 @@
 .gameBoard {
   position: relative;
-  width: 1857.92px;
-  height: 1461.94px;
+  width: 1850.92px;
+  height: 1459.94px;
   overflow: hidden;
 }
 
 img {
-  top: -946.25px;
+  top: -960.25px;
   left: -640px;
   position: absolute;
   background-size: -100%;

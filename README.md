@@ -15,8 +15,13 @@ HTML
     <div id="column7"></div>
 </div>
 
+- image maps
+- css grid layout (css-tricks)
 
-CSS
+CSS - NEED TO CUT OUT CIRCLES FROM BOARD, need to create arrow
+for image map - need to put all buttons on one image; if time make board 3D
+- use Z index to make board up front
+- token falls from behind arrow
 - use of sprites to create the tokens
   #game-board {} -- will be set in place, does not do anything (how do I want to set this up? Image with tokens on top?)
   #tokens{} -- sprite, onclick
@@ -85,7 +90,8 @@ Game Logic:
   Instructions
 - FOR LOOP -- (var i = 0; i < array.length; i++); -- for each column, when column is clicked, loop until it hits end of array then +1 token to end of it
   -- need to figure out how to make that work with CSS to then add token to #game-board
-- game players - playerOne is even, playerTwo is odd?
+- game players - playerOne is even, playerTwo is odd? or true false
+  x % 2 ==== 0 or x='1' otherwise x = '2'
 - MAYBE -- do three big check statements, for example -
           checkVerticalWin {
             if tokens === 4 -- return win
@@ -101,4 +107,7 @@ Game Logic:
           }
 - buildBoard function -- need to set the width and height - so 7 and 6
 - one click event for EACH column since the user can click on each column
-- 
+- each column has a click number, so it increases every time it is clicked
+- COLUMNS --- loop through each element in the 2d-array, and get the nth column OR get column with map function
+- OR use an object so the value can be red or black - value is 0 until a token is added OR value for array is red or black while image map value goes up
+- use image map to divide columns, each column has an html value, data-index (array5 - dataIndex)[6-1]  ---> array[5][4] array five, data index 4 then 6-1 would be column 6
