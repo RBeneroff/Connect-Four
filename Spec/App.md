@@ -22,6 +22,11 @@
 1. Default display: 'Ready?' (or whatever saying is)
 2. When startButton is clicked, toggle to playerOne display
 3. One playerOne goes, update toggle to playerTwo display
+POSSIBLY USE A SWITCH STATEMENT
+
+### `winnerDisplay`
+1. When ###updateWinner returns true, show winnerDisplay with player who won  
+2. If nobody has won, remain hidden
 
 ### `warningDisplay`
 1. If ###fullColumnCheck returns true, update warningDisplay to show the warning
