@@ -100,3 +100,4 @@ Game Logic:
             }
           }
 - buildBoard function -- need to set the width and height - so 7 and 6
+- one click event for EACH column since the user can click on each column

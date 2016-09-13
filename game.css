@@ -1,0 +1,17 @@
+.gameBoard {
+  position: relative;
+  width: 1857.92px;
+  height: 1461.94px;
+  overflow: hidden;
+}
+
+img {
+  top: -946.25px;
+  left: -640px;
+  position: absolute;
+  background-size: -100%;
+  zoom: .4;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}

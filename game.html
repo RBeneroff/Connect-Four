@@ -3,8 +3,39 @@
   <head>
     <meta charset="utf-8">
     <title>Connect Four Game</title>
+    <link rel="stylesheet" href="game.css">
   </head>
   <body>
-
+    <header></header>
+    <div id="game">
+      <div class="gameBoard">
+        <img src="Sprite_ConnectFour-03.png"/>
+      </div>
+      <div id="columns">
+        <div id="column1"></div>
+        <div id="column2"></div>
+        <div id="column3"></div>
+        <div id="column4"></div>
+        <div id="column5"></div>
+        <div id="column6"></div>
+        <div id="column7"></div>
+      </div>
+    </div>
+    <aside>
+      <div id="whosTurn">
+        <div id="instructions"></div>
+      </div>
+      <div id="start">
+        <button name="startButton"></button>
+      </div>
+      <div id="warning"></div>
+        <p>this shows when user has clicked on full column</p>
+      <div id="gameFunctions">
+        <div id="oneP"></div>
+        <div id="twoP"></div>
+        <div id="restart"></div>
+      </div>
+    </aside>
+    <footer></footer>
   </body>
 </html>
