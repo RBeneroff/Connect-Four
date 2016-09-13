@@ -44,11 +44,13 @@ onClickStart: function() {
 }, //onClickStart closure
 
 onClickReset: function() {
-
+  $('startButton')[0].reset();
+  $('updateColumnDisplay')[0].reset();
+  $('updateWinner') = false;
 },
 
 onClickInstructions: function() {
-
+  $('#instructions').toggle();
 };
 }; // UI closing
 

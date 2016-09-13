@@ -167,18 +167,18 @@ for (var y = 0; y <= 5; y++) {
 
 ## Event handlers
 
-### `onClickStart`
+### `onClickStart` - DONE
 1. If game is not started,
     start game
 2. If game has started, do nothing
 3. prevents page from reloading
 
 
-### `onClickReset`
+### `onClickReset` - DONE
 1. clears the game -- ###updateColumnDisplay to empty
 2. Updates ###updateTurn and ###whosTurn to default
 
-### `onClickInstructions`
+### `onClickInstructions` - DONE
 1. When clicked, show instructions to game - makes visible
 2. When clicked again, hide instructions - makes invisible
 
