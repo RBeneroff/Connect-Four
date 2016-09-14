@@ -1,8 +1,10 @@
 .gameBoard {
-  position: relative;
+  position: absolute;
   width: 1855.92px;
-  height: 1459.94px;
+  height: 559.94px;
   overflow: hidden;
+  margin-left: 45vw;
+  margin-top: 5vh;
 }
 
 img {
@@ -11,7 +13,59 @@ img {
   position: absolute;
   background-size: -100%;
   zoom: .4;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
+}
+
+.gamePos {
+  position: relative;
+}
+
+body {
+  margin: 40px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, [col] 150px);
+  grid-template-rows: repeat(5, [row] 100px );
+  grid-gap: 30px;
+  background-color: white;
+  color: #444;
+}
+
+.whosTurn {
+  background-color: grey;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+  grid-row: row;
+  grid-column: col / span 2;
+}
+
+.start {
+  background-color: grey;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+  grid-row: row 2;
+}
+
+.warning {
+  background-color: grey;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+  grid-row: row 3;
+}
+
+.gameFunctions {
+  background-color: grey;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+  grid-row: row 4;
+  grid-column: col / span 2;
 }

@@ -3,23 +3,26 @@
 ### `axis & settings`
 1. Define the x and y axis and how many tokens to declare a win
 var settings = {
-  xAxis: 7, (horizontal)
-  yAxis: 6, (vertical)
+  xAxis: 7, (horizontal) j
+  yAxis: 6, (vertical) i
   tokensToWin: 4,
-  playerOne: 'black',
-  playerTwo: 'red'
+  playerOne: 'r',
+  playerTwo: 'b'
 };
 
-var gameBoard = [ [0,0,0,0,0,0,0],
-                  [0,0,0,0,0,0,0],
-                  [0,0,0,0,0,0,0],
-                  [0,0,0,0,0,0,0],
-                  [0,0,0,0,0,0,0],
+figure out to determine value of array - 7 nested array
+
+var gameBoard = [ [0,0,0,0,0,R,0], j horizontal (x)
+                  [0,0,0,0,0,R,0], i vertical (y)
+                  [0,0,B,0,0,R,0],
+                  [0,0,0,0,0,R,0],
+                  [R,B,B,R,B,B,0],
                   [0,0,0,0,0,0,0], ]
 
 ### `addTokenToBoard`
 function addTokenToBoard(playerSpot,xPos, yPos) {
   gameBoard[yPos][xPos] = playerSpot;
+  gameBoard[i][j]
 }
 
 ### `changePlayer` - DONE
@@ -149,6 +152,8 @@ return ###warningDisplay
 ### `updateColumnArray` -- update Board
 1. When a column is clicked, +1 to that column's array
 2. If column array === 7, do nothing
+When column is clicked, add token to column[i][j+1]
+
   while (board[i][index] !== 7) {
     if (board[i][index] < 7) {
       add to array
