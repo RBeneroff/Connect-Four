@@ -1,21 +1,26 @@
 
-var config = {
-//   gameBoard: [[0,0,0,0,0,0,0],
-//               [0,0,0,0,0,0,0],
-//               [0,0,0,0,0,0,0],
-//               [0,0,0,0,0,0,0]
-//               [0,0,0,0,0,0,0],
-//               [0,0,0,0,0,0,0]],
-};
+var Config = {
+}; //config closing
 
 var App = {
 }; // App closing
 
 // global variables
-var row = [];
-// var column1Clicked = $('.column1');
+var rowsColumn1 = [];
+var rowsColumn2 = [];
+var rowsColumn3 = [];
+var rowsColumn4 = [];
+var rowsColumn5 = [];
+var rowsColumn6 = [];
+var rowsColumn7 = [];
 function incrementRowIndex(i) {
-  row[i]++;
+  rowsColumn1[i]++;
+  rowsColumn2[i]++;
+  rowsColumn3[i]++;
+  rowsColumn4[i]++;
+  rowsColumn5[i]++;
+  rowsColumn6[i]++;
+  rowsColumn7[i]++;
 };
 var rowMax = 5;
 
@@ -28,65 +33,75 @@ changePlayer: function() {
   }
 },
 
-updateColumnArray: function(i) {
-  // for (var m = 0; m <= 5; m++)
-  while (row.length <= rowMax) {
-    row.push(0);
+updateColumnArray1: function(i) {
+  if (rowsColumn1.length <= rowMax) {
+    rowsColumn1.push(0);
     var rowIndex = $('<div></div>').appendTo( '.column1' );
     rowIndex.addClass('rowIndex');
-    rowIndex.attr('data-index', row.length - 1);
+    rowIndex.attr('data-index', rowsColumn1.length - 1);
       incrementRowIndex(i);
     };
+},
 
-  // while (row.length <= rowMax) {
-  //   row.push(0);
-  //   var rowIndex = $('<div></div>').appendTo( '.column2' );
-  //   rowIndex.addClass('rowIndex');
-  //   rowIndex.attr('data-index', row.length - 1);
-  //     incrementRowIndex(i);
-  // };
-  //
-  // while (row.length <= rowMax) {
-  //   row.push(0);
-  //   var rowIndex = $('<div></div>').appendTo( '.column3' );
-  //   rowIndex.addClass('rowIndex');
-  //   rowIndex.attr('data-index', row.length - 1);
-  //     incrementRowIndex(i);
-  // };
-  //
-  // while (row.length <= rowMax) {
-  //   row.push(0);
-  //   var rowIndex = $('<div></div>').appendTo( '.column4' );
-  //   rowIndex.addClass('rowIndex');
-  //   rowIndex.attr('data-index', row.length - 1);
-  //     incrementRowIndex(i);
-  // };
-  //
-  // while (row.length <= rowMax) {
-  //   row.push(0);
-  //   var rowIndex = $('<div></div>').appendTo( '.column5' );
-  //   rowIndex.addClass('rowIndex');
-  //   rowIndex.attr('data-index', row.length - 1);
-  //     incrementRowIndex(i);
-  //   };
-  //
-  // while (row.length <= rowMax) {
-  //   row.push(0);
-  //   var rowIndex = $('<div></div>').appendTo( '.column6' );
-  //   rowIndex.addClass('rowIndex');
-  //   rowIndex.attr('data-index', row.length - 1);
-  //     incrementRowIndex(i);
-  // };
-  //
-  // while (row.length <= rowMax) {
-  //   row.push(0);
-  //   var rowIndex = $('<div></div>').appendTo( '.column7' );
-  //   rowIndex.addClass('rowIndex');
-  //   rowIndex.attr('data-index', row.length - 1);
-  //      incrementRowIndex(i);
-  // };
+updateColumnArray2: function(i) {
+  if (rowsColumn2.length <= rowMax) {
+    rowsColumn2.push(0);
+    var rowIndex = $('<div></div>').appendTo( '.column2' );
+    rowIndex.addClass('rowIndex');
+    rowIndex.attr('data-index', rowsColumn2.length - 1);
+      incrementRowIndex(i);
+  };
+},
 
-}, //updateColumnArray closure
+updateColumnArray3: function(i) {
+  if (rowsColumn3.length <= rowMax) {
+    rowsColumn3.push(0);
+    var rowIndex = $('<div></div>').appendTo( '.column3' );
+    rowIndex.addClass('rowIndex');
+    rowIndex.attr('data-index', rowsColumn3.length - 1);
+      incrementRowIndex(i);
+  };
+},
+
+updateColumnArray4: function(i) {
+  if (rowsColumn4.length <= rowMax) {
+    rowsColumn4.push(0);
+    var rowIndex = $('<div></div>').appendTo( '.column4' );
+    rowIndex.addClass('rowIndex');
+    rowIndex.attr('data-index', rowsColumn4.length - 1);
+      incrementRowIndex(i);
+  };
+},
+
+updateColumnArray5: function(i) {
+  if (rowsColumn5.length <= rowMax) {
+    rowsColumn5.push(0);
+    var rowIndex = $('<div></div>').appendTo( '.column5' );
+    rowIndex.addClass('rowIndex');
+    rowIndex.attr('data-index', rowsColumn5.length - 1);
+      incrementRowIndex(i);
+    };
+},
+
+updateColumnArray6: function(i) {
+  if (rowsColumn6.length <= rowMax) {
+    rowsColumn6.push(0);
+    var rowIndex = $('<div></div>').appendTo( '.column6' );
+    rowIndex.addClass('rowIndex');
+    rowIndex.attr('data-index', rowsColumn6.length - 1);
+      incrementRowIndex(i);
+  };
+},
+
+updateColumnArray7: function(i) {
+  if (rowsColumn7.length <= rowMax) {
+    rowsColumn7.push(0);
+    var rowIndex = $('<div></div>').appendTo( '.column7' );
+    rowIndex.addClass('rowIndex');
+    rowIndex.attr('data-index', rowsColumn7.length - 1);
+       incrementRowIndex(i);
+  };
+},
 
 // win checks
 // checkVerticalWin: function() {
@@ -167,11 +182,48 @@ onClickInstructions: function() {
   // $('#inst_button').toggle();
 },
 
-onClickBoard: function() {
-  console.log('clicked column');
+onClickColumn1: function() {
+  console.log('clicked column1');
   // UI.addTokenToBoard();
-  UI.updateColumnArray();
-}
+  UI.updateColumnArray1();
+},
+
+onClickColumn2: function() {
+  console.log('clicked column2');
+  // UI.addTokenToBoard();
+  UI.updateColumnArray2();
+},
+
+onClickColumn3: function() {
+  console.log('clicked column3');
+  // UI.addTokenToBoard();
+  UI.updateColumnArray3();
+},
+
+onClickColumn4: function() {
+  console.log('clicked column4');
+  // UI.addTokenToBoard();
+  UI.updateColumnArray4();
+},
+
+onClickColumn5: function() {
+  console.log('clicked column5');
+  // UI.addTokenToBoard();
+  UI.updateColumnArray5();
+},
+
+onClickColumn6: function() {
+  console.log('clicked column6');
+  // UI.addTokenToBoard();
+  UI.updateColumnArray6();
+},
+
+onClickColumn7: function() {
+  console.log('clicked column7');
+  // UI.addTokenToBoard();
+  UI.updateColumnArray7();
+},
+
 }; // UI closing
 
 // responsive image mapping
@@ -184,11 +236,11 @@ window.onload = function() {
   $('#inst_button').on('click', UI.onClickInstructions);
   $('#start-button').on('click', UI.onClickStart);
   $('#reset-button').on('click', UI.onClickReset);
-  $('.column1').on('click', UI.onClickBoard);
-  $('.column2').on('click', UI.onClickBoard);
-  $('.column3').on('click', UI.onClickBoard);
-  $('.column4').on('click', UI.onClickBoard);
-  $('.column5').on('click', UI.onClickBoard);
-  $('.column6').on('click', UI.onClickBoard);
-  $('.column7').on('click', UI.onClickBoard);
+  $('.column1').on('click', UI.onClickColumn1);
+  $('.column2').on('click', UI.onClickColumn2);
+  $('.column3').on('click', UI.onClickColumn3);
+  $('.column4').on('click', UI.onClickColumn4);
+  $('.column5').on('click', UI.onClickColumn5);
+  $('.column6').on('click', UI.onClickColumn6);
+  $('.column7').on('click', UI.onClickColumn7);
 };
