@@ -12,10 +12,40 @@
     <div id="game">
       <span class="boardPos">
         <div class="gameBoard">
-          <img src="Sprite_ConnectFour-03-03.png"/>
+          <img src="Sprite_ConnectFour-03-03.png" alt="HTML Map" usemap="#map"/>
+          <map name="#map">
+            <area class ="column1"
+              shape="rect"
+              coords="797.07, 997.4, 978.37, 2148.6"
+              onClick="$().onClickBoard;"/>
+            <area class ="column2"
+              shape="rect"
+              coords="978.37, 997.4, 1142.92, 2148.96"
+              onClick="$().onClickBoard;"/>
+            <area class ="column3"
+              shape="rect"
+              coords="1142.92, 997.4, 1320.24, 2148.96"
+              onClick="$().onClickBoard;"/>
+            <area class ="column4"
+              shape="rect"
+              coords="1320.24, 997.4, 1494.79, 2148.96"
+              onClick="$().onClickBoard;"/>
+            <area class ="column5"
+              shape="rect"
+              coords="1484.79, 997.4, 1655.97, 2148.96"
+              onClick="$().onClickBoard;"/>
+            <area class ="column6"
+              shape="rect"
+              coords="1655.97, 997.4, 1829.33, 2148.96"
+              onClick="$().onClickBoard;"/>
+            <area class ="column7"
+              shape="rect"
+              coords="1829.33, 997.4, 2006.33, 2148.96"
+              onClick="$().onClickBoard;"/>
+          </map>
         </div>
       </span>
-      <div id="columns">
+      <!-- <div id="columns">
         <div id="column1"></div>
         <div id="column2"></div>
         <div id="column3"></div>
@@ -23,7 +53,7 @@
         <div id="column5"></div>
         <div id="column6"></div>
         <div id="column7"></div>
-      </div>
+      </div> -->
     </div>
     <aside>
       <div class="container">

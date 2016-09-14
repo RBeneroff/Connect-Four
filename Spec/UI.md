@@ -1,5 +1,21 @@
 # Unit Spec : `UI`
 
+
+config:
+// var currentPosition = [i][j],
+// var currentPlayer = ${playerOne} || ${playerTwo},
+// var isWinner: false,
+// var isPlaying: false,
+// var tokens = 0,
+
+// settings: function() {
+//   xAxis: 7,
+//   yAxis: 6,
+//   tokensToWin: 4,
+//   playerOne: 'r',
+//   playerTwo: 'b'
+// },
+
 ### `axis & settings`
 1. Define the x and y axis and how many tokens to declare a win
 var settings = {
@@ -12,18 +28,28 @@ var settings = {
 
 figure out to determine value of array - 7 nested array
 
-var gameBoard = [ [0,0,0,0,0,R,0], j horizontal (x)
-                  [0,0,0,0,0,R,0], i vertical (y)
+var gameBoard = [ [0,0,0,0,0,R,0], row horizontal (x)
+                  [0,0,0,0,0,R,0], column vertical (y)
                   [0,0,B,0,0,R,0],
                   [0,0,0,0,0,R,0],
                   [R,B,B,R,B,B,0],
                   [0,0,0,0,0,0,0], ]
 
+                  gameBoard[0][5] = 'r'
+
 ### `addTokenToBoard`
 function addTokenToBoard(playerSpot,xPos, yPos) {
-  gameBoard[yPos][xPos] = playerSpot;
-  gameBoard[i][j]
+  <!-- gameBoard[xPos][yPos] = playerSpot;
+  gameBoard[j][i] -- [data-id][] -->
+  gameBoard[row][column]
+  column doesn't change but row will change
+  data-id++ each time same column clicked
+  row is data-index-- SAME THING,
+  need to now change 0 to r or b
 }
+
+1. When player clicks column1, next 0 in line (closest) turns to'b'
+2. each column must be a button then
 
 ### `changePlayer` - DONE
 if (currentPlayer === red) {
@@ -140,16 +166,16 @@ for (i = 0; i < xAxis-3; i++) {
 
 ## Core Functions
 
-### `updateDataIndex`
+<!-- ### `updateDataIndex`
 1. When a column is clicked, update the data-index of that column +1
 2. if that column array === 7, do nothing
-tokens = tokens + 1;
+tokens = tokens + 1; -->
 
 ### `fullColumnCheck`
 1. If data-index on a column === 7 && player clicks on that column
 return ###warningDisplay
 
-### `updateColumnArray` -- update Board
+<!-- ### `updateColumnArray` -- update Board
 1. When a column is clicked, +1 to that column's array
 2. If column array === 7, do nothing
 When column is clicked, add token to column[i][j+1]
@@ -167,7 +193,7 @@ for (var y = 0; y <= 5; y++) {
       var spot = $('')
     }
   }
-}
+} -->
 
 
 ## Event handlers
@@ -186,6 +212,17 @@ for (var y = 0; y <= 5; y++) {
 ### `onClickInstructions` - DONE
 1. When clicked, show instructions to game - makes visible
 2. When clicked again, hide instructions - makes invisible
+
+# seven column buttons
+### `column1Button`
+1. When column1 is clicked, ###addTokenToBoard at column
+2. gameBoard array updates
+### `column2Button`
+### `column3Button`
+### `column4Button`
+### `column5Button`
+### `column6Button`
+### `column7Button`
 
 ## Animations
 
