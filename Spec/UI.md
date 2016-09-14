@@ -59,6 +59,8 @@ if (currentPlayer === red) {
 }
 
 var currentPlayer = ${playerOne} or ${playerTwo}
+even 0  
+odd  1
 
 ### `computerAI` -- REACH
 
@@ -66,13 +68,13 @@ var currentPlayer = ${playerOne} or ${playerTwo}
 1. Default starts with playerOne
 2. if !playerOne, then playerTwo -->
 
-### `updateWinner`
+### `updateWinner`-- DONE
 1. Return true if any of the check for wins returns a win
 2. Otherwise remain false
 
 ## Checking for wins
 
-### `checkVerticalWin` -- check for current player ONLY
+### `checkVerticalWin` -- check for current player ONLY -
 
 1. check for wins vertically for player that just went
 
@@ -171,29 +173,16 @@ for (i = 0; i < xAxis-3; i++) {
 2. if that column array === 7, do nothing
 tokens = tokens + 1; -->
 
-### `fullColumnCheck`
+### `fullColumnCheck` -- DONE in updateColumnDisplays
 1. If data-index on a column === 7 && player clicks on that column
 return ###warningDisplay
 
-<!-- ### `updateColumnArray` -- update Board
-1. When a column is clicked, +1 to that column's array
-2. If column array === 7, do nothing
+### `updateColumnArray` -- DONE
+1. When a column is clicked, +1 to that column's data-index
+2. When column index = 5, do nothing
+
+
 When column is clicked, add token to column[i][j+1]
-
-  while (board[i][index] !== 7) {
-    if (board[i][index] < 7) {
-      add to array
-      board[i].push();
-    }
-  }
-
-for (var y = 0; y <= 5; y++) {
-  for (var x = 0; x <= 6; x++) {
-    if (gameBoard[y][x] !== 0) {
-      var spot = $('')
-    }
-  }
-} -->
 
 
 ## Event handlers
@@ -213,7 +202,7 @@ for (var y = 0; y <= 5; y++) {
 1. When clicked, show instructions to game - makes visible
 2. When clicked again, hide instructions - makes invisible
 
-# seven column buttons
+# seven column buttons - DONE
 ### `column1Button`
 1. When column1 is clicked, ###addTokenToBoard at column
 2. gameBoard array updates
