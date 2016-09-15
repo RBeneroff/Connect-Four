@@ -121,7 +121,6 @@ addTokenToBoard: function(i) {
 
   // if($(UI.onClickColumn1).clicked){
     // var newArray1 = column1Array + moveUp;
-    .column1.attr('data-index').next();
     column1Array.splice(UI.rowIndex,1,currentPlayer);
     column2Array.splice(UI.rowIndex,1,currentPlayer);
     column3Array.splice(UI.rowIndex,1,currentPlayer);
@@ -129,7 +128,9 @@ addTokenToBoard: function(i) {
     column5Array.splice(UI.rowIndex,1,currentPlayer);
     column6Array.splice(UI.rowIndex,1,currentPlayer);
     column7Array.splice(UI.rowIndex,1,currentPlayer);
-    incrementRowIndex(i);
+    // var column1 = document.getElementsByClassName('column1');
+    // var moveUp = $(column1[value='data-index']).next();
+    // incrementRowIndex(i);
 
       // return column1Array;
 
