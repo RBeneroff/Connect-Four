@@ -1,5 +1,9 @@
 
 var Config = {
+  startingPlayer: 'r',
+  // column1Array: [0,0,0,0,0,0],
+  // column2Array: [0,0,0,0,0,0],
+
 }; //config closing
 
 var App = {
@@ -23,13 +27,23 @@ function incrementRowIndex(i) {
   rowsColumn7[i]++;
 };
 var rowMax = 5;
+column1Array = [0,0,0,0,0,0];
+column2Array = [0,0,0,0,0,0];
+column3Array = [0,0,0,0,0,0];
+column4Array = [0,0,0,0,0,0];
+column5Array = [0,0,0,0,0,0];
+column6Array = [0,0,0,0,0,0];
+column7Array = [0,0,0,0,0,0];
+var currentPlayer = Config.startingPlayer;
+// var hasBeenClicked1 = false;
 
 var UI = {
+  //default playerOne is 'r'
 changePlayer: function() {
   if (currentPlayer === 'r') {
-    currentPlayer = 'b';
+    currentPlayer == 'b';
   } else {
-    currentPlayer = 'r';
+    currentPlayer == 'r';
   }
 },
 
@@ -101,6 +115,24 @@ updateColumnArray7: function(i) {
     rowIndex.attr('data-index', rowsColumn7.length - 1);
        incrementRowIndex(i);
   };
+},
+
+addTokenToBoard: function(i) {
+
+  // if($(UI.onClickColumn1).clicked){
+    // var newArray1 = column1Array + moveUp;
+    .column1.attr('data-index').next();
+    column1Array.splice(UI.rowIndex,1,currentPlayer);
+    column2Array.splice(UI.rowIndex,1,currentPlayer);
+    column3Array.splice(UI.rowIndex,1,currentPlayer);
+    column4Array.splice(UI.rowIndex,1,currentPlayer);
+    column5Array.splice(UI.rowIndex,1,currentPlayer);
+    column6Array.splice(UI.rowIndex,1,currentPlayer);
+    column7Array.splice(UI.rowIndex,1,currentPlayer);
+    incrementRowIndex(i);
+
+      // return column1Array;
+
 },
 
 // win checks
@@ -184,8 +216,11 @@ onClickInstructions: function() {
 
 onClickColumn1: function() {
   console.log('clicked column1');
-  // UI.addTokenToBoard();
+  UI.addTokenToBoard();
   UI.updateColumnArray1();
+  // if (UI.onClickColumn1.clicked) {
+  //  hasBeenClicked1=true; };
+  //  return hasBeenClicked1;
 },
 
 onClickColumn2: function() {

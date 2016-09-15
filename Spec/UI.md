@@ -38,7 +38,9 @@ var gameBoard = [ [0,0,0,0,0,R,0], row horizontal (x)
                   gameBoard[0][5] = 'r'
 
 ### `addTokenToBoard`
-function addTokenToBoard(playerSpot,xPos, yPos) {
+function addTokenToBoard(currentPlayer, xPos, yPos) {
+  function addTokenToBoard(currentPlayer, data-index, column#)
+  AT data-index at column#, put player's token
   <!-- gameBoard[xPos][yPos] = playerSpot;
   gameBoard[j][i] -- [data-id][] -->
   gameBoard[row][column]
@@ -46,16 +48,51 @@ function addTokenToBoard(playerSpot,xPos, yPos) {
   data-id++ each time same column clicked
   row is data-index-- SAME THING,
   need to now change 0 to r or b
-}
+  When column is clicked, add token to column[i][j+1]
+
+  column1 = [0,0,0,0,0,0] --> ['r','b','r', 0, 0, 0]
+  column2 = [0,0,0,0,0,0]
+  when column 1 is first clicked, change 0 to 'r' then when clicked again change to 'b'
 
 1. When player clicks column1, next 0 in line (closest) turns to'b'
 2. each column must be a button then
 
+if (onClickColumn1.clicked && rowsColumn1.length < 5) {
+  change that 0 in array to 'r' or 'b'
+}
+
+splice()
+column1Array.splice(0,0)
+
+
+$("#mybutton").click(function(){
+  var oldval=$("#mytext").val();
+  $("#mytext").val('Changed by button');
+  var newval=$("#mytext").val();
+  if (newval != oldval) {
+    $("#mytext").trigger('change');
+  }
+});
+
+$("onClickColumn1").click(function(){
+  var oldval=$(0).val();
+  $(0).val(0);
+  var newval=$(0).val();
+  if (newval != oldval) {
+    $(0).trigger('r');
+  }
+});
+
+$(UI.onClickColumn1).click(function(event, column1Array) {
+
+})
+.trigger("click", ['r']);
+
 ### `changePlayer` - DONE
-if (currentPlayer === red) {
-  currentPlayer = black
+if (currentPlayer === 'r') {
+  currentPlayer == 'b';
 } else {
-  currentPlayer = red
+  currentPlayer == 'r';
 }
 
 var currentPlayer = ${playerOne} or ${playerTwo}
@@ -180,9 +217,10 @@ return ###warningDisplay
 ### `updateColumnArray` -- DONE
 1. When a column is clicked, +1 to that column's data-index
 2. When column index = 5, do nothing
-
-
-When column is clicked, add token to column[i][j+1]
+column doesn't change but row will change
+data-id++ each time same column clicked
+row is data-index-- SAME THING,
+need to now change 0 to r or b
 
 
 ## Event handlers
