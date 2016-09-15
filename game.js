@@ -1,13 +1,31 @@
 
 var Config = {
   startingPlayer: 'r',
-  playerTwo : 'b'
-  // column1Array: [0,0,0,0,0,0],
-  // column2Array: [0,0,0,0,0,0],
-
+  countToWin: 4,
+  winner: 0,
 }; //config closing
 
 var App = {
+
+hoverArrow: function() {
+  if($('#map')) {
+    $('.column1 area').each(function() {
+      var id= $(this).attr('id');
+      $(this).mouseover(function(e) {
+        $('.arrow1'+id).show();
+      });
+      $(this).mouseout(function() {
+        var id = $(this).attr('id');
+        $('.arrow1'+id).hide();
+      });
+    });
+  };
+},
+
+winnerDisplay: function() {
+  console.log('winner');
+}
+
 }; // App closing
 
 // global variables
@@ -126,20 +144,50 @@ updateColumnArray7: function(i) {
   };
 },
 
-// addTokenToBoard: function(i) {
-// },
+
 
 // win checks
 checkVerticalWin: function() {
-  for (i = 0; i < yAxis-3; i++) {
-    for (j=0; j < xAxis; j++) {
-      if (gameBoard[i][j] != 0 && gameBoard[i][j] == board[i+1][j] && gameBoard[i][j] == board[i+2][j] && gameBoard[i][j] == gameBoard[i+3][j]) {
-        return true;
-      } else {
-        return false;
-        }
+  for (var i = 0; i < rowsColumn1.length; i++) {
+    if (UI.column1Array[i] === UI.column1Array[i]-1 && UI.column1Array[i] === UI.column1Array[i]-2 && UI.column1Array[i] === UI.column1Array[i]-3) {
+      Config.winner++;
+    } else {
+      Config.winner = 0;
+    }
+    if (Config.winner === Config.countToWin) {
+      App.winnerDisplay();
     }
   }
+
+  // counter = 0;
+  // for (var i = 0; i < rowIndex.length; i++) {
+  //   if (column1Array[0] === column1Array[1] === column1Array[2] === column1Array[3] === column1Array[4] === column1Array[5]) {
+  //     return true;
+  //   } else {
+  //     return false;
+  //   }
+  // } console.log('winner!');
+
+// if currentValue = previousValue add 1... until 4, if not, stop
+  // if (counter = countToWin) {
+  //   return true;
+  // } else {
+  //   return false;
+  // }
+
+  // for (i = 0; i < rowsColumn1.length - 3) {
+  //   if column1Array[]
+  // }
+
+  // for (i = 0; i < yAxis-3; i++) {
+  //   for (j=0; j < xAxis; j++) {
+  //     if (gameBoard[i][j] != 0 && gameBoard[i][j] == board[i+1][j] && gameBoard[i][j] == board[i+2][j] && gameBoard[i][j] == gameBoard[i+3][j]) {
+  //       return true;
+  //     } else {
+  //       return false;
+  //       }
+  //   }
+  // } console.log('Vertical winner!');
 },
 
 checkHorizontalWin: function() {
@@ -214,9 +262,8 @@ onClickColumn1: function() {
   // UI.addTokenToBoard();
   UI.updateColumnArray1();
   UI.changePlayer();
-  // if (UI.onClickColumn1.clicked) {
-  //  hasBeenClicked1=true; };
-  //  return hasBeenClicked1;
+  UI.checkVerticalWin();
+  // UI.checkHorizontalWin();
 },
 
 onClickColumn2: function() {

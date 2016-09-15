@@ -1,44 +1,44 @@
 # Unit Spec : `UI`
 
+### `axis & settings OR config`
 
-config:
-// var currentPosition = [i][j],
-// var currentPlayer = ${playerOne} || ${playerTwo},
-// var isWinner: false,
-// var isPlaying: false,
-// var tokens = 0,
+  config:
+  // var currentPosition = [i][j],
+  // var currentPlayer = ${playerOne} || ${playerTwo},
+  // var isWinner: false,
+  // var isPlaying: false,
+  // var tokens = 0,
 
-// settings: function() {
-//   xAxis: 7,
-//   yAxis: 6,
-//   tokensToWin: 4,
-//   playerOne: 'r',
-//   playerTwo: 'b'
-// },
+  // settings: function() {
+  //   xAxis: 7,
+  //   yAxis: 6,
+  //   tokensToWin: 4,
+  //   playerOne: 'r',
+  //   playerTwo: 'b'
+  // },
 
-### `axis & settings`
-1. Define the x and y axis and how many tokens to declare a win
-var settings = {
-  xAxis: 7, (horizontal) j
-  yAxis: 6, (vertical) i
-  tokensToWin: 4,
-  playerOne: 'r',
-  playerTwo: 'b'
-};
+  1. Define the x and y axis and how many tokens to declare a win
+  var settings = {
+    xAxis: 7, (horizontal) j
+    yAxis: 6, (vertical) i
+    tokensToWin: 4,
+    playerOne: 'r',
+    playerTwo: 'b'
+  };
 
-figure out to determine value of array - 7 nested array
+  figure out to determine value of array - 7 nested array
 
-var gameBoard = [ [0,0,0,0,0,R,0], row horizontal (x)
-                  [0,0,0,0,0,R,0], column vertical (y)
-                  [0,0,B,0,0,R,0],
-                  [0,0,0,0,0,R,0],
-                  [R,B,B,R,B,B,0],
-                  [0,0,0,0,0,0,0], ]
+  var gameBoard = [ [0,0,0,0,0,R,0], row horizontal (x)
+                    [0,0,0,0,0,R,0], column vertical (y)
+                    [0,0,B,0,0,R,0],
+                    [0,0,0,0,0,R,0],
+                    [R,B,B,R,B,B,0],
+                    [0,0,0,0,0,0,0], ]
 
-                  gameBoard[0][5] = 'r'
+                    gameBoard[0][5] = 'r'
 
 ### `addTokenToBoard`
-function addTokenToBoard(currentPlayer, xPos, yPos) {
+  function addTokenToBoard(currentPlayer, xPos, yPos) {
   function addTokenToBoard(currentPlayer, data-index, column#)
   AT data-index at column#, put player's token
   <!-- gameBoard[xPos][yPos] = playerSpot;
@@ -54,75 +54,66 @@ function addTokenToBoard(currentPlayer, xPos, yPos) {
   column2 = [0,0,0,0,0,0]
   when column 1 is first clicked, change 0 to 'r' then when clicked again change to 'b'
 
-1. When player clicks column1, next 0 in line (closest) turns to'b'
-2. each column must be a button then
+  1. When player clicks column1, next 0 in line (closest) turns to'b'
+  2. each column must be a button then
 
-if (onClickColumn1.clicked && rowsColumn1.length < 5) {
-  change that 0 in array to 'r' or 'b'
-}
-
-splice()
-column1Array.splice(0,0)
-
-
-$("#mybutton").click(function(){
-  var oldval=$("#mytext").val();
-  $("#mytext").val('Changed by button');
-  var newval=$("#mytext").val();
-  if (newval != oldval) {
-    $("#mytext").trigger('change');
+  if (onClickColumn1.clicked && rowsColumn1.length < 5) {
+    change that 0 in array to 'r' or 'b'
   }
-});
 
-$("onClickColumn1").click(function(){
-  var oldval=$(0).val();
-  $(0).val(0);
-  var newval=$(0).val();
-  if (newval != oldval) {
-    $(0).trigger('r');
-  }
-});
-
-$(UI.onClickColumn1).click(function(event, column1Array) {
-
-})
-.trigger("click", ['r']);
+  splice()
+  column1Array.splice(0,0)
 
 
-// if($(UI.onClickColumn1).clicked){
-  // var newArray1 = column1Array + moveUp;
-  // var column1 = document.getElementsByClassName('column1');
-  // var moveUp = $(column1[value='data-index']).next();
-  //   moveUp++;
-  //
-  // column1Array.splice(UI.moveUp++,1,currentPlayer);
-  // column2Array.splice(UI.rowIndex,1,currentPlayer);
-  // column3Array.splice(UI.rowIndex,1,currentPlayer);
-  // column4Array.splice(UI.rowIndex,1,currentPlayer);
-  // column5Array.splice(UI.rowIndex,1,currentPlayer);
-  // column6Array.splice(UI.rowIndex,1,currentPlayer);
-  // column7Array.splice(UI.rowIndex,1,currentPlayer);
-  // incrementRowIndex(i);
+  $("#mybutton").click(function(){
+    var oldval=$("#mytext").val();
+    $("#mytext").val('Changed by button');
+    var newval=$("#mytext").val();
+    if (newval != oldval) {
+      $("#mytext").trigger('change');
+    }
+  });
 
-    // return column1Array;
+  $("onClickColumn1").click(function(){
+    var oldval=$(0).val();
+    $(0).val(0);
+    var newval=$(0).val();
+    if (newval != oldval) {
+      $(0).trigger('r');
+    }
+  });
 
+  $(UI.onClickColumn1).click(function(event, column1Array) {
+
+  })
+  .trigger("click", ['r']);
+
+  // if($(UI.onClickColumn1).clicked){
+    // var newArray1 = column1Array + moveUp;
+    // var column1 = document.getElementsByClassName('column1');
+    // var moveUp = $(column1[value='data-index']).next();
+    //   moveUp++;
+    //
+    // column1Array.splice(UI.moveUp++,1,currentPlayer);
+    // column2Array.splice(UI.rowIndex,1,currentPlayer);
+    // column3Array.splice(UI.rowIndex,1,currentPlayer);
+    // column4Array.splice(UI.rowIndex,1,currentPlayer);
+    // column5Array.splice(UI.rowIndex,1,currentPlayer);
+    // column6Array.splice(UI.rowIndex,1,currentPlayer);
+    // column7Array.splice(UI.rowIndex,1,currentPlayer);
+    // incrementRowIndex(i);
+
+      // return column1Array; - DO NOT NEED (added into updateColumnArray)
 
 ### `changePlayer` - DONE
-if (currentPlayer === 'r') {
-  currentPlayer == 'b';
-} else {
-  currentPlayer == 'r';
-}
-
-var currentPlayer = ${playerOne} or ${playerTwo}
-even 0  
-odd  1
+1. update who's turn it is
+2. switch back and forth between playerOne and playerTwo
 
 ### `computerAI` -- REACH
 
-<!-- ### `updateTurn` - JS code
-1. Default starts with playerOne
-2. if !playerOne, then playerTwo -->
+  <!-- ### `updateTurn` - JS code
+  1. Default starts with playerOne
+  2. if !playerOne, then playerTwo -->
 
 ### `updateWinner`-- DONE
 1. Return true if any of the check for wins returns a win
@@ -134,6 +125,42 @@ odd  1
 
 1. check for wins vertically for player that just went
 
+column1Array.string();
+function countForWin(str) {
+  var c= str.match(r);
+  return c.map(function(itm) {
+    return[itm.charAt(0), itm.length];
+    });
+}
+
+currentValue = null;
+previousValue = 0;
+tally = 0;
+
+for the length of the column (6), count 'r' or 'b' - 3 to check 3 down from spot
+  currentValue = [column1Array[index]][column1Array] -->
+
+  for (var x = 0; x <= 6; x++) {
+    for (var y = 0; y <= 5; y++) {
+      currentValue = column1Array[column1Array[i]][column1Array];
+      currentValue = column1Array[index value][column#]
+      if (currentValue === previousValue && currentValue !== 0) {
+        tally += 1;
+      } else {
+        tally = 0;
+      };
+      if (tally === Config.countToWin -1) {
+        return true;
+      }
+      previousValue = currentValue;
+    }
+    tally = 0;
+    previousValue = 0;
+  };
+    return false;
+    console.log('winner!');
+
+
   for (i = 0; i < xAxis-3; i++) {
     for (j=0; j < yAxis; j++) {
       if (gameBoard[i][j] != 0 && gameBoard[i][j] == board[i+1][j] && gameBoard[i][j] == board[i+2][j]) && gameBoard[i][j] == gameBoard[i+3][j])
@@ -142,6 +169,8 @@ odd  1
   } else {
     return false;
   }
+
+  if
 
 <!--
 function checkVerticalWin(token, column, data-index) {

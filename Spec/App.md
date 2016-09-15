@@ -14,6 +14,19 @@
 1. have one arrow above each column
 2. display: hidden until ###hoverArrow is used
 
+  if($('#map')) {
+    $('.column1').each(function() {
+      var id= $(this).attr('id');
+      $(this).mouseover(function() {
+        $('.arrow1'+id).show();
+      });
+      $(this).mouseout(function() {
+        var id = $(this).attr('id');
+        $('.arrow1'+id).hide();
+      });
+    });
+  };
+
 ### `restart`
 1. When Reset Button is clicked (###onClickReset), update display (###updateColumnDisplay) to a blank board
 2. Update ###updateTurn to default playerOne's turn
@@ -29,51 +42,51 @@ POSSIBLY USE A SWITCH STATEMENT
 1. When ###updateWinner returns true, show winnerDisplay with player who won  
 2. If nobody has won, remain hidden
 
-### `warningDisplay`
-1. If ###fullColumnCheck returns true, update warningDisplay to show the warning
-2. If ###fullColumnCheck is false, do nothing and hide display
+### `warningDisplay` - REACH
+  1. If ###fullColumnCheck returns true, update warningDisplay to show the warning
+  2. If ###fullColumnCheck is false, do nothing and hide display
 
-## Image Mapping
+## Image Mapping - DONE in HTML
 
-### `imageMap`
-sprite of game board
-width: 1857.92px;
-height: 1461.94px;
-placement on sprite page:
-top: -946.25px;
-left: -640px;
-zoom: .4
+  ### `imageMap`
+  sprite of game board
+  width: 1857.92px;
+  height: 1461.94px;
+  placement on sprite page:
+  top: -946.25px;
+  left: -640px;
+  zoom: .4
 
-<img src="url/to/your/image.jpg" alt="" usemap="#Map" />
-<map name="Map" id="Map">
-    <area alt="" title="" href="#" shape="poly" coords="top left, bottom right" />  --> x,y,x,y
-    [...]
-</map>
+  <img src="url/to/your/image.jpg" alt="" usemap="#Map" />
+  <map name="Map" id="Map">
+      <area alt="" title="" href="#" shape="poly" coords="top left, bottom right" />  --> x,y,x,y
+      [...]
+  </map>
 
-### `AreaColumn1`
-area shape of column 1
-coordinates: 797.07, 997.4, 978.37, 2148.6
+  ### `AreaColumn1`
+  area shape of column 1
+  coordinates: 797.07, 997.4, 978.37, 2148.6
 
-### `AreaColumn2`
-area shape of column 2
-coordinates:978.37, 997.4, 1142.92, 2148.96
+  ### `AreaColumn2`
+  area shape of column 2
+  coordinates:978.37, 997.4, 1142.92, 2148.96
 
-### `AreaColumn3`
-area shape of column 3
-coordinates: 1142.92, 997.4, 1320.24, 2148.96
+  ### `AreaColumn3`
+  area shape of column 3
+  coordinates: 1142.92, 997.4, 1320.24, 2148.96
 
-### `AreaColumn4`
-area shape of column 4
-coordinates: 1320.24, 997.4, 1484.79, 2148.96
+  ### `AreaColumn4`
+  area shape of column 4
+  coordinates: 1320.24, 997.4, 1484.79, 2148.96
 
-### `AreaColumn5`
-area shape of column 5
-coordinates: 1484.79, 997.4, 1655.97, 2148.96
+  ### `AreaColumn5`
+  area shape of column 5
+  coordinates: 1484.79, 997.4, 1655.97, 2148.96
 
-### `AreaColumn6`
-area shape of column 6
-coordinates: 1655.97, 997.4, 1829.33, 2148.96
+  ### `AreaColumn6`
+  area shape of column 6
+  coordinates: 1655.97, 997.4, 1829.33, 2148.96
 
-### `AreaColumn7`
-area shape of column 7
-coordinates: 1829.33, 997.4, 2006.33, 2148.96
+  ### `AreaColumn7`
+  area shape of column 7
+  coordinates: 1829.33, 997.4, 2006.33, 2148.96

@@ -7,7 +7,7 @@
   margin-top: 5vh;
 }
 
-img {
+.board {
   top: -960.25px;
   left: -635px;
   position: absolute;
@@ -17,6 +17,22 @@ img {
 
 .gamePos {
   position: relative;
+}
+
+.arrow1:hover {
+  top: -780px;
+  left: -1852px;
+  position: absolute;
+  zoom: .4;
+}
+
+.arrowDiv1 {
+  position: absolute;
+  width: 124px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 84.5vw;
+  margin-top: 5vh;
 }
 
 body {
