@@ -1,6 +1,7 @@
 
 var Config = {
   startingPlayer: 'r',
+  playerTwo : 'b'
   // column1Array: [0,0,0,0,0,0],
   // column2Array: [0,0,0,0,0,0],
 
@@ -35,16 +36,17 @@ column5Array = [0,0,0,0,0,0];
 column6Array = [0,0,0,0,0,0];
 column7Array = [0,0,0,0,0,0];
 var currentPlayer = Config.startingPlayer;
-// var hasBeenClicked1 = false;
+var playerOne = 'r';
+var playerTwo = 'b';
 
 var UI = {
   //default playerOne is 'r'
 changePlayer: function() {
   if (currentPlayer === 'r') {
-    currentPlayer == 'b';
-  } else {
-    currentPlayer == 'r';
-  }
+    currentPlayer = playerTwo;
+  } else if (currentPlayer === 'b') {
+    currentPlayer = playerOne;
+  };
 },
 
 updateColumnArray1: function(i) {
@@ -189,6 +191,7 @@ updateWinner: function() {
 onClickStart: function(event) {
   event.preventDefault();
   console.log('start game');
+  UI.changePlayer();
   // if (!App.isPlaying) {
   //   App.startGame();
   // }
@@ -210,6 +213,7 @@ onClickColumn1: function() {
   console.log('clicked column1');
   // UI.addTokenToBoard();
   UI.updateColumnArray1();
+  UI.changePlayer();
   // if (UI.onClickColumn1.clicked) {
   //  hasBeenClicked1=true; };
   //  return hasBeenClicked1;
@@ -219,36 +223,42 @@ onClickColumn2: function() {
   console.log('clicked column2');
   // UI.addTokenToBoard();
   UI.updateColumnArray2();
+  UI.changePlayer();
 },
 
 onClickColumn3: function() {
   console.log('clicked column3');
   // UI.addTokenToBoard();
   UI.updateColumnArray3();
+  UI.changePlayer();
 },
 
 onClickColumn4: function() {
   console.log('clicked column4');
   // UI.addTokenToBoard();
   UI.updateColumnArray4();
+  UI.changePlayer();
 },
 
 onClickColumn5: function() {
   console.log('clicked column5');
   // UI.addTokenToBoard();
   UI.updateColumnArray5();
+  UI.changePlayer();
 },
 
 onClickColumn6: function() {
   console.log('clicked column6');
   // UI.addTokenToBoard();
   UI.updateColumnArray6();
+  UI.changePlayer();
 },
 
 onClickColumn7: function() {
   console.log('clicked column7');
   // UI.addTokenToBoard();
   UI.updateColumnArray7();
+  UI.changePlayer();
 },
 
 }; // UI closing
