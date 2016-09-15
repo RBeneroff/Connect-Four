@@ -53,6 +53,7 @@ updateColumnArray1: function(i) {
     var rowIndex = $('<div></div>').appendTo( '.column1' );
     rowIndex.addClass('rowIndex');
     rowIndex.attr('data-index', rowsColumn1.length - 1);
+    column1Array[rowsColumn1.length - 1] = currentPlayer;
       incrementRowIndex(i);
     };
 },
@@ -63,6 +64,7 @@ updateColumnArray2: function(i) {
     var rowIndex = $('<div></div>').appendTo( '.column2' );
     rowIndex.addClass('rowIndex');
     rowIndex.attr('data-index', rowsColumn2.length - 1);
+    column2Array[rowsColumn2.length - 1] = currentPlayer;
       incrementRowIndex(i);
   };
 },
@@ -73,6 +75,7 @@ updateColumnArray3: function(i) {
     var rowIndex = $('<div></div>').appendTo( '.column3' );
     rowIndex.addClass('rowIndex');
     rowIndex.attr('data-index', rowsColumn3.length - 1);
+    column3Array[rowsColumn3.length - 1] = currentPlayer;
       incrementRowIndex(i);
   };
 },
@@ -83,6 +86,7 @@ updateColumnArray4: function(i) {
     var rowIndex = $('<div></div>').appendTo( '.column4' );
     rowIndex.addClass('rowIndex');
     rowIndex.attr('data-index', rowsColumn4.length - 1);
+    column4Array[rowsColumn4.length - 1] = currentPlayer;
       incrementRowIndex(i);
   };
 },
@@ -93,6 +97,7 @@ updateColumnArray5: function(i) {
     var rowIndex = $('<div></div>').appendTo( '.column5' );
     rowIndex.addClass('rowIndex');
     rowIndex.attr('data-index', rowsColumn5.length - 1);
+    column5Array[rowsColumn5.length - 1] = currentPlayer;
       incrementRowIndex(i);
     };
 },
@@ -103,6 +108,7 @@ updateColumnArray6: function(i) {
     var rowIndex = $('<div></div>').appendTo( '.column6' );
     rowIndex.addClass('rowIndex');
     rowIndex.attr('data-index', rowsColumn6.length - 1);
+    column6Array[rowsColumn6.length - 1] = currentPlayer;
       incrementRowIndex(i);
   };
 },
@@ -113,28 +119,13 @@ updateColumnArray7: function(i) {
     var rowIndex = $('<div></div>').appendTo( '.column7' );
     rowIndex.addClass('rowIndex');
     rowIndex.attr('data-index', rowsColumn7.length - 1);
+    column7Array[rowsColumn7.length - 1] = currentPlayer;
        incrementRowIndex(i);
   };
 },
 
-addTokenToBoard: function(i) {
-
-  // if($(UI.onClickColumn1).clicked){
-    // var newArray1 = column1Array + moveUp;
-    column1Array.splice(UI.rowIndex,1,currentPlayer);
-    column2Array.splice(UI.rowIndex,1,currentPlayer);
-    column3Array.splice(UI.rowIndex,1,currentPlayer);
-    column4Array.splice(UI.rowIndex,1,currentPlayer);
-    column5Array.splice(UI.rowIndex,1,currentPlayer);
-    column6Array.splice(UI.rowIndex,1,currentPlayer);
-    column7Array.splice(UI.rowIndex,1,currentPlayer);
-    // var column1 = document.getElementsByClassName('column1');
-    // var moveUp = $(column1[value='data-index']).next();
-    // incrementRowIndex(i);
-
-      // return column1Array;
-
-},
+// addTokenToBoard: function(i) {
+// },
 
 // win checks
 checkVerticalWin: function() {
@@ -217,7 +208,7 @@ onClickInstructions: function() {
 
 onClickColumn1: function() {
   console.log('clicked column1');
-  UI.addTokenToBoard();
+  // UI.addTokenToBoard();
   UI.updateColumnArray1();
   // if (UI.onClickColumn1.clicked) {
   //  hasBeenClicked1=true; };

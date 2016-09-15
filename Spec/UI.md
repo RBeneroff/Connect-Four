@@ -88,6 +88,25 @@ $(UI.onClickColumn1).click(function(event, column1Array) {
 })
 .trigger("click", ['r']);
 
+
+// if($(UI.onClickColumn1).clicked){
+  // var newArray1 = column1Array + moveUp;
+  // var column1 = document.getElementsByClassName('column1');
+  // var moveUp = $(column1[value='data-index']).next();
+  //   moveUp++;
+  //
+  // column1Array.splice(UI.moveUp++,1,currentPlayer);
+  // column2Array.splice(UI.rowIndex,1,currentPlayer);
+  // column3Array.splice(UI.rowIndex,1,currentPlayer);
+  // column4Array.splice(UI.rowIndex,1,currentPlayer);
+  // column5Array.splice(UI.rowIndex,1,currentPlayer);
+  // column6Array.splice(UI.rowIndex,1,currentPlayer);
+  // column7Array.splice(UI.rowIndex,1,currentPlayer);
+  // incrementRowIndex(i);
+
+    // return column1Array;
+
+
 ### `changePlayer` - DONE
 if (currentPlayer === 'r') {
   currentPlayer == 'b';
