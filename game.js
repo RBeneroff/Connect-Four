@@ -26,7 +26,7 @@ winnerDisplay: function() {
   UI.checkVerticalWin;
   UI.checkHorizontalWin;
   // window.alert('You Win ' + currentPlayer);
-  swal({   title: "Sweet!",   text: "You Won!",   imageUrl: "winning.png" });
+  swal({   title: "Sweet",   text: "You Won!",   imageUrl: "winning.png" });
 },
 
 };// App closing
@@ -340,6 +340,7 @@ onClickReset: function() {
 //
 onClickInstructions: function() {
   console.log('toggle');
+  swal({   title: "Don't know how to play?",   text: "Instructions go here",   imageUrl: "inst.png" });
   // $('#inst_button').toggle();
 },
 
