@@ -65,7 +65,6 @@ column7Array = [];
 var currentPlayer = Config.startingPlayer;
 var playerOne = 'r';
 var playerTwo = 'b';
-// var count = 0;
 
 var UI = {
   //default playerOne is 'r'
@@ -262,70 +261,47 @@ checkVerticalWin: function() {
 checkHorizontalWin: function(i) {
   count = 1;
 
-  if (column1Array[i] === column2Array[i] && column1Array[i] != 0) {
+  if (column1Array[i] === column2Array[i] && !column1Array[i] && !column2Array[i]) {
     count++;
+    console.log('one and two');
   } else {
     count = 1;
   }
   if (column2Array[i] === column3Array[i]  && column2Array[i] != 0) {
     count++;
+    // console.log("two and three");
   } else {
     count = 1;
   }
   //   // && !column2Array[i] && !column3Array[i]
   if(column3Array[i] === column4Array[i] && column3Array[i] != 0) {
-        count++;
+    count++;
   } else {
     count = 1;
   }
   if (column4Array[i] === column5Array[i] && column4Array[i] != 0) {
-        count++;
+    count++;
   } else {
     count = 1;
   }
   // // && !column4Array[i] && !column5Array[i]
   if(column5Array[i] === column6Array[i] && column5Array[i] != 0) {
-        count++;
+    count++;
   } else {
     count = 1;
   }
   // // && !column5Array[i] && !column6Array[i]
   if(column6Array[i] === column7Array[i] && column6Array[i] != 0) {
-        count++;
+    count++;
   } else {
     count = 1;
   }
   //  && !column6Array[i] && !column7Array[i]
-  if (count === 4) {
+  if (count === Config.countToWin) {
     App.winnerDisplay();
     console.log('winning horizontally');
     }
 
-  // if (rowsColumn1.length > 3) {
-  //   var winnerCheck = rowsColumn1.attr('data-index');
-  //   if (rowsColumn1[rowsColumn1.length] === rowsColumn2[rowsColumn2.length] === rowsColumn3[rowsColumn3.length] === rowsColumn4[rowsColumn4.length]) {
-  //     App.winnerDisplay();
-  //     console.log('winner');
-  //   }
-  // }
-
-     //
-    //   winnerCheck &&    rowsColumn1[rowsColumn1.length -3] === winnerCheck && rowsColumn1[rowsColumn1.length - 4] === winnerCheck) {
-    //   App.winnerDisplay();
-    //   console.log('winner');
-    //  }
-  // };
-
-
-  // for (i = 0; i < yAxis; i++) {
-  //   for (j=0; j < xAxis-3; j++) {
-  //     if (gameBoard[i][j] != 0 && gameBoard[i][j] == board[i][j+1] && gameBoard[i][j] == board[i][j+2] && gameBoard[i][j] == gameBoard[i][j+3]) {
-  //       return true;
-  //     } else {
-  //       return false;
-  //       }
-  //   }
-  // }
 },
 
 checkDiagonalWin1: function () {
