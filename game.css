@@ -8,7 +8,7 @@ h1 {
 
 @font-face {
   font-family: Majel;
-  src: url('Majel.otf');
+  src: url('./images:font/Majel.otf');
 }
 
 .gameBoard {

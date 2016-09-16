@@ -26,7 +26,7 @@ winnerDisplay: function() {
   UI.checkVerticalWin;
   UI.checkHorizontalWin;
   // window.alert('You Win ' + currentPlayer);
-  swal({   title: "Sweet",   text: "You Won!",   imageUrl: "winning.png" });
+  swal({   title: "Sweet",   text: "You Won!",   imageUrl: "./images:font/winning.png" });
 },
 
 };// App closing
@@ -317,7 +317,7 @@ updateWinner: function() {
 // Event Handlers
 onClickStart: function(event) {
   event.preventDefault();
-  swal({   title: "Ready?",   text: "",   imageUrl: "taco.png" });
+  swal({   title: "Ready?",   text: "",   imageUrl: "./images:font/taco.png" });
   console.log('start game');
   UI.changePlayer();
   // if (!App.isPlaying) {
@@ -341,7 +341,7 @@ onClickReset: function() {
 //
 onClickInstructions: function() {
   console.log('toggle');
-  swal({   title: "Don't know how to play?",   text: "Bascically, get four of your tokens in a row before your opponent does.",   imageUrl: "inst.png" });
+  swal({   title: "Don't know how to play?",   text: "Bascically, get four of your tokens in a row before your opponent does.",   imageUrl: "./images:font/inst.png" });
   // $('#inst_button').toggle();
 },
 
