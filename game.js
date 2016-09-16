@@ -2,6 +2,10 @@
 var Config = {
   startingPlayer: 'r',
   countToWin: 4,
+  // count: 0,
+  // counter: function(i) {
+  //   count[i]++;
+  // },
   // winner: 0,
 }; //config closing
 
@@ -39,6 +43,8 @@ var rowsColumn4 = [];
 var rowsColumn5 = [];
 var rowsColumn6 = [];
 var rowsColumn7 = [];
+var count = 1;
+// var me = 0;
 function incrementRowIndex(i) {
   rowsColumn1[i]++;
   rowsColumn2[i]++;
@@ -59,6 +65,7 @@ column7Array = [];
 var currentPlayer = Config.startingPlayer;
 var playerOne = 'r';
 var playerTwo = 'b';
+// var count = 0;
 
 var UI = {
   //default playerOne is 'r'
@@ -252,15 +259,55 @@ checkVerticalWin: function() {
   // } console.log('Vertical winner!');
 },
 
-checkHorizontalWin: function() {
+checkHorizontalWin: function(i) {
+  count = 1;
 
-  if (rowsColumn1.length > 3) {
-    var winnerCheck = rowsColumn1.attr('data-index');
-    if (rowsColumn1[rowsColumn1.length] === rowsColumn2[rowsColumn2.length] === rowsColumn3[rowsColumn3.length] === rowsColumn4[rowsColumn4.length]) {
-      App.winnerDisplay();
-      console.log('winner');
-    }
+  if (column1Array[i] === column2Array[i] && column1Array[i] != 0) {
+    count++;
+  } else {
+    count = 1;
   }
+  if (column2Array[i] === column3Array[i]  && column2Array[i] != 0) {
+    count++;
+  } else {
+    count = 1;
+  }
+  //   // && !column2Array[i] && !column3Array[i]
+  if(column3Array[i] === column4Array[i] && column3Array[i] != 0) {
+        count++;
+  } else {
+    count = 1;
+  }
+  if (column4Array[i] === column5Array[i] && column4Array[i] != 0) {
+        count++;
+  } else {
+    count = 1;
+  }
+  // // && !column4Array[i] && !column5Array[i]
+  if(column5Array[i] === column6Array[i] && column5Array[i] != 0) {
+        count++;
+  } else {
+    count = 1;
+  }
+  // // && !column5Array[i] && !column6Array[i]
+  if(column6Array[i] === column7Array[i] && column6Array[i] != 0) {
+        count++;
+  } else {
+    count = 1;
+  }
+  //  && !column6Array[i] && !column7Array[i]
+  if (count === 4) {
+    App.winnerDisplay();
+    console.log('winning horizontally');
+    }
+
+  // if (rowsColumn1.length > 3) {
+  //   var winnerCheck = rowsColumn1.attr('data-index');
+  //   if (rowsColumn1[rowsColumn1.length] === rowsColumn2[rowsColumn2.length] === rowsColumn3[rowsColumn3.length] === rowsColumn4[rowsColumn4.length]) {
+  //     App.winnerDisplay();
+  //     console.log('winner');
+  //   }
+  // }
 
      //
     //   winnerCheck &&    rowsColumn1[rowsColumn1.length -3] === winnerCheck && rowsColumn1[rowsColumn1.length - 4] === winnerCheck) {
@@ -336,6 +383,7 @@ onClickReset: function() {
   $('.rowIndex').remove();
   currentPlayer === Config.startingPlayer;
   console.log('reset');
+  count = 0;
 
 },
 //
@@ -351,7 +399,7 @@ onClickColumn1: function() {
   UI.updateColumnArray1();
   UI.changePlayer();
   UI.checkVerticalWin();
-  // UI.checkHorizontalWin();
+  UI.checkHorizontalWin(column1Array.length-1);
 },
 
 onClickColumn2: function() {
@@ -360,6 +408,7 @@ onClickColumn2: function() {
   UI.updateColumnArray2();
   UI.changePlayer();
   UI.checkVerticalWin();
+  UI.checkHorizontalWin(column2Array.length-1);
 },
 
 onClickColumn3: function() {
@@ -368,6 +417,7 @@ onClickColumn3: function() {
   UI.updateColumnArray3();
   UI.changePlayer();
   UI.checkVerticalWin();
+  UI.checkHorizontalWin(column3Array.length-1);
 },
 
 onClickColumn4: function() {
@@ -376,6 +426,7 @@ onClickColumn4: function() {
   UI.updateColumnArray4();
   UI.changePlayer();
   UI.checkVerticalWin();
+  UI.checkHorizontalWin(column4Array.length-1);
 },
 
 onClickColumn5: function() {
@@ -384,6 +435,7 @@ onClickColumn5: function() {
   UI.updateColumnArray5();
   UI.changePlayer();
   UI.checkVerticalWin();
+  UI.checkHorizontalWin(column5Array.length-1);
 },
 
 onClickColumn6: function() {
@@ -392,6 +444,7 @@ onClickColumn6: function() {
   UI.updateColumnArray6();
   UI.changePlayer();
   UI.checkVerticalWin();
+  UI.checkHorizontalWin(column6Array.length-1);
 },
 
 onClickColumn7: function() {
@@ -400,6 +453,7 @@ onClickColumn7: function() {
   UI.updateColumnArray7();
   UI.changePlayer();
   UI.checkVerticalWin();
+  UI.checkHorizontalWin(column7Array.length-1);
 },
 
 }; // UI closing

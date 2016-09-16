@@ -223,6 +223,37 @@ function checkVerticalWin(token, column, data-index) {
 
 ### `checkHorizontalWin`
 1. check for horizontal wins for specific player
+4 of these statements must be correct to return winner
+IF column1Array[0] ===  column2Array[0] ===  column3Array[0] ===  column4Array[0] ===  column5Array[0] ===  column5Array[0] ===  column7Array[0]
+
+if (column1Array.length === currentPlayer || column2Array.length === currentPlayer || column3Array.length === currentPlayer || column4Array.length === currentPlayer ||  column5Array.length === currentPlayer || column6Array.length === currentPlayer || column7Array.length === currentPlayer) {
+  count++;
+} else {
+  count = 0;
+} if (count >=4) {
+  return win;
+}
+
+count = 0;
+if (column1Array.length === currentPlayer && column2Array.length === currentPlayer) {
+  count ++;
+} if (column2Array.length === currentPlayer && column3Array.length === currentPlayer) {
+  count++;
+} if(column3Array.length === currentPlayer && column4Array.length === currentPlayer) {
+  count++;
+} if (column4Array.length === currentPlayer &&  column5Array.length === currentPlayer) {
+  count++;
+} if(column5Array.length === currentPlayer && column6Array.length === currentPlayer) {
+  count++;
+} if(column6Array.length === currentPlayer && column7Array.length === currentPlayer) {
+  count++;
+} when (count === 4) {
+  return win;
+} else {
+  count = 0;
+}
+
+
 
 for (i = 0; i < xAxis; i++) {
   for (j=0; j < yAxis-3; j++) {
