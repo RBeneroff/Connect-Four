@@ -317,6 +317,7 @@ updateWinner: function() {
 // Event Handlers
 onClickStart: function(event) {
   event.preventDefault();
+  swal({   title: "Ready?",   text: "",   imageUrl: "taco.png" });
   console.log('start game');
   UI.changePlayer();
   // if (!App.isPlaying) {
@@ -340,7 +341,7 @@ onClickReset: function() {
 //
 onClickInstructions: function() {
   console.log('toggle');
-  swal({   title: "Don't know how to play?",   text: "Instructions go here",   imageUrl: "inst.png" });
+  swal({   title: "Don't know how to play?",   text: "Bascically, get four of your tokens in a row before your opponent does.",   imageUrl: "inst.png" });
   // $('#inst_button').toggle();
 },
 
