@@ -125,6 +125,36 @@
 
 1. check for wins vertically for player that just went
 
+arr = rowsColumn1;
+start = arr[0];
+count = 0;
+
+function checkWinner(array){
+
+  if (array.length > 3) {
+    var winnerCheck = array[array.length]
+      if (array[array.length -1 ] === winnerCheck && array[array.length -2 ] === winnerCheck && array[array.length - 3] === winnerCheck) {
+        winner = winnerCheck;
+      } else {
+        console.log('no winner');
+      }
+  }
+
+
+for (var i = 0; i < arr.length-3; i++) {
+  if (start=='r') {
+    count++;
+  } else if (arr[i]) {
+    for (var j=i+1; j < arr.length-3; j++) {
+      if(arr[i] == arr[j] && arr[j] == 4) {
+        count++;
+      }
+    }
+  }
+
+
+  }
+
 column1Array.string();
 function countForWin(str) {
   var c= str.match(r);
@@ -136,6 +166,8 @@ function countForWin(str) {
 currentValue = null;
 previousValue = 0;
 tally = 0;
+
+
 
 for the length of the column (6), count 'r' or 'b' - 3 to check 3 down from spot
   currentValue = [column1Array[index]][column1Array] -->
