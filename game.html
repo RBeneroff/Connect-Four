@@ -73,22 +73,33 @@
           </div>
         </div>
         <div class="start">
-          <button id="start-button">Start Button</button>
-          <img src="./images:font/Sprite_ConnectFour1-03.png" class="startimg"/>
+          <!-- <button id="start-button">Start Button</button> -->
+          <img src="./images:font/Sprite_ConnectFour1-03.png" class="startimg" map="#startMap"/>
+          <map name="#startMap">
+            <area class ="startButton"
+              shape="rect"
+              coords="132, 690, 286, 1124"
+              onClick="$().onClickStart;"/>
         </div>
         <div class="warning">
           <p></p>
         </div>
         <div class="gameFunctions">
-          <img src="./images:font/Sprite_ConnectFour1-03.png" class="resetimg"/>
-          <div id="oneP"></div>
+          <img src="./images:font/Sprite_ConnectFour1-03.png" class="resetimg" alt="HTML Reset" usemap="#resetMap"/>
+          <map name="#resetMap">
+            <area class ="resetButton"
+              shape="rect"
+              coords="686, 444, 885, 587"
+              onClick="$().onClickReset;"/>
+          <!-- <div id="oneP"></div>
           <div id="twoP"></div>
           <div id="restart">
-            <button id="reset-button">Restart</button>
+            <button id="reset-button">Restart</button> -->
+          </map>
           </div>
         </div>
       </div>
     </aside>
-    <footer></footer>
+    <footer>Rachel Beneroff &copy;2016</footer>
   </body>
 </html>

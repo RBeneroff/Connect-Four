@@ -16,7 +16,7 @@ h1 {
   width: 755.92px;
   height: 569.94px;
   overflow: hidden;
-  margin-left: 45vw;
+  margin-left: 30vw;
   /*margin-top: 2vh;*/
   margin-bottom: 2vh;
   background-color: #E7EAF0;
@@ -34,13 +34,17 @@ h1 {
   position: relative;
 }
 
+.gameFunctions {
+  position: relative;
+}
+
 .start {
   position: absolute;
-  width: 434px;
-  height: 154px;
+  width: 214px;
+  height: 85px;
   overflow: hidden;
-  /*margin-left: 84.5vw;
-  margin-top: 60vh;*/
+  margin-left: 3vw;
+  /*margin-top: 60vh;*/
 }
 
 .startimg {
@@ -52,15 +56,15 @@ h1 {
 
 .gameFunctions {
   position: absolute;
-  width: 432px;
-  height: 298px;
+  width: 185px;
+  height: 263px;
   overflow: hidden;
-  /*margin-left: 84.5vw;
-  margin-top: 60vh;*/
+  margin-left: 4vw;
+  /*margin-top: 60vh;*/
 }
 
 .resetimg {
-  top: -636px;
+  top: -336px;
   left: -188px;
   position: absolute;
   zoom: .4;
