@@ -121,7 +121,7 @@
 
 ## Checking for wins
 
-### `checkVerticalWin` -- check for current player ONLY -
+### `checkVerticalWin` -- DONE
 
 1. check for wins vertically for player that just went
 

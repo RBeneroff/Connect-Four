@@ -1,14 +1,29 @@
+h1 {
+  text-align: center;
+  font-size: 12vh;
+  background-color: #E7EAF0;
+  font-family: Majel;
+  margin-top: 1vh;
+}
+
+@font-face {
+  font-family: Majel;
+  src: url('Majel.otf');
+}
+
 .gameBoard {
   position: absolute;
-  width: 1855.92px;
-  height: 559.94px;
+  width: 755.92px;
+  height: 569.94px;
   overflow: hidden;
   margin-left: 45vw;
-  margin-top: 5vh;
+  /*margin-top: 2vh;*/
+  margin-bottom: 2vh;
+  background-color: #E7EAF0;
 }
 
 .board {
-  top: -960.25px;
+  top: -963.25px;
   left: -635px;
   position: absolute;
   background-size: -100%;
@@ -18,6 +33,29 @@
 .gamePos {
   position: relative;
 }
+
+.tokens {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 84.5vw;
+  margin-top: 60vh;
+}
+
+.black {
+  top: -131px;
+  left: -404px;
+  position: absolute;
+  zoom: .4;
+}
+
+/*.red {
+  top: -131px;
+  left: -190px;
+  position: absolute;
+  zoom: .4;
+}*/
 
 .arrow1:hover {
   top: -780px;
@@ -37,18 +75,19 @@
 
 body {
   margin: 40px;
+  background-color: #E7EAF0;
 }
 
-.container {
+/*.container {
   display: grid;
   grid-template-columns: repeat(2, [col] 150px);
   grid-template-rows: repeat(5, [row] 100px );
   grid-gap: 30px;
   background-color: white;
   color: #444;
-}
+}*/
 
-.whosTurn {
+/*.whosTurn {
   background-color: grey;
   color: #fff;
   border-radius: 5px;
@@ -84,4 +123,4 @@ body {
   font-size: 150%;
   grid-row: row 4;
   grid-column: col / span 2;
-}
+}*/

@@ -5,10 +5,19 @@
     <title>Connect Four Game</title>
     <link rel="stylesheet" href="game.css">
     <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+    <script src="jQuery-rwdImageMaps-master/jquery.rwdImageMaps.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      $(document).ready(function(e) {
+        $('img[usemap]').rwdImageMaps();
+        });
+    </script>
     <script type="text/javascript" src="game.js"></script>
+    <script src="dist/sweetalert.min.js"></script> <link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
   </head>
   <body>
-    <header></header>
+    <header>
+      <h1>Connect Four</h1>
+    </header>
     <div id="game">
       <span class="boardPos">
         <div class="gameBoard">
@@ -46,21 +55,15 @@
           </map>
         </div>
       </span>
-      <div class="arrowDiv1">
-        <img src="Sprite_ConnectFour1-03.png" class="arrow1"/>
-      </div>
-      <div class="arrowDiv1">
-        <img src="Sprite_ConnectFour1-03.png" class="arrow1"/>
-      </div>
-      <div class="arrowDiv1">
-        <img src="Sprite_ConnectFour1-03.png" class="arrow1"/>
-      </div>
-      <div class="arrowDiv1">
-        <img src="Sprite_ConnectFour1-03.png" class="arrow1"/>
-      </div>
-      <div class="arrowDiv1">
-        <img src="Sprite_ConnectFour1-03.png" class="arrow1"/>
-      </div>                  
+      <div class="otherGamePieces">
+        <div class="arrowDiv1">
+          <img src="Sprite_ConnectFour1-03.png" class="arrow1"/>
+        </div>
+        <div class="tokens">
+          <img src="Sprite_ConnectFour1-03.png" class="black"/>
+          <img src="Sprite_ConnectFour1-03.png" class="red"/>
+        </div>
+    </div>
     </div>
     <aside>
       <div class="container">
@@ -73,11 +76,11 @@
           <button id="start-button">Start Button</button>
         </div>
         <div class="warning">
-          <p>C</p>
+          <p></p>
         </div>
         <div class="gameFunctions">
-          <div id="oneP">playerOne</div>
-          <div id="twoP">playerTwo</div>
+          <div id="oneP"></div>
+          <div id="twoP"></div>
           <div id="restart">
             <button id="reset-button">Restart</button>
           </div>

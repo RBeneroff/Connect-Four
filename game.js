@@ -2,7 +2,7 @@
 var Config = {
   startingPlayer: 'r',
   countToWin: 4,
-  winner: 0,
+  // winner: 0,
 }; //config closing
 
 var App = {
@@ -24,8 +24,9 @@ hoverArrow: function() {
 
 winnerDisplay: function() {
   UI.checkVerticalWin;
-  // UI.checkHorizontalWin;
-  window.alert('You Win');
+  UI.checkHorizontalWin;
+  // window.alert('You Win ' + currentPlayer);
+  swal({   title: "Sweet!",   text: "You Won!",   imageUrl: "winning.png" });
 },
 
 };// App closing
@@ -49,12 +50,12 @@ function incrementRowIndex(i) {
 };
 var rowMax = 5;
 column1Array = [];
-column2Array = [0,0,0,0,0,0];
-column3Array = [0,0,0,0,0,0];
-column4Array = [0,0,0,0,0,0];
-column5Array = [0,0,0,0,0,0];
-column6Array = [0,0,0,0,0,0];
-column7Array = [0,0,0,0,0,0];
+column2Array = [];
+column3Array = [];
+column4Array = [];
+column5Array = [];
+column6Array = [];
+column7Array = [];
 var currentPlayer = Config.startingPlayer;
 var playerOne = 'r';
 var playerTwo = 'b';
@@ -150,15 +151,60 @@ updateColumnArray7: function(i) {
 checkVerticalWin: function() {
 
   if (column1Array.length > 3) {
-
     var winnerCheck = column1Array[column1Array.length -1];
-
     if (column1Array[column1Array.length -2] === winnerCheck &&    column1Array[column1Array.length -3] === winnerCheck && column1Array[column1Array.length - 4] === winnerCheck) {
       App.winnerDisplay();
-      console.log('winner');
+      console.log('winner column1');
      }
   };
 
+  if (column2Array.length > 3) {
+    var winnerCheck = column2Array[column2Array.length -1];
+    if (column2Array[column2Array.length -2] === winnerCheck &&    column2Array[column2Array.length -3] === winnerCheck && column2Array[column2Array.length - 4] === winnerCheck) {
+      App.winnerDisplay();
+      console.log('winner column2');
+     }
+  };
+
+  if (column3Array.length > 3) {
+    var winnerCheck = column3Array[column3Array.length -1];
+    if (column3Array[column3Array.length -2] === winnerCheck &&    column3Array[column3Array.length -3] === winnerCheck && column3Array[column3Array.length - 4] === winnerCheck) {
+      App.winnerDisplay();
+      console.log('winner column3');
+     }
+  };
+
+  if (column4Array.length > 3) {
+    var winnerCheck = column4Array[column4Array.length -1];
+    if (column4Array[column4Array.length -2] === winnerCheck &&    column4Array[column4Array.length -3] === winnerCheck && column4Array[column4Array.length - 4] === winnerCheck) {
+      App.winnerDisplay();
+      console.log('winner column4');
+     }
+  };
+
+  if (column5Array.length > 3) {
+    var winnerCheck = column5Array[column5Array.length -1];
+    if (column5Array[column5Array.length -2] === winnerCheck &&    column5Array[column5Array.length -3] === winnerCheck && column5Array[column5Array.length - 4] === winnerCheck) {
+      App.winnerDisplay();
+      console.log('winner column5');
+     }
+  };
+
+  if (column6Array.length > 3) {
+    var winnerCheck = column6Array[column6Array.length -1];
+    if (column6Array[column6Array.length -2] === winnerCheck &&    column6Array[column6Array.length -3] === winnerCheck && column6Array[column6Array.length - 4] === winnerCheck) {
+      App.winnerDisplay();
+      console.log('winner column6');
+     }
+  };
+
+  if (column7Array.length > 3) {
+    var winnerCheck = column7Array[column7Array.length -1];
+    if (column7Array[column7Array.length -2] === winnerCheck &&    column7Array[column7Array.length -3] === winnerCheck && column7Array[column7Array.length - 4] === winnerCheck) {
+      App.winnerDisplay();
+      console.log('winner column7');
+     }
+  };
     // var w = column1.attr('data-index');
     // if (column1Array[5] === column1Array[4] && column1Array[5] === column1Array[3] && column1Array[5] === column1Array[2]) {
     //   console.log('winner!');
@@ -207,6 +253,21 @@ checkVerticalWin: function() {
 },
 
 checkHorizontalWin: function() {
+
+  if (rowsColumn1.length > 3) {
+    var winnerCheck = rowsColumn1.attr('data-index');
+    if (rowsColumn1[rowsColumn1.length] === rowsColumn2[rowsColumn2.length] === rowsColumn3[rowsColumn3.length] === rowsColumn4[rowsColumn4.length]) {
+      App.winnerDisplay();
+      console.log('winner');
+    }
+  }
+
+     //
+    //   winnerCheck &&    rowsColumn1[rowsColumn1.length -3] === winnerCheck && rowsColumn1[rowsColumn1.length - 4] === winnerCheck) {
+    //   App.winnerDisplay();
+    //   console.log('winner');
+    //  }
+  // };
 
 
   // for (i = 0; i < yAxis; i++) {
@@ -264,10 +325,17 @@ onClickStart: function(event) {
 }, //onClickStart closure
 
 onClickReset: function() {
+  column1Array.length = [];
+  column2Array.length = 0;
+  column3Array.length = 0;
+  column4Array.length = 0;
+  column5Array.length = 0;
+  column6Array.length = 0;
+  column7Array.length = 0;
+  $('.rowIndex').remove();
+  currentPlayer === Config.startingPlayer;
   console.log('reset');
-  // $('startButton')[0].reset();
-  // $('updateColumnDisplay')[0].reset();
-  // $('updateWinner') = false;
+
 },
 //
 onClickInstructions: function() {
@@ -341,6 +409,7 @@ onClickColumn7: function() {
 
 //last thing - Initial Event handlers
 window.onload = function() {
+  $('img[usemap]').rwdImageMaps();
   $('#inst_button').on('click', UI.onClickInstructions);
   $('#start-button').on('click', UI.onClickStart);
   $('#reset-button').on('click', UI.onClickReset);
