@@ -43,7 +43,7 @@ var rowsColumn4 = [];
 var rowsColumn5 = [];
 var rowsColumn6 = [];
 var rowsColumn7 = [];
-var count = 1;
+// var count = 1;
 // var me = 0;
 function incrementRowIndex(i) {
   rowsColumn1[i]++;
@@ -259,49 +259,116 @@ checkVerticalWin: function() {
 },
 
 checkHorizontalWin: function(i) {
-  count = 1;
+  var count = 1;
 
-  if (column1Array[i] === column2Array[i] && !column1Array[i] && !column2Array[i]) {
-    count++;
-    console.log('one and two');
-  } else {
-    count = 1;
+// working when its 1 = 2, 2 = 3 works but when click column 1 you get 2 (can do 1 = 2 = 3 and get 3  but if click column 1 first it logs count at 2)
+
+  // if (column1Array[i] === column2Array[i] && column1Array[i] != 0) {
+  //   count++;
+  // } else if (column2Array[i] === column3Array[i] && column2Array[i] != 0) {
+  //   count++;
+  // } else if (column3Array[i] === column4Array[i] && column3Array[i] != 0) {
+  //   count++;
+  // } else if (column4Array[i] === column5Array[i] && column4Array[i] != 0) {
+  //   count++;
+  // } else if (column5Array[i] === column6Array[i] &&  column5Array[i] != 0) {
+  //   count++;
+  // } else if (column6Array[i] === column7Array[i] && column6Array[i] != 0) {
+  //   count++;
+  // }
+  // else {
+  //   count = 1;
+  // }
+  //
+  // if (column1Array[i] === column2Array[i]) {
+  //   // console.log('one and two');
+  //   if (column2Array[i] === column3Array[i]) {
+  //   // console.log('hi');
+  //     if(column3Array[i] === column4Array[i]) {
+  //       count = 4;
+  //       console.log('win4');
+  //     }
+  //   }
+  // }
+  // else {
+  //   count = 1;
+  // };
+  //
+  // if (column2Array[i] === column3Array[i]) {
+  //   // console.log('one and two');
+  //   if (column3Array[i] === column4Array[i]) {
+  //   // console.log('hi');
+  //     if(column4Array[i] === column5Array[i]) {
+  //       count = 4;
+  //       console.log('win5');
+  //     }
+  //   }
+  // }
+  // else {
+  //   count = 1;
+  // }
+
+    if (column1Array[i] !== undefined) {
+      if (column1Array[i] === column2Array[i] ) {
+        ++count;
+        // console.log("two and three");
+      } else {
+        count = 1;
+      }
+    }
+
+  if (column2Array[i] !== undefined)  {
+    if (column2Array[i] === column3Array[i]) {
+      ++count;
+      // console.log("two and three");
+    } else {
+      count = 1;
+    }
   }
-  if (column2Array[i] === column3Array[i]  && column2Array[i] != 0) {
-    count++;
-    // console.log("two and three");
-  } else {
-    count = 1;
+
+  // //   // && !column2Array[i] && !column3Array[i]
+  if (column3Array[i] !== undefined) {
+    if(column3Array[i] === column4Array[i]) {
+      ++count;
+    } else {
+      count = 1;
+    }
   }
-  //   // && !column2Array[i] && !column3Array[i]
-  if(column3Array[i] === column4Array[i] && column3Array[i] != 0) {
-    count++;
-  } else {
-    count = 1;
+if (count < 4 ) {
+  if (column4Array[i] !== undefined) {
+    if (column4Array[i] === column5Array[i]) {
+      ++count;
+    } else {
+      count = 1;
+    }
   }
-  if (column4Array[i] === column5Array[i] && column4Array[i] != 0) {
-    count++;
-  } else {
-    count = 1;
-  }
+}
   // // && !column4Array[i] && !column5Array[i]
-  if(column5Array[i] === column6Array[i] && column5Array[i] != 0) {
-    count++;
-  } else {
-    count = 1;
+if (count < 4 ) {
+  if (column5Array[i] !== undefined) {
+    if(column5Array[i] === column6Array[i]) {
+      ++count;
+    } else {
+      count = 1;
+    }
   }
+}
   // // && !column5Array[i] && !column6Array[i]
-  if(column6Array[i] === column7Array[i] && column6Array[i] != 0) {
-    count++;
-  } else {
-    count = 1;
+if (count < 4 ) {
+  if (column6Array[i] !== undefined) {
+    if(column6Array[i] === column7Array[i]) {
+      ++count;
+    } else {
+      count = 1;
+    }
   }
+}
   //  && !column6Array[i] && !column7Array[i]
   if (count === Config.countToWin) {
     App.winnerDisplay();
     console.log('winning horizontally');
     }
-
+console.log(count);
 },
 
 checkDiagonalWin1: function () {
@@ -359,7 +426,7 @@ onClickReset: function() {
   $('.rowIndex').remove();
   currentPlayer === Config.startingPlayer;
   console.log('reset');
-  count = 0;
+  // count = 1;
 
 },
 //
@@ -370,7 +437,7 @@ onClickInstructions: function() {
 },
 
 onClickColumn1: function() {
-  console.log('clicked column1');
+  console.log('clicked column1', UI.count);
   // UI.addTokenToBoard();
   UI.updateColumnArray1();
   UI.changePlayer();
@@ -379,7 +446,7 @@ onClickColumn1: function() {
 },
 
 onClickColumn2: function() {
-  console.log('clicked column2');
+  console.log('clicked column2', UI.count);
   // UI.addTokenToBoard();
   UI.updateColumnArray2();
   UI.changePlayer();
@@ -388,7 +455,7 @@ onClickColumn2: function() {
 },
 
 onClickColumn3: function() {
-  console.log('clicked column3');
+  console.log('clicked column3', UI.count);
   // UI.addTokenToBoard();
   UI.updateColumnArray3();
   UI.changePlayer();
@@ -397,7 +464,7 @@ onClickColumn3: function() {
 },
 
 onClickColumn4: function() {
-  console.log('clicked column4');
+  console.log('clicked column4', UI.count);
   // UI.addTokenToBoard();
   UI.updateColumnArray4();
   UI.changePlayer();
@@ -406,7 +473,7 @@ onClickColumn4: function() {
 },
 
 onClickColumn5: function() {
-  console.log('clicked column5');
+  console.log('clicked column5', UI.count);
   // UI.addTokenToBoard();
   UI.updateColumnArray5();
   UI.changePlayer();
@@ -415,7 +482,7 @@ onClickColumn5: function() {
 },
 
 onClickColumn6: function() {
-  console.log('clicked column6');
+  console.log('clicked column6', UI.count);
   // UI.addTokenToBoard();
   UI.updateColumnArray6();
   UI.changePlayer();
@@ -424,7 +491,7 @@ onClickColumn6: function() {
 },
 
 onClickColumn7: function() {
-  console.log('clicked column7');
+  console.log('clicked column7', UI.count);
   // UI.addTokenToBoard();
   UI.updateColumnArray7();
   UI.changePlayer();

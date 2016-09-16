@@ -34,6 +34,38 @@ h1 {
   position: relative;
 }
 
+.start {
+  position: absolute;
+  width: 434px;
+  height: 154px;
+  overflow: hidden;
+  /*margin-left: 84.5vw;
+  margin-top: 60vh;*/
+}
+
+.startimg {
+  top: -132px;
+  left: -690px;
+  position: absolute;
+  zoom: .4;
+}
+
+.gameFunctions {
+  position: absolute;
+  width: 432px;
+  height: 298px;
+  overflow: hidden;
+  /*margin-left: 84.5vw;
+  margin-top: 60vh;*/
+}
+
+.resetimg {
+  top: -636px;
+  left: -188px;
+  position: absolute;
+  zoom: .4;
+}
+
 .tokens {
   position: absolute;
   width: 70px;
