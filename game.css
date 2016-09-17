@@ -51,6 +51,7 @@ h1 {
   top: -132px;
   left: -690px;
   position: absolute;
+  background-size: -100%;
   zoom: .4;
 }
 
@@ -67,6 +68,7 @@ h1 {
   top: -336px;
   left: -188px;
   position: absolute;
+  background-size: -100%;
   zoom: .4;
 }
 
@@ -113,6 +115,27 @@ body {
   margin: 40px;
   background-color: #E7EAF0;
 }
+
+.instructions-warning {
+  position: absolute;
+  width: 383px;
+  height: 212px;
+  overflow: hidden;
+  margin-left: 2.3vw;
+  margin-top: 300px;
+}
+
+.instImg {
+  top: -131px;
+  left: -1339px;
+  position: absolute;
+  background-size: -100%;
+  zoom: .4;
+}
+
+/*footer {
+  margin-top: 100vh;
+}*/
 
 /*.container {
   display: grid;

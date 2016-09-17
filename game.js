@@ -350,12 +350,9 @@ updateWinner: function() {
 // Event Handlers
 onClickStart: function(event) {
   event.preventDefault();
-  swal({   title: "Ready?",   text: "",   imageUrl: "./images:font/taco.png" });
   console.log('start game');
+  swal({   title: "Ready?",   text: "",   imageUrl: "./images:font/taco.png" });
   UI.changePlayer();
-  // if (!App.isPlaying) {
-  //   App.startGame();
-  // }
 }, //onClickStart closure
 
 onClickReset: function() {
@@ -372,11 +369,10 @@ onClickReset: function() {
   count = 1;
 
 },
-//
+
 onClickInstructions: function() {
-  console.log('toggle');
+  console.log('instructions');
   swal({   title: "Don't know how to play?",   text: "Bascically, get four of your tokens in a row before your opponent does.",   imageUrl: "./images:font/inst.png" });
-  // $('#inst_button').toggle();
 },
 
 onClickColumn1: function() {
@@ -452,7 +448,7 @@ onClickColumn7: function() {
 //last thing - Initial Event handlers
 window.onload = function() {
   $('img[usemap]').rwdImageMaps();
-  $('#inst_button').on('click', UI.onClickInstructions);
+  $('.instButton').on('click', UI.onClickInstructions);
   $('.startButton').on('click', UI.onClickStart);
   $('.resetButton').on('click', UI.onClickReset);
   $('.column1').on('click', UI.onClickColumn1);
