@@ -5,19 +5,56 @@
 2. When player clicks column, display is updated and new token is shown
 3. If column is full - do nothing
 
-in image map area add an item="column1token"
-div id ="tokenB1" class = "display"</div>
-js -
-$('[item="texas"]').click(function(){
-    $(".display").hide();
-    $("#texas").show();
-    return false;
-});
-$('[item="florida"]').click(function(){
-    $(".display").hide();
-    $("#florida").show();
-    return false;
-});
+  // var tokenB1 = getElementById("tokenB1");
+  // var token = createElement("tokenB1Img");
+  // myImage.id = "tokenB1";
+  // myImage.src = "./images:font/Sprite_ConnectFour-03.png";
+  // myImage.useMap = "#tokenBlack";
+  // imageBox.appendChild(tokenB1);
+
+  // backwards because currentPlayer switches right away
+  //value[i]++ every time clicked
+  //need nested loop
+  // var tokenR = `#tokenR`
+  // var tokenB = `#tokenB`
+  // for (var columnPosition = 1; columnPosition <= 6; columnPosition++) {
+  // for (var rowPosition = 1; rowPosition <= 7; rowPosition++) {
+  //     var tokenRed = tokenR + columnPosition + '-' + rowPosition;
+  //     // console.log(tokenRed);
+  //     var tokenBlack = tokenB + columnPosition + '-' + rowPosition;
+  //     // console.log(tokenBlack);
+  //     if (currentPlayer === 'b' && i === columnPosition && i === rowPosition) {
+  //         $(tokenRed).show();
+  //         console.log(tokenRed);
+  //     } else if (currentPlayer === 'r' && i === columnPosition && i === rowPosition) {
+  //         $(tokenBlack).show();
+  //         console.log(tokenBlack);
+  //     }
+  //   }
+  // }
+
+
+    // var tokenR = `#tokenR`
+    // var tokenB = `#tokenB`
+    // var columnPosition = 2;
+    // for (var rowPosition = 1; rowPosition <= 7; rowPosition++) {
+    //   // if (i = 0)
+    //     var tokenRed = tokenR + columnPosition + '-' + rowPosition;
+    //     // console.log(tokenRed);
+    //     var tokenBlack = tokenB + columnPosition + '-' + rowPosition;
+    //     // console.log(tokenBlack);
+    //     if (currentPlayer === 'b' && i === 2) {
+    //       for (rowPosition = 1; rowPosition <= 7; rowPosition++) {
+    //         if (rowPosition < 7) {
+    //           $(tokenRed).show();
+    //           console.log(tokenRed);
+    //       } else if (currentPlayer === 'r' && i === 2 && i === rowPosition) {
+    //           $(tokenBlack).show();
+    //           console.log(tokenBlack);
+    //       }
+    //         }
+    //       }
+    //   }
 
 
 ### `startGame` - DONE
