@@ -1,12 +1,26 @@
 # Unit Spec : `App` / `Display`
 
-
-### `updateColumnDisplay`
+### `addTokensToBoard`
 1. Displays the tokens in each column
 2. When player clicks column, display is updated and new token is shown
 3. If column is full - do nothing
 
-### `startGame`
+in image map area add an item="column1token"
+div id ="tokenB1" class = "display"</div>
+js -
+$('[item="texas"]').click(function(){
+    $(".display").hide();
+    $("#texas").show();
+    return false;
+});
+$('[item="florida"]').click(function(){
+    $(".display").hide();
+    $("#florida").show();
+    return false;
+});
+
+
+### `startGame` - DONE
 1. If the game has started - do nothing when button is clicked
 2. If game has not started - start game and change ###whosTurn display to playerOne
 
@@ -27,24 +41,36 @@
     });
   };
 
-### `restart`
+### `restart` - DONE once board clears of showing tokens
 1. When Reset Button is clicked (###onClickReset), update display (###updateColumnDisplay) to a blank board
 2. Update ###updateTurn to default playerOne's turn
 3. Update ###whosTurn to default view
 
-### `whosTurn` - Display toggle
+### `whosTurn` - REACH
 1. Default display: 'Ready?' (or whatever saying is)
 2. When startButton is clicked, toggle to playerOne display
 3. One playerOne goes, update toggle to playerTwo display
 POSSIBLY USE A SWITCH STATEMENT
 
-### `winnerDisplay`
+### `winnerDisplay` - DONE
 1. When ###updateWinner returns true, show winnerDisplay with player who won  
 2. If nobody has won, remain hidden
 
 ### `warningDisplay` - REACH
   1. If ###fullColumnCheck returns true, update warningDisplay to show the warning
   2. If ###fullColumnCheck is false, do nothing and hide display
+
+## Animations
+
+### `dropToken`
+1. Drop token from arrow above
+
+### `hoverArrow`
+1. When mouse is hovering over column, display that htmlArrow
+2. When mouse is not over arrow, hide that arrow
+
+### `startAnimation` - REACH
+1. When start button is clicked, do some animation
 
 ## Image Mapping - DONE in HTML
 

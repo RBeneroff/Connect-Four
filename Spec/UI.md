@@ -1,6 +1,7 @@
 # Unit Spec : `UI`
 
-### `axis & settings OR config`
+### `Config` - DONE
+1. holds any variables that are needed for the configuration of the site (startingPlayer, countToWin)
 
   config:
   // var currentPosition = [i][j],
@@ -16,94 +17,6 @@
   //   playerOne: 'r',
   //   playerTwo: 'b'
   // },
-
-  1. Define the x and y axis and how many tokens to declare a win
-  var settings = {
-    xAxis: 7, (horizontal) j
-    yAxis: 6, (vertical) i
-    tokensToWin: 4,
-    playerOne: 'r',
-    playerTwo: 'b'
-  };
-
-  figure out to determine value of array - 7 nested array
-
-  var gameBoard = [ [0,0,0,0,0,R,0], row horizontal (x)
-                    [0,0,0,0,0,R,0], column vertical (y)
-                    [0,0,B,0,0,R,0],
-                    [0,0,0,0,0,R,0],
-                    [R,B,B,R,B,B,0],
-                    [0,0,0,0,0,0,0], ]
-
-                    gameBoard[0][5] = 'r'
-
-### `addTokenToBoard`
-  function addTokenToBoard(currentPlayer, xPos, yPos) {
-  function addTokenToBoard(currentPlayer, data-index, column#)
-  AT data-index at column#, put player's token
-  <!-- gameBoard[xPos][yPos] = playerSpot;
-  gameBoard[j][i] -- [data-id][] -->
-  gameBoard[row][column]
-  column doesn't change but row will change
-  data-id++ each time same column clicked
-  row is data-index-- SAME THING,
-  need to now change 0 to r or b
-  When column is clicked, add token to column[i][j+1]
-
-  column1 = [0,0,0,0,0,0] --> ['r','b','r', 0, 0, 0]
-  column2 = [0,0,0,0,0,0]
-  when column 1 is first clicked, change 0 to 'r' then when clicked again change to 'b'
-
-  1. When player clicks column1, next 0 in line (closest) turns to'b'
-  2. each column must be a button then
-
-  if (onClickColumn1.clicked && rowsColumn1.length < 5) {
-    change that 0 in array to 'r' or 'b'
-  }
-
-  splice()
-  column1Array.splice(0,0)
-
-
-  $("#mybutton").click(function(){
-    var oldval=$("#mytext").val();
-    $("#mytext").val('Changed by button');
-    var newval=$("#mytext").val();
-    if (newval != oldval) {
-      $("#mytext").trigger('change');
-    }
-  });
-
-  $("onClickColumn1").click(function(){
-    var oldval=$(0).val();
-    $(0).val(0);
-    var newval=$(0).val();
-    if (newval != oldval) {
-      $(0).trigger('r');
-    }
-  });
-
-  $(UI.onClickColumn1).click(function(event, column1Array) {
-
-  })
-  .trigger("click", ['r']);
-
-  // if($(UI.onClickColumn1).clicked){
-    // var newArray1 = column1Array + moveUp;
-    // var column1 = document.getElementsByClassName('column1');
-    // var moveUp = $(column1[value='data-index']).next();
-    //   moveUp++;
-    //
-    // column1Array.splice(UI.moveUp++,1,currentPlayer);
-    // column2Array.splice(UI.rowIndex,1,currentPlayer);
-    // column3Array.splice(UI.rowIndex,1,currentPlayer);
-    // column4Array.splice(UI.rowIndex,1,currentPlayer);
-    // column5Array.splice(UI.rowIndex,1,currentPlayer);
-    // column6Array.splice(UI.rowIndex,1,currentPlayer);
-    // column7Array.splice(UI.rowIndex,1,currentPlayer);
-    // incrementRowIndex(i);
-
-      // return column1Array; - DO NOT NEED (added into updateColumnArray)
 
 ### `changePlayer` - DONE
 1. update who's turn it is
@@ -122,175 +35,13 @@
 ## Checking for wins
 
 ### `checkVerticalWin` -- DONE
-
 1. check for wins vertically for player that just went
 
-arr = rowsColumn1;
-start = arr[0];
-count = 0;
 
-function checkWinner(array){
-
-  if (array.length > 3) {
-    var winnerCheck = array[array.length]
-      if (array[array.length -1 ] === winnerCheck && array[array.length -2 ] === winnerCheck && array[array.length - 3] === winnerCheck) {
-        winner = winnerCheck;
-      } else {
-        console.log('no winner');
-      }
-  }
-
-
-for (var i = 0; i < arr.length-3; i++) {
-  if (start=='r') {
-    count++;
-  } else if (arr[i]) {
-    for (var j=i+1; j < arr.length-3; j++) {
-      if(arr[i] == arr[j] && arr[j] == 4) {
-        count++;
-      }
-    }
-  }
-
-
-  }
-
-column1Array.string();
-function countForWin(str) {
-  var c= str.match(r);
-  return c.map(function(itm) {
-    return[itm.charAt(0), itm.length];
-    });
-}
-
-currentValue = null;
-previousValue = 0;
-tally = 0;
-
-
-
-for the length of the column (6), count 'r' or 'b' - 3 to check 3 down from spot
-  currentValue = [column1Array[index]][column1Array] -->
-
-  for (var x = 0; x <= 6; x++) {
-    for (var y = 0; y <= 5; y++) {
-      currentValue = column1Array[column1Array[i]][column1Array];
-      currentValue = column1Array[index value][column#]
-      if (currentValue === previousValue && currentValue !== 0) {
-        tally += 1;
-      } else {
-        tally = 0;
-      };
-      if (tally === Config.countToWin -1) {
-        return true;
-      }
-      previousValue = currentValue;
-    }
-    tally = 0;
-    previousValue = 0;
-  };
-    return false;
-    console.log('winner!');
-
-
-  for (i = 0; i < xAxis-3; i++) {
-    for (j=0; j < yAxis; j++) {
-      if (gameBoard[i][j] != 0 && gameBoard[i][j] == board[i+1][j] && gameBoard[i][j] == board[i+2][j]) && gameBoard[i][j] == gameBoard[i+3][j])
-      return true;
-    }
-  } else {
-    return false;
-  }
-
-  if
-
-<!--
-function checkVerticalWin(token, column, data-index) {
-  if (column[i][index] < axis.xAxis) {
-    for (var i = 0; i < axis.xAxis; i++) {
-      if ( tokens[black] < 4) {
-        tokens[black]++ (updateDataIndex)
-        array.push(); (updateColumnArray)
-      } else if (tokens === 4) {
-        array.push();
-        return updateWinner;
-      } else if (column[i][index] === 7) {
-        return fullColumnCheck;
-      }
-    }
-  }
-} -->
-
-### `checkHorizontalWin`
+### `checkHorizontalWin` - DONE
 1. check for horizontal wins for specific player
-4 of these statements must be correct to return winner
-IF column1Array[0] ===  column2Array[0] ===  column3Array[0] ===  column4Array[0] ===  column5Array[0] ===  column5Array[0] ===  column7Array[0]
 
-if (column1Array.length === currentPlayer || column2Array.length === currentPlayer || column3Array.length === currentPlayer || column4Array.length === currentPlayer ||  column5Array.length === currentPlayer || column6Array.length === currentPlayer || column7Array.length === currentPlayer) {
-  count++;
-} else {
-  count = 0;
-} if (count >=4) {
-  return win;
-}
-
-count = 0;
-if (column1Array.length === currentPlayer && column2Array.length === currentPlayer) {
-  count ++;
-} if (column2Array.length === currentPlayer && column3Array.length === currentPlayer) {
-  count++;
-} if(column3Array.length === currentPlayer && column4Array.length === currentPlayer) {
-  count++;
-} if (column4Array.length === currentPlayer &&  column5Array.length === currentPlayer) {
-  count++;
-} if(column5Array.length === currentPlayer && column6Array.length === currentPlayer) {
-  count++;
-} if(column6Array.length === currentPlayer && column7Array.length === currentPlayer) {
-  count++;
-} when (count === 4) {
-  return win;
-} else {
-  count = 0;
-}
-
-
-
-for (i = 0; i < xAxis; i++) {
-  for (j=0; j < yAxis-3; j++) {
-    if (gameBoard[i][j] != 0 && gameBoard[i][j] == board[i][j+1] && gameBoard[i][j] == board[i][j+2]) && gameBoard[i][j] == gameBoard[i][j+3])
-    return true;
-  }
-} else {
-  return false;
-}
-
-OR
-
-for (var y = 0; y <= 5; y++) {
-        for (var x = 0; x <= 6; x++) {
-            currentValue = board[y][x];
-            if (currentValue === previousValue && currentValue !== 0) {
-                tokens += 1;
-            } else {
-                // Reset the count if you find a gap.
-                tokens = 0;
-            }
-            if (tokens === 4) {
-                return true;
-            }
-            previousValue = currentValue;
-        }
-
-        // After each row, reset the tokens and previous value.
-        tokens = 0;
-        previousValue = 0;
-    }
-
-    // No horizontal win was found.
-    return false;
-}
-
-### `checkDiagonalWin`
+### `checkDiagonalWin` - REACH
 1. check for diagonal wins for specific player
 
 check right diagonal:
@@ -313,13 +64,7 @@ for (i = 0; i < xAxis-3; i++) {
   return false;
 }
 
-
 ## Core Functions
-
-<!-- ### `updateDataIndex`
-1. When a column is clicked, update the data-index of that column +1
-2. if that column array === 7, do nothing
-tokens = tokens + 1; -->
 
 ### `fullColumnCheck` -- DONE in updateColumnDisplays
 1. If data-index on a column === 7 && player clicks on that column
@@ -361,15 +106,3 @@ need to now change 0 to r or b
 ### `column5Button`
 ### `column6Button`
 ### `column7Button`
-
-## Animations
-
-### `dropToken`
-1. Drop token from arrow above
-
-### `hoverArrow`
-1. When mouse is hovering over column, display that htmlArrow
-2. When mouse is not over arrow, hide that arrow
-
-### `startAnimation` - REACH
-1. When start button is clicked, do some animation

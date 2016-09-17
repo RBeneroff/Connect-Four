@@ -25,44 +25,640 @@
           <map name="#map">
             <area class ="column1"
               shape="rect"
-              coords="797.07, 997.4, 978.37, 2148.6"
+              coords="797.07, 897.4, 978.37, 2148.6"
               onClick="$().onClickColumn1;"
+              onClick="$().addTokensToBoard;"
+              item="column1token"
               mouseOver=".arrow1"/>
             <area class ="column2"
               shape="rect"
-              coords="978.37, 997.4, 1142.92, 2148.96"
+              coords="978.37, 897.4, 1142.92, 2148.96"
               onClick="$().onClickColumn2;"/>
             <area class ="column3"
               shape="rect"
-              coords="1142.92, 997.4, 1320.24, 2148.96"
+              coords="1142.92, 897.4, 1320.24, 2148.96"
               onClick="$().onClickColumn3;"/>
             <area class ="column4"
               shape="rect"
-              coords="1320.24, 997.4, 1494.79, 2148.96"
+              coords="1320.24, 897.4, 1494.79, 2148.96"
               onClick="$().onClickColumn4;"/>
             <area class ="column5"
               shape="rect"
-              coords="1484.79, 997.4, 1655.97, 2148.96"
+              coords="1484.79, 897.4, 1655.97, 2148.96"
               onClick="$().onClickColumn5;"/>
             <area class ="column6"
               shape="rect"
-              coords="1655.97, 997.4, 1829.33, 2148.96"
+              coords="1655.97, 897.4, 1829.33, 2148.96"
               onClick="$().onClickColumn6;"/>
             <area class ="column7"
               shape="rect"
-              coords="1829.33, 997.4, 2136.33, 2228.96"
+              coords="1829.33, 897.4, 2136.33, 2228.96"
               onClick="$().onClickColumn7;"/>
           </map>
+            <div id="tokenB1-1" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenBlack" alt="HTML Black" usemap="#tokenBlack"/>
+              <map name="#tokenBlack">
+                <area class ="black"
+                  shape="rect"
+                  coords="404.052, 132.637, 548.052, 276.637"
+                  onClick="$().onClickColumn1;"/>
+              </map>
+            </div>
+            <div id="tokenR1-1" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenRed" alt="HTML Red" usemap="#tokenRed"/>
+              <map name="#tokenRed">
+                <area class ="red"
+                  shape="rect"
+                  coords="188.052, 132.637, 332.052, 276.637"
+                  onClick="$().onClickColumn1;"/>
+              </map>
+            </div>
+            <div id="tokenR1-2" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenRed" alt="HTML Red" usemap="#tokenRed"/>
+              <map name="#tokenRed">
+                <area class ="red"
+                  shape="rect"
+                  coords="188.052, 132.637, 332.052, 276.637"
+                  onClick="$().onClickColumn1;"/>
+              </map>
+            </div>
+            <div id="tokenB1-2" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenBlack" alt="HTML Black" usemap="#tokenBlack"/>
+              <map name="#tokenBlack">
+                <area class ="black"
+                  shape="rect"
+                  coords="404.052, 132.637, 548.052, 276.637"
+                  onClick="$().onClickColumn1;"/>
+              </map>
+            </div>
+            <div id="tokenR1-3" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenRed" alt="HTML Red" usemap="#tokenRed"/>
+              <map name="#tokenRed">
+                <area class ="red"
+                  shape="rect"
+                  coords="188.052, 132.637, 332.052, 276.637"
+                  onClick="$().onClickColumn1;"/>
+              </map>
+            </div>
+            <div id="tokenB1-3" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenBlack" alt="HTML Black" usemap="#tokenBlack"/>
+              <map name="#tokenBlack">
+                <area class ="black"
+                  shape="rect"
+                  coords="404.052, 132.637, 548.052, 276.637"
+                  onClick="$().onClickColumn1;"/>
+              </map>
+            </div>
+            <div id="tokenR1-4" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenRed" alt="HTML Red" usemap="#tokenRed"/>
+              <map name="#tokenRed">
+                <area class ="red"
+                  shape="rect"
+                  coords="188.052, 132.637, 332.052, 276.637"
+                  onClick="$().onClickColumn1;"/>
+              </map>
+            </div>
+            <div id="tokenB1-4" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenBlack" alt="HTML Black" usemap="#tokenBlack"/>
+              <map name="#tokenBlack">
+                <area class ="black"
+                  shape="rect"
+                  coords="404.052, 132.637, 548.052, 276.637"
+                  onClick="$().onClickColumn1;"/>
+              </map>
+            </div>
+            <div id="tokenR1-5" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenRed" alt="HTML Red" usemap="#tokenRed"/>
+              <map name="#tokenRed">
+                <area class ="red"
+                  shape="rect"
+                  coords="188.052, 132.637, 332.052, 276.637"
+                  onClick="$().onClickColumn1;"/>
+              </map>
+            </div>
+            <div id="tokenB1-5" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenBlack" alt="HTML Black" usemap="#tokenBlack"/>
+              <map name="#tokenBlack">
+                <area class ="black"
+                  shape="rect"
+                  coords="404.052, 132.637, 548.052, 276.637"
+                  onClick="$().onClickColumn1;"/>
+              </map>
+            </div>
+            <div id="tokenR1-6" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenRed" alt="HTML Red" usemap="#tokenRed"/>
+              <map name="#tokenRed">
+                <area class ="red"
+                  shape="rect"
+                  coords="188.052, 132.637, 332.052, 276.637"
+                  onClick="$().onClickColumn1;"/>
+              </map>
+            </div>
+            <div id="tokenB1-6" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenBlack" alt="HTML Black" usemap="#tokenBlack"/>
+              <map name="#tokenBlack">
+                <area class ="black"
+                  shape="rect"
+                  coords="404.052, 132.637, 548.052, 276.637"
+                  onClick="$().onClickColumn1;"/>
+              </map>
+            </div>
+            <div id="tokenB2-1" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenBlack" alt="HTML Black" usemap="#tokenBlack"/>
+              <map name="#tokenBlack">
+                <area class ="black"
+                  shape="rect"
+                  coords="404.052, 132.637, 548.052, 276.637"
+                  onClick="$().onClickColumn2;"/>
+              </map>
+            </div>
+            <div id="tokenR2-1" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenRed" alt="HTML Red" usemap="#tokenRed"/>
+              <map name="#tokenRed">
+                <area class ="red"
+                  shape="rect"
+                  coords="188.052, 132.637, 332.052, 276.637"
+                  onClick="$().onClickColumn2;"/>
+              </map>
+            </div>
+            <div id="tokenR2-2" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenRed" alt="HTML Red" usemap="#tokenRed"/>
+              <map name="#tokenRed">
+                <area class ="red"
+                  shape="rect"
+                  coords="188.052, 132.637, 332.052, 276.637"
+                  onClick="$().onClickColumn2;"/>
+              </map>
+            </div>
+            <div id="tokenB2-2" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenBlack" alt="HTML Black" usemap="#tokenBlack"/>
+              <map name="#tokenBlack">
+                <area class ="black"
+                  shape="rect"
+                  coords="404.052, 132.637, 548.052, 276.637"
+                  onClick="$().onClickColumn2;"/>
+              </map>
+            </div>
+            <div id="tokenR2-3" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenRed" alt="HTML Red" usemap="#tokenRed"/>
+              <map name="#tokenRed">
+                <area class ="red"
+                  shape="rect"
+                  coords="188.052, 132.637, 332.052, 276.637"
+                  onClick="$().onClickColumn2;"/>
+              </map>
+            </div>
+            <div id="tokenB2-3" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenBlack" alt="HTML Black" usemap="#tokenBlack"/>
+              <map name="#tokenBlack">
+                <area class ="black"
+                  shape="rect"
+                  coords="404.052, 132.637, 548.052, 276.637"
+                  onClick="$().onClickColumn2;"/>
+              </map>
+            </div>
+            <div id="tokenR2-4" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenRed" alt="HTML Red" usemap="#tokenRed"/>
+              <map name="#tokenRed">
+                <area class ="red"
+                  shape="rect"
+                  coords="188.052, 132.637, 332.052, 276.637"
+                  onClick="$().onClickColumn2;"/>
+              </map>
+            </div>
+            <div id="tokenB2-4" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenBlack" alt="HTML Black" usemap="#tokenBlack"/>
+              <map name="#tokenBlack">
+                <area class ="black"
+                  shape="rect"
+                  coords="404.052, 132.637, 548.052, 276.637"
+                  onClick="$().onClickColumn2;"/>
+              </map>
+            </div>
+            <div id="tokenR2-5" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenRed" alt="HTML Red" usemap="#tokenRed"/>
+              <map name="#tokenRed">
+                <area class ="red"
+                  shape="rect"
+                  coords="188.052, 132.637, 332.052, 276.637"
+                  onClick="$().onClickColumn2;"/>
+              </map>
+            </div>
+            <div id="tokenB2-5" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenBlack" alt="HTML Black" usemap="#tokenBlack"/>
+              <map name="#tokenBlack">
+                <area class ="black"
+                  shape="rect"
+                  coords="404.052, 132.637, 548.052, 276.637"
+                  onClick="$().onClickColumn2;"/>
+              </map>
+            </div>
+            <div id="tokenR2-6" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenRed" alt="HTML Red" usemap="#tokenRed"/>
+              <map name="#tokenRed">
+                <area class ="red"
+                  shape="rect"
+                  coords="188.052, 132.637, 332.052, 276.637"
+                  onClick="$().onClickColumn2;"/>
+              </map>
+            </div>
+            <div id="tokenB2-6" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenBlack" alt="HTML Black" usemap="#tokenBlack"/>
+              <map name="#tokenBlack">
+                <area class ="black"
+                  shape="rect"
+                  coords="404.052, 132.637, 548.052, 276.637"
+                  onClick="$().onClickColumn2;"/>
+              </map>
+            </div>
+            <div id="tokenB3-1" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenBlack" alt="HTML Black" usemap="#tokenBlack"/>
+              <map name="#tokenBlack">
+                <area class ="black"
+                  shape="rect"
+                  coords="404.052, 132.637, 548.052, 276.637"
+                  onClick="$().onClickColumn3;"/>
+              </map>
+            </div>
+            <div id="tokenR3-1" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenRed" alt="HTML Red" usemap="#tokenRed"/>
+              <map name="#tokenRed">
+                <area class ="red"
+                  shape="rect"
+                  coords="188.052, 132.637, 332.052, 276.637"
+                  onClick="$().onClickColumn3;"/>
+              </map>
+            </div>
+            <div id="tokenR3-2" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenRed" alt="HTML Red" usemap="#tokenRed"/>
+              <map name="#tokenRed">
+                <area class ="red"
+                  shape="rect"
+                  coords="188.052, 132.637, 332.052, 276.637"
+                  onClick="$().onClickColumn3;"/>
+              </map>
+            </div>
+            <div id="tokenB3-2" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenBlack" alt="HTML Black" usemap="#tokenBlack"/>
+              <map name="#tokenBlack">
+                <area class ="black"
+                  shape="rect"
+                  coords="404.052, 132.637, 548.052, 276.637"
+                  onClick="$().onClickColumn3;"/>
+              </map>
+            </div>
+            <div id="tokenR3-3" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenRed" alt="HTML Red" usemap="#tokenRed"/>
+              <map name="#tokenRed">
+                <area class ="red"
+                  shape="rect"
+                  coords="188.052, 132.637, 332.052, 276.637"
+                  onClick="$().onClickColumn3;"/>
+              </map>
+            </div>
+            <div id="tokenB3-3" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenBlack" alt="HTML Black" usemap="#tokenBlack"/>
+              <map name="#tokenBlack">
+                <area class ="black"
+                  shape="rect"
+                  coords="404.052, 132.637, 548.052, 276.637"
+                  onClick="$().onClickColumn3;"/>
+              </map>
+            </div>
+            <div id="tokenR3-4" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenRed" alt="HTML Red" usemap="#tokenRed"/>
+              <map name="#tokenRed">
+                <area class ="red"
+                  shape="rect"
+                  coords="188.052, 132.637, 332.052, 276.637"
+                  onClick="$().onClickColumn3;"/>
+              </map>
+            </div>
+            <div id="tokenB3-4" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenBlack" alt="HTML Black" usemap="#tokenBlack"/>
+              <map name="#tokenBlack">
+                <area class ="black"
+                  shape="rect"
+                  coords="404.052, 132.637, 548.052, 276.637"
+                  onClick="$().onClickColumn3;"/>
+              </map>
+            </div>
+            <div id="tokenR3-5" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenRed" alt="HTML Red" usemap="#tokenRed"/>
+              <map name="#tokenRed">
+                <area class ="red"
+                  shape="rect"
+                  coords="188.052, 132.637, 332.052, 276.637"
+                  onClick="$().onClickColumn3;"/>
+              </map>
+            </div>
+            <div id="tokenB3-5" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenBlack" alt="HTML Black" usemap="#tokenBlack"/>
+              <map name="#tokenBlack">
+                <area class ="black"
+                  shape="rect"
+                  coords="404.052, 132.637, 548.052, 276.637"
+                  onClick="$().onClickColumn3;"/>
+              </map>
+            </div>
+            <div id="tokenR3-6" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenRed" alt="HTML Red" usemap="#tokenRed"/>
+              <map name="#tokenRed">
+                <area class ="red"
+                  shape="rect"
+                  coords="188.052, 132.637, 332.052, 276.637"
+                  onClick="$().onClickColumn3;"/>
+              </map>
+            </div>
+            <div id="tokenB3-6" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenBlack" alt="HTML Black" usemap="#tokenBlack"/>
+              <map name="#tokenBlack">
+                <area class ="black"
+                  shape="rect"
+                  coords="404.052, 132.637, 548.052, 276.637"
+                  onClick="$().onClickColumn3;"/>
+              </map>
+            </div>
+            <div id="tokenB4-1" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenBlack" alt="HTML Black" usemap="#tokenBlack"/>
+              <map name="#tokenBlack">
+                <area class ="black"
+                  shape="rect"
+                  coords="404.052, 132.637, 548.052, 276.637"
+                  onClick="$().onClickColumn4;"/>
+              </map>
+            </div>
+            <div id="tokenR4-1" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenRed" alt="HTML Red" usemap="#tokenRed"/>
+              <map name="#tokenRed">
+                <area class ="red"
+                  shape="rect"
+                  coords="188.052, 132.637, 332.052, 276.637"
+                  onClick="$().onClickColumn4;"/>
+              </map>
+            </div>
+            <div id="tokenR4-2" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenRed" alt="HTML Red" usemap="#tokenRed"/>
+              <map name="#tokenRed">
+                <area class ="red"
+                  shape="rect"
+                  coords="188.052, 132.637, 332.052, 276.637"
+                  onClick="$().onClickColumn4;"/>
+              </map>
+            </div>
+            <div id="tokenB4-2" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenBlack" alt="HTML Black" usemap="#tokenBlack"/>
+              <map name="#tokenBlack">
+                <area class ="black"
+                  shape="rect"
+                  coords="404.052, 132.637, 548.052, 276.637"
+                  onClick="$().onClickColumn4;"/>
+              </map>
+            </div>
+            <div id="tokenR4-3" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenRed" alt="HTML Red" usemap="#tokenRed"/>
+              <map name="#tokenRed">
+                <area class ="red"
+                  shape="rect"
+                  coords="188.052, 132.637, 332.052, 276.637"
+                  onClick="$().onClickColumn4;"/>
+              </map>
+            </div>
+            <div id="tokenB4-3" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenBlack" alt="HTML Black" usemap="#tokenBlack"/>
+              <map name="#tokenBlack">
+                <area class ="black"
+                  shape="rect"
+                  coords="404.052, 132.637, 548.052, 276.637"
+                  onClick="$().onClickColumn4;"/>
+              </map>
+            </div>
+            <div id="tokenR4-4" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenRed" alt="HTML Red" usemap="#tokenRed"/>
+              <map name="#tokenRed">
+                <area class ="red"
+                  shape="rect"
+                  coords="188.052, 132.637, 332.052, 276.637"
+                  onClick="$().onClickColumn4;"/>
+              </map>
+            </div>
+            <div id="tokenB4-4" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenBlack" alt="HTML Black" usemap="#tokenBlack"/>
+              <map name="#tokenBlack">
+                <area class ="black"
+                  shape="rect"
+                  coords="404.052, 132.637, 548.052, 276.637"
+                  onClick="$().onClickColumn4;"/>
+              </map>
+            </div>
+            <div id="tokenR4-5" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenRed" alt="HTML Red" usemap="#tokenRed"/>
+              <map name="#tokenRed">
+                <area class ="red"
+                  shape="rect"
+                  coords="188.052, 132.637, 332.052, 276.637"
+                  onClick="$().onClickColumn4;"/>
+              </map>
+            </div>
+            <div id="tokenB4-5" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenBlack" alt="HTML Black" usemap="#tokenBlack"/>
+              <map name="#tokenBlack">
+                <area class ="black"
+                  shape="rect"
+                  coords="404.052, 132.637, 548.052, 276.637"
+                  onClick="$().onClickColumn4;"/>
+              </map>
+            </div>
+            <div id="tokenR4-6" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenRed" alt="HTML Red" usemap="#tokenRed"/>
+              <map name="#tokenRed">
+                <area class ="red"
+                  shape="rect"
+                  coords="188.052, 132.637, 332.052, 276.637"
+                  onClick="$().onClickColumn4;"/>
+              </map>
+            </div>
+            <div id="tokenB4-6" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenBlack" alt="HTML Black" usemap="#tokenBlack"/>
+              <map name="#tokenBlack">
+                <area class ="black"
+                  shape="rect"
+                  coords="404.052, 132.637, 548.052, 276.637"
+                  onClick="$().onClickColumn4;"/>
+              </map>
+            </div>
+            <div id="tokenB5-1" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenBlack" alt="HTML Black" usemap="#tokenBlack"/>
+              <map name="#tokenBlack">
+                <area class ="black"
+                  shape="rect"
+                  coords="404.052, 132.637, 548.052, 276.637"
+                  onClick="$().onClickColumn5;"/>
+              </map>
+            </div>
+            <div id="tokenR5-1" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenRed" alt="HTML Red" usemap="#tokenRed"/>
+              <map name="#tokenRed">
+                <area class ="red"
+                  shape="rect"
+                  coords="188.052, 132.637, 332.052, 276.637"
+                  onClick="$().onClickColumn5;"/>
+              </map>
+            </div>
+            <div id="tokenR5-2" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenRed" alt="HTML Red" usemap="#tokenRed"/>
+              <map name="#tokenRed">
+                <area class ="red"
+                  shape="rect"
+                  coords="188.052, 132.637, 332.052, 276.637"
+                  onClick="$().onClickColumn5;"/>
+              </map>
+            </div>
+            <div id="tokenB5-2" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenBlack" alt="HTML Black" usemap="#tokenBlack"/>
+              <map name="#tokenBlack">
+                <area class ="black"
+                  shape="rect"
+                  coords="404.052, 132.637, 548.052, 276.637"
+                  onClick="$().onClickColumn5;"/>
+              </map>
+            </div>
+            <div id="tokenR5-3" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenRed" alt="HTML Red" usemap="#tokenRed"/>
+              <map name="#tokenRed">
+                <area class ="red"
+                  shape="rect"
+                  coords="188.052, 132.637, 332.052, 276.637"
+                  onClick="$().onClickColumn5;"/>
+              </map>
+            </div>
+            <div id="tokenB5-3" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenBlack" alt="HTML Black" usemap="#tokenBlack"/>
+              <map name="#tokenBlack">
+                <area class ="black"
+                  shape="rect"
+                  coords="404.052, 132.637, 548.052, 276.637"
+                  onClick="$().onClickColumn5;"/>
+              </map>
+            </div>
+            <div id="tokenR5-4" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenRed" alt="HTML Red" usemap="#tokenRed"/>
+              <map name="#tokenRed">
+                <area class ="red"
+                  shape="rect"
+                  coords="188.052, 132.637, 332.052, 276.637"
+                  onClick="$().onClickColumn5;"/>
+              </map>
+            </div>
+            <div id="tokenB5-4" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenBlack" alt="HTML Black" usemap="#tokenBlack"/>
+              <map name="#tokenBlack">
+                <area class ="black"
+                  shape="rect"
+                  coords="404.052, 132.637, 548.052, 276.637"
+                  onClick="$().onClickColumn5;"/>
+              </map>
+            </div>
+            <div id="tokenR5-5" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenRed" alt="HTML Red" usemap="#tokenRed"/>
+              <map name="#tokenRed">
+                <area class ="red"
+                  shape="rect"
+                  coords="188.052, 132.637, 332.052, 276.637"
+                  onClick="$().onClickColumn5;"/>
+              </map>
+            </div>
+            <div id="tokenB5-5" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenBlack" alt="HTML Black" usemap="#tokenBlack"/>
+              <map name="#tokenBlack">
+                <area class ="black"
+                  shape="rect"
+                  coords="404.052, 132.637, 548.052, 276.637"
+                  onClick="$().onClickColumn5;"/>
+              </map>
+            </div>
+            <div id="tokenR5-6" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenRed" alt="HTML Red" usemap="#tokenRed"/>
+              <map name="#tokenRed">
+                <area class ="red"
+                  shape="rect"
+                  coords="188.052, 132.637, 332.052, 276.637"
+                  onClick="$().onClickColumn5;"/>
+              </map>
+            </div>
+            <div id="tokenB5-6" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenBlack" alt="HTML Black" usemap="#tokenBlack"/>
+              <map name="#tokenBlack">
+                <area class ="black"
+                  shape="rect"
+                  coords="404.052, 132.637, 548.052, 276.637"
+                  onClick="$().onClickColumn5;"/>
+              </map>
+            </div>5
+            <div id="tokenB6-1" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenBlack" alt="HTML Black" usemap="#tokenBlack"/>
+              <map name="#tokenBlack">
+                <area class ="black"
+                  shape="rect"
+                  coords="404.052, 132.637, 548.052, 276.637"
+                  onClick="$().onClickColumn6;"/>
+              </map>
+            </div>
+            <div id="tokenR6-1" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenRed" alt="HTML Red" usemap="#tokenRed"/>
+              <map name="#tokenRed">
+                <area class ="red"
+                  shape="rect"
+                  coords="188.052, 132.637, 332.052, 276.637"
+                  onClick="$().onClickColumn6;"/>
+              </map>
+            </div>
+            <div id="tokenB7-1" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenBlack" alt="HTML Black" usemap="#tokenBlack"/>
+              <map name="#tokenBlack">
+                <area class ="black"
+                  shape="rect"
+                  coords="404.052, 132.637, 548.052, 276.637"
+                  onClick="$().onClickColumn7;"/>
+              </map>
+            </div>
+            <div id="tokenR7-1" style="display: none">
+              <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenRed" alt="HTML Red" usemap="#tokenRed"/>
+              <map name="#tokenRed">
+                <area class ="red"
+                  shape="rect"
+                  coords="188.052, 132.637, 332.052, 276.637"
+                  onClick="$().onClickColumn7;"/>
+              </map>
+            </div>
         </div>
       </span>
       <div class="otherGamePieces">
         <div class="arrowDiv1">
           <img src="./images:font/Sprite_ConnectFour-03.png" class="arrow1"/>
         </div>
-        <div class="tokens">
+        <div class="arrowDiv2">
+          <img src="./images:font/Sprite_ConnectFour-03.png" class="arrow2"/>
+        </div>
+        <div class="arrowDiv3">
+          <img src="./images:font/Sprite_ConnectFour-03.png" class="arrow3"/>
+        </div>
+        <div class="arrowDiv4">
+          <img src="./images:font/Sprite_ConnectFour-03.png" class="arrow4"/>
+        </div>
+        <div class="arrowDiv5">
+          <img src="./images:font/Sprite_ConnectFour-03.png" class="arrow5"/>
+        </div>
+        <div class="arrowDiv6">
+          <img src="./images:font/Sprite_ConnectFour-03.png" class="arrow6"/>
+        </div>
+        <div class="arrowDiv7">
+          <img src="./images:font/Sprite_ConnectFour-03.png" class="arrow7"/>
+        </div>
+        <!-- <div class="tokens">
           <img src="./images:font/Sprite_ConnectFour-03.png" class="black"/>
           <img src="./images:font/Sprite_ConnectFour-03.png" class="red"/>
-        </div>
+        </div> -->
     </div>
     </div>
     <aside>

@@ -72,28 +72,705 @@ h1 {
   zoom: .4;
 }
 
-.tokens {
+#tokenB1-1 {
   position: absolute;
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 84.5vw;
-  margin-top: 60vh;
+  margin-left: 79.6px;
+  margin-top: 417.5px;
 }
 
-.black {
+.tokenBlack {
   top: -131px;
   left: -404px;
   position: absolute;
+  background-size: -100%;
   zoom: .4;
 }
 
-/*.red {
+#tokenR1-1 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 83.8px;
+  margin-top: 417.5px;
+}
+
+.tokenRed{
   top: -131px;
   left: -190px;
   position: absolute;
+  background-size: -100%;
   zoom: .4;
-}*/
+}
+
+#tokenB2-1 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 151.2px;
+  margin-top: 418px;
+}
+
+#tokenR2-1 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 155.7px;
+  margin-top: 418px;
+}
+
+#tokenB3-1 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 222.8px;
+  margin-top: 418px;
+}
+
+#tokenR3-1 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 227.1px;
+  margin-top: 418px;
+}
+
+#tokenB4-1 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 293.1px;
+  margin-top: 418px;
+}
+
+#tokenR4-1 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 297.5px;
+  margin-top: 418px;
+}
+
+#tokenB5-1 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 364.8px;
+  margin-top: 418px;
+}
+
+#tokenR5-1 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 369.2px;
+  margin-top: 418px;
+}
+
+#tokenB6-1 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 435.4px;
+  margin-top: 418px;
+}
+
+#tokenR6-1 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 439.9px;
+  margin-top: 418px;
+}
+
+#tokenB7-1 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 508px;
+  margin-top: 418px;
+}
+
+#tokenR7-1 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 512.4px;
+  margin-top: 418px;
+}
+
+#tokenB1-2 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 79.6px;
+  margin-top: 344.5px;
+}
+
+#tokenR1-2 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 83.8px;
+  margin-top: 344.5px;
+}
+
+#tokenB1-3 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 79.6px;
+  margin-top: 273px;
+}
+
+#tokenR1-3 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 83.8px;
+  margin-top: 272.9px;
+}
+
+#tokenB1-4 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 79.6px;
+  margin-top: 201.4px;
+}
+
+#tokenR1-4 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 83.8px;
+  margin-top: 202.9px;
+}
+
+#tokenB1-5 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 79.6px;
+  margin-top: 130.4px;
+}
+
+#tokenR1-5 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 83.8px;
+  margin-top: 130.9px;
+}
+
+#tokenB1-6 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 79.6px;
+  margin-top: 58.4px;
+}
+
+#tokenR1-6 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 83.8px;
+  margin-top: 58.9px;
+}
+
+#tokenB1-7 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 79.6px;
+  margin-top: 4px;
+}
+
+#tokenR1-7 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 83.8px;
+  margin-top: 4px;
+}
+
+#tokenB2-2 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 150.9px;
+  margin-top: 346.5px;
+}
+
+#tokenR2-2 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 150.9px;
+  margin-top: 346.5px;
+}
+
+#tokenB2-3 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 150.9px;
+  margin-top: 273px;
+}
+
+#tokenR2-3 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 150.9px;
+  margin-top: 273px;
+}
+
+#tokenB2-4 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 150.9px;
+  margin-top: 201.4px;
+}
+
+#tokenR2-4 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 150.9px;
+  margin-top: 202.9px;
+}
+
+#tokenB2-5 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 150.9px;
+  margin-top: 130.4px;
+}
+
+#tokenR2-5 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 150.9px;
+  margin-top: 130.9px;
+}
+
+#tokenB2-6 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 150.9px;
+  margin-top: 58.4px;
+}
+
+#tokenR2-6 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 150.9px;
+  margin-top: 58.9px;
+}
+
+#tokenB3-2 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 222.8px;
+  margin-top: 346.5px;
+}
+
+#tokenR3-2 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 227.1px;
+  margin-top: 346.5px;
+}
+
+#tokenB3-3 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 222.8px;
+  margin-top: 273px;
+}
+
+#tokenR3-3 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 227.1px;
+  margin-top: 273px;
+}
+
+#tokenB3-4 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 222.8px;
+  margin-top: 201.4px;
+}
+
+#tokenR3-4 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 227.1px;
+  margin-top: 202.9px;
+}
+
+#tokenB3-5 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 222.8px;
+  margin-top: 130.4px;
+}
+
+#tokenR3-5 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 227.1px;
+  margin-top: 130.9px;
+}
+
+#tokenB3-6 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 227.1px;
+  margin-top: 58.4px;
+}
+
+#tokenR3-6 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 227.1px;
+  margin-top: 58.9px;
+}
+
+#tokenB4-2 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 293.1px;
+  margin-top: 346.5px;
+}
+
+#tokenR4-2 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 297.5px;
+  margin-top: 346.5px;
+}
+
+#tokenB4-3 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 293.1px;
+  margin-top: 273px;
+}
+
+#tokenR4-3 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 296.5px;
+  margin-top: 273px;
+}
+
+#tokenB4-4 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 293.1px;
+  margin-top: 201.4px;
+}
+
+#tokenR4-4 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 296.5px;
+  margin-top: 202.9px;
+}
+
+#tokenB4-5 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 293.1px;
+  margin-top: 130.4px;
+}
+
+#tokenR4-5 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 296.5px;
+  margin-top: 130.9px;
+}
+
+#tokenB4-6 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 293.1px;
+  margin-top: 58.4px;
+}
+
+#tokenR4-6 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 296.5px;
+  margin-top: 58.9px;
+}
+
+#tokenB5-2 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 364.8px;
+  margin-top: 346.5px;
+}
+
+#tokenR5-2 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 369.2px;
+  margin-top: 346.5px;
+}
+
+#tokenB5-3 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 364.8px;
+  margin-top: 273px;
+}
+
+#tokenR5-3 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 369.2px;
+  margin-top: 273px;
+}
+
+#tokenB5-4 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 364.8px;
+  margin-top: 201.4px;
+}
+
+#tokenR5-4 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left:369.2px;
+  margin-top: 202.9px;
+}
+
+#tokenB5-5 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 364.8px;
+  margin-top: 130.4px;
+}
+
+#tokenR5-5 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 369.2px;
+  margin-top: 130.9px;
+}
+
+#tokenB5-6 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 364.8px;
+  margin-top: 58.4px;
+}
+
+#tokenR5-6 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 369.2px;
+  margin-top: 58.9px;
+}
+
+#tokenB6-2 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 364.8px;
+  margin-top: 346.5px;
+}
+
+#tokenR6-2 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 369.2px;
+  margin-top: 346.5px;
+}
+
+#tokenB6-3 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 364.8px;
+  margin-top: 273px;
+}
+
+#tokenR6-3 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 369.2px;
+  margin-top: 273px;
+}
+
+#tokenB6-4 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 364.8px;
+  margin-top: 201.4px;
+}
+
+#tokenR6-4 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left:369.2px;
+  margin-top: 202.9px;
+}
+
+#tokenB6-5 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 364.8px;
+  margin-top: 130.4px;
+}
+
+#tokenR6-5 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 369.2px;
+  margin-top: 130.9px;
+}
+
+#tokenB6-6 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 364.8px;
+  margin-top: 58.4px;
+}
+
+#tokenR6-6 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 369.2px;
+  margin-top: 58.9px;
+}
 
 .arrow1:hover {
   top: -780px;
@@ -105,10 +782,106 @@ h1 {
 .arrowDiv1 {
   position: absolute;
   width: 124px;
-  height: 70px;
+  height: 44px;
   overflow: hidden;
-  margin-left: 84.5vw;
-  margin-top: 5vh;
+  margin-left: 394px;
+  margin-top: 2px;
+}
+
+.arrow2:hover {
+  top: -780px;
+  left: -1852px;
+  position: absolute;
+  zoom: .4;
+}
+
+.arrowDiv2 {
+  position: absolute;
+  width: 124px;
+  height: 44px;
+  overflow: hidden;
+  margin-left: 465px;
+  margin-top: 2px;
+}
+
+.arrow3:hover {
+  top: -780px;
+  left: -1852px;
+  position: absolute;;
+  zoom: .4;
+}
+
+.arrowDiv3 {
+  position: absolute;
+  width: 124px;
+  height: 44px;
+  overflow: hidden;
+  margin-left: 537px;
+  margin-top: 2px;
+}
+
+.arrow4:hover {
+  top: -780px;
+  left: -1852px;
+  position: absolute;
+  zoom: .4;
+}
+
+.arrowDiv4 {
+  position: absolute;
+  width: 124px;
+  height: 44px;
+  overflow: hidden;
+  margin-left: 608px;
+  margin-top: 2px;
+}
+
+.arrow5:hover {
+  top: -780px;
+  left: -1852px;
+  position: absolute;
+  zoom: .4;
+}
+
+.arrowDiv5 {
+  position: absolute;
+  width: 124px;
+  height: 44px;
+  overflow: hidden;
+  margin-left: 679px;
+  margin-top: 2px;
+}
+
+.arrow6:hover {
+  top: -780px;
+  left: -1852px;
+  position: absolute;
+  zoom: .4;
+}
+
+.arrowDiv6 {
+  position: absolute;
+  width: 124px;
+  height: 44px;
+  overflow: hidden;
+  margin-left: 749px;
+  margin-top: 2px;
+}
+
+.arrow7:hover {
+  top: -780px;
+  left: -1852px;
+  position: absolute;
+  zoom: .4;
+}
+
+.arrowDiv7 {
+  position: absolute;
+  width: 124px;
+  height: 44px;
+  overflow: hidden;
+  margin-left: 821px;
+  margin-top: 2px;
 }
 
 body {
@@ -128,6 +901,24 @@ body {
 .instImg {
   top: -131px;
   left: -1339px;
+  position: absolute;
+  background-size: -100%;
+  zoom: .4;
+}
+
+.decoration {
+  position: absolute;
+  width: 115px;
+  height: 78px;
+  overflow: hidden;
+  margin-left: 170px;
+  margin-top: -150px;
+  z-index: 1;
+}
+
+.tokenDec {
+  top: -320px;
+  left: -200px;
   position: absolute;
   background-size: -100%;
   zoom: .4;

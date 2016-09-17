@@ -28,6 +28,317 @@ winnerDisplay: function() {
   swal({   title: "Sweet",   text: "You Won!",   imageUrl: "./images:font/winning.png" });
 },
 
+addTokensToBoard1: function(i) {
+  // backwards because currentPlayer switches right away
+  //value[i]++ every time clicked
+  //need nested loop
+  // var tokenR = `#tokenR`
+  // var tokenB = `#tokenB`
+  // for (var columnPosition = 1; columnPosition <= 6; columnPosition++) {
+  // for (var rowPosition = 1; rowPosition <= 7; rowPosition++) {
+  //     var tokenRed = tokenR + columnPosition + '-' + rowPosition;
+  //     // console.log(tokenRed);
+  //     var tokenBlack = tokenB + columnPosition + '-' + rowPosition;
+  //     // console.log(tokenBlack);
+  //     if (currentPlayer === 'b' && i === columnPosition && i === rowPosition) {
+  //         $(tokenRed).show();
+  //         console.log(tokenRed);
+  //     } else if (currentPlayer === 'r' && i === columnPosition && i === rowPosition) {
+  //         $(tokenBlack).show();
+  //         console.log(tokenBlack);
+  //     }
+  //   }
+  // }
+
+  if (currentPlayer === 'b' && i === 1) {
+      $('#tokenR1-1').show();
+  } else if (currentPlayer === 'r' && i === 1) {
+      $('#tokenB1-1').show();
+  };
+
+  if (currentPlayer === 'b' && i === 2) {
+      $('#tokenR1-2').show();
+  } else if (currentPlayer === 'r' && i === 2) {
+      $('#tokenB1-2').show();
+  };
+
+  if (currentPlayer === 'b' && i === 3) {
+      $('#tokenR1-3').show();
+  } else if (currentPlayer === 'r' && i === 3) {
+      $('#tokenB1-3').show();
+  };
+
+  if (currentPlayer === 'b' && i === 4) {
+      $('#tokenR1-4').show();
+  } else if (currentPlayer === 'r' && i === 4) {
+      $('#tokenB1-4').show();
+  };
+
+  if (currentPlayer === 'b' && i === 5) {
+      $('#tokenR1-5').show();
+  } else if (currentPlayer === 'r' && i === 5) {
+      $('#tokenB1-5').show();
+  };
+
+  if (currentPlayer === 'b' && i === 6) {
+      $('#tokenR1-6').show();
+        console.log('R1-6');
+  } else if (currentPlayer === 'r' && i === 6) {
+      $('#tokenB1-6').show();
+        console.log('R1-6');
+  };
+
+    if (currentPlayer === 'b' && i === 7) {
+        $('#tokenR1-7').show();
+        console.log('R1-7');
+    } else if (currentPlayer === 'r' && i === 7) {
+        $('#tokenB1-7').show();
+        console.log('B1-7');
+    };
+
+  // var tokenB1 = getElementById("tokenB1");
+  // var token = createElement("tokenB1Img");
+  // myImage.id = "tokenB1";
+  // myImage.src = "./images:font/Sprite_ConnectFour-03.png";
+  // myImage.useMap = "#tokenBlack";
+  // imageBox.appendChild(tokenB1);
+}, //addTokensToBoard1 closure
+
+addTokensToBoard2: function(i) {
+  // var tokenR = `#tokenR`
+  // var tokenB = `#tokenB`
+  // var columnPosition = 2;
+  // for (var rowPosition = 1; rowPosition <= 7; rowPosition++) {
+  //   // if (i = 0)
+  //     var tokenRed = tokenR + columnPosition + '-' + rowPosition;
+  //     // console.log(tokenRed);
+  //     var tokenBlack = tokenB + columnPosition + '-' + rowPosition;
+  //     // console.log(tokenBlack);
+  //     if (currentPlayer === 'b' && i === 2) {
+  //       for (rowPosition = 1; rowPosition <= 7; rowPosition++) {
+  //         if (rowPosition < 7) {
+  //           $(tokenRed).show();
+  //           console.log(tokenRed);
+  //       } else if (currentPlayer === 'r' && i === 2 && i === rowPosition) {
+  //           $(tokenBlack).show();
+  //           console.log(tokenBlack);
+  //       }
+  //         }
+  //       }
+  //   }
+
+
+  if (currentPlayer === 'b' && i === 1) {
+    $('#tokenR2-1').show();
+  } else if (currentPlayer === 'r' && i === 1) {
+    $('#tokenB2-1').show();
+    };
+
+  if (currentPlayer === 'b' && i === 2) {
+    $('#tokenR2-2').show();
+   } else if (currentPlayer === 'r' && i === 2) {
+    $('#tokenB2-2').show();
+  };
+
+  if (currentPlayer === 'b' && i === 3) {
+    $('#tokenR2-3').show();
+  } else if (currentPlayer === 'r' && i === 3) {
+    $('#tokenB2-3').show();
+  };
+
+  if (currentPlayer === 'b' && i === 4) {
+    $('#tokenR2-4').show();
+  } else if (currentPlayer === 'r' && i === 4) {
+    $('#tokenB2-4').show();
+  };
+
+  if (currentPlayer === 'b' && i === 5) {
+    $('#tokenR2-5').show();
+  } else if (currentPlayer === 'r' && i === 5) {
+    $('#tokenB2-5').show();
+  };
+
+  if (currentPlayer === 'b' && i === 6) {
+    $('#tokenR2-6').show();
+  } else if (currentPlayer === 'r' && i === 6) {
+    $('#tokenB2-6').show();
+  };
+
+  if (currentPlayer === 'b' && i === 7) {
+    $('#tokenR2-7').show();
+  } else if (currentPlayer === 'r' && i === 7) {
+    $('#tokenB2-7').show();
+  };
+
+},
+
+addTokensToBoard3: function(i) {
+  // var tokenR = `#tokenR`
+  // var tokenB = `#tokenB`
+  // var columnPosition = 3;
+  // for (var rowPosition = 1; rowPosition <= 7; rowPosition++) {
+  //   if (currentPlayer === 'b' && i === columnPosition && i === rowPosition) {
+  //     $(tokenRed).show();
+  //   } else if (currentPlayer === 'r' && i === columnPosition && i === rowPosition) {
+  //     $(tokenBlack).show();
+  //     };
+
+  // },
+
+  if (currentPlayer === 'b' && i === 1) {
+    $('#tokenR3-1').show();
+  } else if (currentPlayer === 'r' && i === 1) {
+    $('#tokenB3-1').show();
+    };
+
+
+  if (currentPlayer === 'b' && i === 2) {
+    $('#tokenR3-2').show();
+   } else if (currentPlayer === 'r' && i === 2) {
+    $('#tokenB3-2').show();
+  };
+
+  if (currentPlayer === 'b' && i === 3) {
+    $('#tokenR3-3').show();
+  } else if (currentPlayer === 'r' && i === 3) {
+    $('#tokenB3-3').show();
+  };
+
+  if (currentPlayer === 'b' && i === 4) {
+    $('#tokenR3-4').show();
+  } else if (currentPlayer === 'r' && i === 4) {
+    $('#tokenB3-4').show();
+  };
+
+  if (currentPlayer === 'b' && i === 5) {
+    $('#tokenR3-5').show();
+  } else if (currentPlayer === 'r' && i === 5) {
+    $('#tokenB3-5').show();
+  };
+
+  if (currentPlayer === 'b' && i === 6) {
+    $('#tokenR3-6').show();
+  } else if (currentPlayer === 'r' && i === 6) {
+    $('#tokenB3-6').show();
+  };
+
+  if (currentPlayer === 'b' && i === 7) {
+    $('#tokenR3-7').show();
+  } else if (currentPlayer === 'r' && i === 7) {
+    $('#tokenB3-7').show();
+  };
+
+},
+
+addTokensToBoard4: function(i) {
+
+    if (currentPlayer === 'b' && i === 1) {
+      $('#tokenR4-1').show();
+    } else if (currentPlayer === 'r' && i === 1) {
+      $('#tokenB4-1').show();
+      };
+
+    if (currentPlayer === 'b' && i === 2) {
+      $('#tokenR4-2').show();
+     } else if (currentPlayer === 'r' && i === 2) {
+      $('#tokenB4-2').show();
+    };
+
+    if (currentPlayer === 'b' && i === 3) {
+      $('#tokenR4-3').show();
+    } else if (currentPlayer === 'r' && i === 3) {
+      $('#tokenB4-3').show();
+    };
+
+    if (currentPlayer === 'b' && i === 4) {
+      $('#tokenR4-4').show();
+    } else if (currentPlayer === 'r' && i === 4) {
+      $('#tokenB4-4').show();
+    };
+
+    if (currentPlayer === 'b' && i === 5) {
+      $('#tokenR4-5').show();
+    } else if (currentPlayer === 'r' && i === 5) {
+      $('#tokenB4-5').show();
+    };
+
+    if (currentPlayer === 'b' && i === 6) {
+      $('#tokenR4-6').show();
+    } else if (currentPlayer === 'r' && i === 6) {
+      $('#tokenB4-6').show();
+    };
+
+    if (currentPlayer === 'b' && i === 7) {
+      $('#tokenR4-7').show();
+    } else if (currentPlayer === 'r' && i === 7) {
+      $('#tokenB4-7').show();
+    };
+
+},
+
+addTokensToBoard5: function(i) {
+  if (currentPlayer === 'b' && i === 1) {
+    $('#tokenR5-1').show();
+  } else if (currentPlayer === 'r' && i === 1) {
+    $('#tokenB5-1').show();
+    };
+
+  if (currentPlayer === 'b' && i === 2) {
+    $('#tokenR5-2').show();
+   } else if (currentPlayer === 'r' && i === 2) {
+    $('#tokenB5-2').show();
+  };
+
+  if (currentPlayer === 'b' && i === 3) {
+    $('#tokenR5-3').show();
+  } else if (currentPlayer === 'r' && i === 3) {
+    $('#tokenB5-3').show();
+  };
+
+  if (currentPlayer === 'b' && i === 4) {
+    $('#tokenR5-4').show();
+  } else if (currentPlayer === 'r' && i === 4) {
+    $('#tokenB5-4').show();
+  };
+
+  if (currentPlayer === 'b' && i === 5) {
+    $('#tokenR5-5').show();
+  } else if (currentPlayer === 'r' && i === 5) {
+    $('#tokenB5-5').show();
+  };
+
+  if (currentPlayer === 'b' && i === 6) {
+    $('#tokenR5-6').show();
+  } else if (currentPlayer === 'r' && i === 6) {
+    $('#tokenB5-6').show();
+  };
+
+  if (currentPlayer === 'b' && i === 7) {
+    $('#tokenR5-7').show();
+  } else if (currentPlayer === 'r' && i === 7) {
+    $('#tokenB5-7').show();
+  };
+
+
+
+},
+
+addTokensToBoard6: function(i) {
+  if (currentPlayer === 'b' && column6Array.length === 1) {
+    $('#tokenR6-1').show();
+  } else if (currentPlayer === 'r' && column6Array.length === 1) {
+    $('#tokenB6-1').show();
+    };
+},
+
+addTokensToBoard7: function(i) {
+  if (currentPlayer === 'b' && column7Array.length === 1) {
+    $('#tokenR7-1').show();
+  } else if (currentPlayer === 'r' && column7Array.length === 1) {
+    $('#tokenB7-1').show();
+    };
+},
+
 };// App closing
 
 // global variables
@@ -38,8 +349,7 @@ var rowsColumn4 = [];
 var rowsColumn5 = [];
 var rowsColumn6 = [];
 var rowsColumn7 = [];
-// var count = 1;
-// var me = 0;
+
 function incrementRowIndex(i) {
   rowsColumn1[i]++;
   rowsColumn2[i]++;
@@ -206,51 +516,7 @@ checkVerticalWin: function() {
       console.log('winner column7');
      }
   };
-    // var w = column1.attr('data-index');
-    // if (column1Array[5] === column1Array[4] && column1Array[5] === column1Array[3] && column1Array[5] === column1Array[2]) {
-    //   console.log('winner!');
-    //   // Config.winner++;
-    // } else {
-    //   console.log('loser');
-    // }
-    // return true;
-    // else {
-    //   Config.winner = 0;
-    // }
-    // if (Config.winner === Config.countToWin) {
-    //   App.winnerDisplay();
-    // }
-  // }
 
-  // counter = 0;
-  // for (var i = 0; i < rowIndex.length; i++) {
-  //   if (column1Array[0] === column1Array[1] === column1Array[2] === column1Array[3] === column1Array[4] === column1Array[5]) {
-  //     return true;
-  //   } else {
-  //     return false;
-  //   }
-  // } console.log('winner!');
-
-  // if currentValue = previousValue add 1... until 4, if not, stop
-  // if (counter = countToWin) {
-  //   return true;
-  // } else {
-  //   return false;
-  // }
-
-  // for (i = 0; i < rowsColumn1.length - 3) {
-  //   if column1Array[]
-  // }
-
-  // for (i = 0; i < yAxis-3; i++) {
-  //   for (j=0; j < xAxis; j++) {
-  //     if (gameBoard[i][j] != 0 && gameBoard[i][j] == board[i+1][j] && gameBoard[i][j] == board[i+2][j] && gameBoard[i][j] == gameBoard[i+3][j]) {
-  //       return true;
-  //     } else {
-  //       return false;
-  //       }
-  //   }
-  // } console.log('Vertical winner!');
 },
 
 checkHorizontalWin: function(i) {
@@ -367,6 +633,33 @@ onClickReset: function() {
   $('.rowIndex').remove();
   currentPlayer === Config.startingPlayer;
   count = 1;
+  $('#tokenR1').hide();
+  $('#tokenB1').hide();
+  $('#tokenR2').hide();
+  $('#tokenB2').hide();
+  $('#tokenR3').hide();
+  $('#tokenB3').hide();
+  $('#tokenR4').hide();
+  $('#tokenB4').hide();
+  $('#tokenR5').hide();
+  $('#tokenB5').hide();
+  $('#tokenR6').hide();
+  $('#tokenB6').hide();
+  $('#tokenR7').hide();
+  $('#tokenB7').hide();
+  // $.fn.clearForm = function() {
+  //   return this.each(function() {
+  //     var type = this.type, tag = this.tagName.toLowerCase();
+  //     if (tag == 'click')
+  //       return $(':input',this).clearForm();
+  //     if (type == 'text' || type == 'password' || tag == 'textarea')
+  //       this.value = '';
+  //     else if (type == 'checkbox' || type == 'radio')
+  //       this.checked = false;
+  //     else if (tag == 'select')
+  //       this.selectedIndex = -1;
+  //   });
+  // };
 
 },
 
@@ -378,10 +671,13 @@ onClickInstructions: function() {
 onClickColumn1: function() {
   console.log('clicked column1');
   // UI.addTokenToBoard();
+  // if (UI.onClickStart.clicked) {
   UI.updateColumnArray1();
   UI.changePlayer();
   UI.checkVerticalWin();
   UI.checkHorizontalWin(column1Array.length-1);
+  App.addTokensToBoard1(column1Array.length);
+  // }
 },
 
 onClickColumn2: function() {
@@ -391,6 +687,7 @@ onClickColumn2: function() {
   UI.changePlayer();
   UI.checkVerticalWin();
   UI.checkHorizontalWin(column2Array.length-1);
+  App.addTokensToBoard2(column2Array.length);
 },
 
 onClickColumn3: function() {
@@ -400,6 +697,7 @@ onClickColumn3: function() {
   UI.changePlayer();
   UI.checkVerticalWin();
   UI.checkHorizontalWin(column3Array.length-1);
+  App.addTokensToBoard3(column3Array.length);
 },
 
 onClickColumn4: function() {
@@ -409,6 +707,7 @@ onClickColumn4: function() {
   UI.changePlayer();
   UI.checkVerticalWin();
   UI.checkHorizontalWin(column4Array.length-1);
+  App.addTokensToBoard4(column4Array.length);
 },
 
 onClickColumn5: function() {
@@ -418,6 +717,7 @@ onClickColumn5: function() {
   UI.changePlayer();
   UI.checkVerticalWin();
   UI.checkHorizontalWin(column5Array.length-1);
+  App.addTokensToBoard5(column5Array.length);
 },
 
 onClickColumn6: function() {
@@ -427,6 +727,7 @@ onClickColumn6: function() {
   UI.changePlayer();
   UI.checkVerticalWin();
   UI.checkHorizontalWin(column6Array.length-1);
+  App.addTokensToBoard6(column6Array.length);
 },
 
 onClickColumn7: function() {
@@ -436,6 +737,7 @@ onClickColumn7: function() {
   UI.changePlayer();
   UI.checkVerticalWin();
   UI.checkHorizontalWin(column7Array.length-1);
+  App.addTokensToBoard7(column7Array.length);
 },
 
 }; // UI closing
@@ -458,4 +760,5 @@ window.onload = function() {
   $('.column5').on('click', UI.onClickColumn5);
   $('.column6').on('click', UI.onClickColumn6);
   $('.column7').on('click', UI.onClickColumn7);
+  // $('[item=column1token]').on('click', App.addTokensToBoard);
 };
