@@ -44,7 +44,7 @@ h1 {
   height: 85px;
   overflow: hidden;
   margin-left: 3vw;
-  /*margin-top: 60vh;*/
+  margin-top: 50px;
 }
 
 .startimg {
@@ -58,14 +58,14 @@ h1 {
 .gameFunctions {
   position: absolute;
   width: 185px;
-  height: 263px;
+  height: 243px;
   overflow: hidden;
   margin-left: 4vw;
-  /*margin-top: 60vh;*/
+  margin-top: 100px;
 }
 
 .resetimg {
-  top: -336px;
+  top: -536px;
   left: -188px;
   position: absolute;
   background-size: -100%;
