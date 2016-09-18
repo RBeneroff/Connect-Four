@@ -613,24 +613,24 @@ var UI = {
       }
   }, //check horiztonal win closure
 
-  checkDiagonalWin: function (index) {
-    // rowIndex.attr('data-index', counts.length - 1);
-    // var index = document.getElementByClassName(UI.rowIndex.attr('data-index'));
-    var index = $("div[data-index= '" + current + "']");
-    var column  = 'column'+columnArray+'Array';
-    // var index = rowIndex.dataset('data-index');
-    var columnArray = 1;
-    // column1Array[i] = 'r' or 'b'
-    // for (var i = 0; i < 7; i++) {
-    for (var columnArray = 0; i < 7; columnArray++) {
-      for (var index = 0; i < index.length; i++) {
-      // if (column1Array[i] !== undefined) {
-      if (column[index] === column[index] && column[index] === column[index] && column[index] === column[index]) {
-        App.winnerDisplay();
-      }
-      // }
-      }
-    }
+  checkDiagonalWin: function () {
+    // // rowIndex.attr('data-index', counts.length - 1);
+    // // var index = document.getElementByClassName(UI.rowIndex.attr('data-index'));
+    // var index = $("div[data-index= '" + current + "']");
+    // var column  = 'column'+columnArray+'Array';
+    // // var index = rowIndex.dataset('data-index');
+    // var columnArray = 1;
+    // // column1Array[i] = 'r' or 'b'
+    // // for (var i = 0; i < 7; i++) {
+    // for (var columnArray = 0; i < 7; columnArray++) {
+    //   for (var index = 0; i < index.length; i++) {
+    //   // if (column1Array[i] !== undefined) {
+    //   if (column[index] === column[index] && column[index] === column[index] && column[index] === column[index]) {
+    //     App.winnerDisplay();
+    //   }
+    //   // }
+    //   }
+    // }
 
   },
 

@@ -8,8 +8,8 @@ I decided to create my game using a sprite and used image mapping in order to se
 
 Unsolved problems:
 - Diagonal wins
-- One player vs computer
-- hover arrows constantly changing position depending on screen size
+- Player vs computer
+- Hover arrows constantly changing position depending on screen size
 - you can start game without clicking Start Game first
 
 User Story:
