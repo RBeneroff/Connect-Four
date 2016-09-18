@@ -1,65 +1,9 @@
 # Unit Spec : `App` / `Display`
 
-### `addTokensToBoard`
+### `addTokensToBoard` - DONE
 1. Displays the tokens in each column
 2. When player clicks column, display is updated and new token is shown
 3. If column is full - do nothing
-
-  // var tokenB1 = getElementById("tokenB1");
-  // var token = createElement("tokenB1Img");
-  // myImage.id = "tokenB1";
-  // myImage.src = "./images:font/Sprite_ConnectFour-03.png";
-  // myImage.useMap = "#tokenBlack";
-  // imageBox.appendChild(tokenB1);
-
-  // backwards because currentPlayer switches right away
-  //value[i]++ every time clicked
-  //need nested loop
-  // var tokenR = `#tokenR`
-  // var tokenB = `#tokenB`
-  // for (var columnPosition = 1; columnPosition <= 6; columnPosition++) {
-  // for (var rowPosition = 1; rowPosition <= 7; rowPosition++) {
-  //     var tokenRed = tokenR + columnPosition + '-' + rowPosition;
-  //     // console.log(tokenRed);
-  //     var tokenBlack = tokenB + columnPosition + '-' + rowPosition;
-  //     // console.log(tokenBlack);
-  //     if (currentPlayer === 'b' && i === columnPosition && i === rowPosition) {
-  //         $(tokenRed).show();
-  //         console.log(tokenRed);
-  //     } else if (currentPlayer === 'r' && i === columnPosition && i === rowPosition) {
-  //         $(tokenBlack).show();
-  //         console.log(tokenBlack);
-  //     }
-  //   }
-  // }
-
-
-    // var tokenR = `#tokenR`
-    // var tokenB = `#tokenB`
-    // var columnPosition = 2;
-    // for (var rowPosition = 1; rowPosition <= 7; rowPosition++) {
-    //   // if (i = 0)
-    //     var tokenRed = tokenR + columnPosition + '-' + rowPosition;
-    //     // console.log(tokenRed);
-    //     var tokenBlack = tokenB + columnPosition + '-' + rowPosition;
-    //     // console.log(tokenBlack);
-    //     if (currentPlayer === 'b' && i === 2) {
-    //       for (rowPosition = 1; rowPosition <= 7; rowPosition++) {
-    //         if (rowPosition < 7) {
-    //           $(tokenRed).show();
-    //           console.log(tokenRed);
-    //       } else if (currentPlayer === 'r' && i === 2 && i === rowPosition) {
-    //           $(tokenBlack).show();
-    //           console.log(tokenBlack);
-    //       }
-    //         }
-    //       }
-    //   }
-
-
-### `startGame` - DONE
-1. If the game has started - do nothing when button is clicked
-2. If game has not started - start game and change ###whosTurn display to playerOne
 
 ### `htmlArrows`
 1. have one arrow above each column
@@ -93,9 +37,13 @@ POSSIBLY USE A SWITCH STATEMENT
 1. When ###updateWinner returns true, show winnerDisplay with player who won  
 2. If nobody has won, remain hidden
 
-### `warningDisplay` - REACH
-  1. If ###fullColumnCheck returns true, update warningDisplay to show the warning
-  2. If ###fullColumnCheck is false, do nothing and hide display
+### `warningDisplay` - DONE (need to fix bug)
+1. If ###fullColumnCheck returns true, update warningDisplay to show the warning
+2. If ###fullColumnCheck is false, do nothing and hide display
+3. If board is completely full, call a tie
+
+### `turnDisplay` - DONE
+1. Show whos turn it is
 
 ## Animations
 

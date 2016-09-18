@@ -336,6 +336,10 @@ var App = {
     if (rowsColumn5.length === 6) {
       $('.fullColumnImg').show().delay(2000).fadeOut().hide(0);
     };
+
+    if (rowsColumn1.length == 6 && rowsColumn2.length == 6 && rowsColumn3.length == 6 && rowsColumn4.length == 6 && rowsColumn5.length == 6 && rowsColumn6.length == 6 && rowsColumn7.length == 6) {
+      swal({   title: "Tie Game",   text: 'Try again!',   imageUrl: "./images:font/tie.png" });
+    };
   },
 
   turnDisplay: function() {
