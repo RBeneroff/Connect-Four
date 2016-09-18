@@ -5,7 +5,7 @@
 2. When player clicks column, display is updated and new token is shown
 3. If column is full - do nothing
 
-### `htmlArrows`
+### `htmlArrows` - working but bugs
 1. have one arrow above each column
 2. display: hidden until ###hoverArrow is used
 
@@ -22,25 +22,25 @@
     });
   };
 
-### `restart` - DONE once board clears of showing tokens
+### `restart` - DONE (reloads page)
 1. When Reset Button is clicked (###onClickReset), update display (###updateColumnDisplay) to a blank board
 2. Update ###updateTurn to default playerOne's turn
 3. Update ###whosTurn to default view
 
-### `whosTurn` - REACH
-1. Default display: 'Ready?' (or whatever saying is)
-2. When startButton is clicked, toggle to playerOne display
-3. One playerOne goes, update toggle to playerTwo display
+### `whosTurn` - REACH - DONE
+1. When startButton is clicked, toggle to playerOne display
+2. One playerOne goes, update toggle to playerTwo display
 POSSIBLY USE A SWITCH STATEMENT
 
 ### `winnerDisplay` - DONE
 1. When ###updateWinner returns true, show winnerDisplay with player who won  
 2. If nobody has won, remain hidden
 
-### `warningDisplay` - DONE (need to fix bug)
+### `warningDisplay` - DONE
 1. If ###fullColumnCheck returns true, update warningDisplay to show the warning
 2. If ###fullColumnCheck is false, do nothing and hide display
 3. If board is completely full, call a tie
+(1 and 2 were moved to OnclickColumn functions to avoid some bugs)
 
 ### `turnDisplay` - DONE
 1. Show whos turn it is
@@ -50,7 +50,7 @@ POSSIBLY USE A SWITCH STATEMENT
 ### `dropToken`
 1. Drop token from arrow above
 
-### `hoverArrow`
+### `hoverArrow` - WORKING
 1. When mouse is hovering over column, display that htmlArrow
 2. When mouse is not over arrow, hide that arrow
 

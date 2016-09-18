@@ -3,30 +3,11 @@
 ### `Config` - DONE
 1. holds any variables that are needed for the configuration of the site (startingPlayer, countToWin)
 
-  config:
-  // var currentPosition = [i][j],
-  // var currentPlayer = ${playerOne} || ${playerTwo},
-  // var isWinner: false,
-  // var isPlaying: false,
-  // var tokens = 0,
-
-  // settings: function() {
-  //   xAxis: 7,
-  //   yAxis: 6,
-  //   tokensToWin: 4,
-  //   playerOne: 'r',
-  //   playerTwo: 'b'
-  // },
-
 ### `changePlayer` - DONE
 1. update who's turn it is
 2. switch back and forth between playerOne and playerTwo
 
 ### `computerAI` -- REACH
-
-  <!-- ### `updateTurn` - JS code
-  1. Default starts with playerOne
-  2. if !playerOne, then playerTwo -->
 
 ### `updateWinner`-- DONE
 1. Return true if any of the check for wins returns a win
@@ -43,38 +24,7 @@
 
 ### `checkDiagonalWin` - REACH
 1. check for diagonal wins for specific player
-
-tokenRed = `tokenR`+column1Array + rowsColumn1
-
-check right diagonal:
-for (i = 0; i < xAxis-3; i++) {
-  for (j=0; j < yAxis-3; j++) {
-    if (gameBoard[i][j] != 0 && gameBoard[i][j] == board[i+1][j+1] && gameBoard[i][j] == board[i+2][j+2]) && gameBoard[i][j] == gameBoard[i+3][j+3])
-    return true;
-  }
-} else {
-  return false;
-}
-
-check left diagonal:
-for (i = 0; i < xAxis-3; i++) {
-  for (j=0; j < yAxis-3; j++) {
-    if (gameBoard[i][j] != 0 && gameBoard[i][j] == board[i+1][j-1] && gameBoard[i][j] == board[i+2][j-2]) && gameBoard[i][j] == gameBoard[i+3][j-3])
-    return true;
-  }
-} else {
-  return false;
-}
-
-// for (i = 0; i < xAxis-3; i++) {
-//   for (j=0; j < yAxis-3; j++) {
-//     if (gameBoard[i][j] != 0 && gameBoard[i][j] == board[i+1][j-1] && gameBoard[i][j] == board[i+2][j-2] && gameBoard[i][j] == gameBoard[i+3][j-3]) {
-//       return true;
-//     } else {
-//       return false;
-//       }
-//   }
-// }
+  tokenRed = `tokenR`+column1Array + rowsColumn1
 
 ## Core Functions
 

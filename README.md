@@ -8,9 +8,9 @@ I decided to create my game using a sprite and used image mapping in order to se
 
 Unsolved problems:
 - Diagonal wins
-- Reset Button, stop play after win
 - One player vs computer
-- hover arrows constantly changed position depending on screen size
+- hover arrows constantly changing position depending on screen size
+- you can start game without clicking Start Game first
 
 User Story:
 As a user, you will have the option to play with a friend or play the computer (reach). When the user is ready to start the game, they can click the Start Game Button. When it is their turn the blue box will display who's move it is. As the user moves their mouse over the 7 columns, the arrow moves with them. When the user clicks, a token will fall on whichever column the user is hovering over. If the column is full, a warning will pop up in the red rectangle letting the user know they need to find a different column. When one of the players gets 4  tokens in a row (either

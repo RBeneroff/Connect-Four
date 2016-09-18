@@ -9,6 +9,7 @@ var App = {
   winnerDisplay: function() {
     UI.checkVerticalWin;
     UI.checkHorizontalWin;
+    UI.checkDiagonalWin;
     if (currentPlayer === playerTwo) {
         swal({   title: "Sweet",   text: 'Player one won!',   imageUrl: "./images:font/winning.png" });
     }
@@ -18,7 +19,6 @@ var App = {
   },
 
   addTokensToBoard1: function(i) {
-    // if (column1Array.length <= 6) {
       if (currentPlayer === 'b' && i === 1) {
           $('#tokenR1-1').show();
       } else if (currentPlayer === 'r' && i === 1) {
@@ -54,7 +54,8 @@ var App = {
       } else if (currentPlayer === 'r' && i === 6) {
           $('#tokenB1-6').show();
       };
-    // }
+
+
   }, //addTokensToBoard1 closure
 
   addTokensToBoard2: function(i) {
@@ -298,30 +299,6 @@ var App = {
   },
 
   warningDisplay: function() {
-    if (rowsColumn1.length === 6) {
-      $('.fullColumnImg').show().delay(2000).fadeOut().stop();
-    } else {
-      $('.fullColumnImg').hide()
-    }
-    if (rowsColumn2.length === 6) {
-      $('.fullColumnImg').show().delay(2000).fadeOut().hide(0);
-    };
-    if (rowsColumn3.length === 6) {
-      $('.fullColumnImg').show().delay(2000).fadeOut().hide(0);
-    };
-    if (rowsColumn4.length === 6) {
-      $('.fullColumnImg').show().delay(2000).fadeOut().hide(0);
-    };
-    if (rowsColumn6.length === 6) {
-      $('.fullColumnImg').show().delay(2000).fadeOut().hide(0);
-    };
-    if (rowsColumn7.length === 6) {
-      $('.fullColumnImg').show().delay(2000).fadeOut().hide(0);
-    };
-    if (rowsColumn5.length === 6) {
-      $('.fullColumnImg').show().delay(2000).fadeOut().hide(0);
-    };
-
     if (rowsColumn1.length == 6 && rowsColumn2.length == 6 && rowsColumn3.length == 6 && rowsColumn4.length == 6 && rowsColumn5.length == 6 && rowsColumn6.length == 6 && rowsColumn7.length == 6) {
       swal({   title: "Tie Game",   text: 'Try again!',   imageUrl: "./images:font/tie.png" });
     };
@@ -371,9 +348,6 @@ column7Array = [];
 var currentPlayer = Config.startingPlayer;
 var playerOne = 'r';
 var playerTwo = 'b';
-// var tally = 0;
-var tally = ($('.column1').data('clicks') || 0);
-
 
 var UI = {
   //default playerOne is 'r'
@@ -469,6 +443,13 @@ var UI = {
       var winnerCheck = column1Array[column1Array.length -1];
       if (column1Array[column1Array.length -2] === winnerCheck &&    column1Array[column1Array.length -3] === winnerCheck && column1Array[column1Array.length - 4] === winnerCheck) {
         App.winnerDisplay();
+        $('.column1').off('click');
+        $('.column2').off('click');
+        $('.column3').off('click');
+        $('.column4').off('click');
+        $('.column5').off('click');
+        $('.column6').off('click');
+        $('.column7').off('click');
         console.log('winner column1');
        }
     };
@@ -477,6 +458,13 @@ var UI = {
       var winnerCheck = column2Array[column2Array.length -1];
       if (column2Array[column2Array.length -2] === winnerCheck &&    column2Array[column2Array.length -3] === winnerCheck && column2Array[column2Array.length - 4] === winnerCheck) {
         App.winnerDisplay();
+        $('.column1').off('click');
+        $('.column2').off('click');
+        $('.column3').off('click');
+        $('.column4').off('click');
+        $('.column5').off('click');
+        $('.column6').off('click');
+        $('.column7').off('click');
         console.log('winner column2');
        }
     };
@@ -485,6 +473,13 @@ var UI = {
       var winnerCheck = column3Array[column3Array.length -1];
       if (column3Array[column3Array.length -2] === winnerCheck &&    column3Array[column3Array.length -3] === winnerCheck && column3Array[column3Array.length - 4] === winnerCheck) {
         App.winnerDisplay();
+        $('.column1').off('click');
+        $('.column2').off('click');
+        $('.column3').off('click');
+        $('.column4').off('click');
+        $('.column5').off('click');
+        $('.column6').off('click');
+        $('.column7').off('click');
         console.log('winner column3');
        }
     };
@@ -493,6 +488,13 @@ var UI = {
       var winnerCheck = column4Array[column4Array.length -1];
       if (column4Array[column4Array.length -2] === winnerCheck &&    column4Array[column4Array.length -3] === winnerCheck && column4Array[column4Array.length - 4] === winnerCheck) {
         App.winnerDisplay();
+        $('.column1').off('click');
+        $('.column2').off('click');
+        $('.column3').off('click');
+        $('.column4').off('click');
+        $('.column5').off('click');
+        $('.column6').off('click');
+        $('.column7').off('click');
         console.log('winner column4');
        }
     };
@@ -501,6 +503,13 @@ var UI = {
       var winnerCheck = column5Array[column5Array.length -1];
       if (column5Array[column5Array.length -2] === winnerCheck &&    column5Array[column5Array.length -3] === winnerCheck && column5Array[column5Array.length - 4] === winnerCheck) {
         App.winnerDisplay();
+        $('.column1').off('click');
+        $('.column2').off('click');
+        $('.column3').off('click');
+        $('.column4').off('click');
+        $('.column5').off('click');
+        $('.column6').off('click');
+        $('.column7').off('click');
         console.log('winner column5');
        }
     };
@@ -509,6 +518,13 @@ var UI = {
       var winnerCheck = column6Array[column6Array.length -1];
       if (column6Array[column6Array.length -2] === winnerCheck &&    column6Array[column6Array.length -3] === winnerCheck && column6Array[column6Array.length - 4] === winnerCheck) {
         App.winnerDisplay();
+        $('.column1').off('click');
+        $('.column2').off('click');
+        $('.column3').off('click');
+        $('.column4').off('click');
+        $('.column5').off('click');
+        $('.column6').off('click');
+        $('.column7').off('click');
         console.log('winner column6');
        }
     };
@@ -517,10 +533,16 @@ var UI = {
       var winnerCheck = column7Array[column7Array.length -1];
       if (column7Array[column7Array.length -2] === winnerCheck &&    column7Array[column7Array.length -3] === winnerCheck && column7Array[column7Array.length - 4] === winnerCheck) {
         App.winnerDisplay();
+        $('.column1').off('click');
+        $('.column2').off('click');
+        $('.column3').off('click');
+        $('.column4').off('click');
+        $('.column5').off('click');
+        $('.column6').off('click');
+        $('.column7').off('click');
         console.log('winner column7');
        }
     };
-
   },
 
   checkHorizontalWin: function(i) {
@@ -580,14 +602,36 @@ var UI = {
     }
     if (count === Config.countToWin) {
       App.winnerDisplay();
+      $('.column1').off('click');
+      $('.column2').off('click');
+      $('.column3').off('click');
+      $('.column4').off('click');
+      $('.column5').off('click');
+      $('.column6').off('click');
+      $('.column7').off('click');
       console.log('winning horizontally');
       }
   }, //check horiztonal win closure
 
-  checkDiagonalWin1: function () {
-  },
+  checkDiagonalWin: function (index) {
+    // rowIndex.attr('data-index', counts.length - 1);
+    // var index = document.getElementByClassName(UI.rowIndex.attr('data-index'));
+    var index = $("div[data-index= '" + current + "']");
+    var column  = 'column'+columnArray+'Array';
+    // var index = rowIndex.dataset('data-index');
+    var columnArray = 1;
+    // column1Array[i] = 'r' or 'b'
+    // for (var i = 0; i < 7; i++) {
+    for (var columnArray = 0; i < 7; columnArray++) {
+      for (var index = 0; i < index.length; i++) {
+      // if (column1Array[i] !== undefined) {
+      if (column[index] === column[index] && column[index] === column[index] && column[index] === column[index]) {
+        App.winnerDisplay();
+      }
+      // }
+      }
+    }
 
-  checkDiagonalWin2: function() {
   },
 
   // Event Handlers
@@ -595,23 +639,14 @@ var UI = {
     event.preventDefault();
     console.log('start game');
     swal({   title: "Ready?",   text: "",   imageUrl: "./images:font/taco.png" });
-    // UI.changePlayer();
     App.turnDisplay();
   }, //onClickStart closure
 
   onClickReset: function() {
     console.log('reset');
-    column1Array.length = [];
-    column2Array.length = [];
-    column3Array.length = [];
-    column4Array.length = [];
-    column5Array.length = [];
-    column6Array.length = [];
-    column7Array.length = [];
-    $('.rowIndex').remove();
-    currentPlayer === Config.startingPlayer;
-    count = 1;
-    // $('#tokenR1').hide();
+    event.preventDefault();
+    document.location.reload(true);
+
   },
 
   onClickInstructions: function() {
@@ -623,11 +658,13 @@ var UI = {
     console.log('clicked column1');
     if (column1Array.length === 5) {
       $('.column1').off('click');
+      $('.fullColumnImg').show().delay(2000).fadeOut();
     };
     UI.updateColumnArray1();
     UI.changePlayer();
     UI.checkVerticalWin();
     UI.checkHorizontalWin(column1Array.length-1);
+    UI.checkDiagonalWin();
     App.addTokensToBoard1(column1Array.length);
     App.warningDisplay();
     App.turnDisplay();
@@ -637,12 +674,14 @@ var UI = {
     console.log('clicked column2');
     if (column2Array.length === 5) {
       $('.column2').off('click');
+      $('.fullColumnImg').show().delay(2000).fadeOut();
     };
       UI.updateColumnArray2();
       UI.changePlayer();
       UI.checkVerticalWin();
       UI.checkHorizontalWin(column2Array.length-1);
       App.addTokensToBoard2(column2Array.length);
+      UI.checkDiagonalWin(column2Array.length-1);
       App.warningDisplay();
       App.turnDisplay();
   },
@@ -651,12 +690,14 @@ var UI = {
     console.log('clicked column3');
     if (column3Array.length === 5) {
       $('.column3').off('click');
+      $('.fullColumnImg').show().delay(2000).fadeOut();
     };
     UI.updateColumnArray3();
     UI.changePlayer();
     UI.checkVerticalWin();
     UI.checkHorizontalWin(column3Array.length-1);
     App.addTokensToBoard3(column3Array.length);
+    UI.checkDiagonalWin(column3Array.length-1);
     App.warningDisplay();
     App.turnDisplay();
   },
@@ -665,12 +706,14 @@ var UI = {
     console.log('clicked column4');
     if (column4Array.length === 5) {
       $('.column4').off('click');
+      $('.fullColumnImg').show().delay(2000).fadeOut();
     };
     UI.updateColumnArray4();
     UI.changePlayer();
     UI.checkVerticalWin();
     UI.checkHorizontalWin(column4Array.length-1);
     App.addTokensToBoard4(column4Array.length);
+    UI.checkDiagonalWin(column4Array.length-1);
     App.warningDisplay();
     App.turnDisplay();
   },
@@ -685,6 +728,7 @@ var UI = {
     UI.checkVerticalWin();
     UI.checkHorizontalWin(column5Array.length-1);
     App.addTokensToBoard5(column5Array.length);
+    UI.checkDiagonalWin(column5Array.length-1);
     App.warningDisplay();
     App.turnDisplay();
   },
@@ -693,12 +737,14 @@ var UI = {
     console.log('clicked column6');
     if (column6Array.length === 5) {
       $('.column6').off('click');
+      $('.fullColumnImg').show().delay(2000).fadeOut();
     };
     UI.updateColumnArray6();
     UI.changePlayer();
     UI.checkVerticalWin();
     UI.checkHorizontalWin(column6Array.length-1);
     App.addTokensToBoard6(column6Array.length);
+    UI.checkDiagonalWin(column6Array.length-1);
     App.warningDisplay();
     App.turnDisplay();
   },
@@ -707,12 +753,14 @@ var UI = {
     console.log('clicked column7');
     if (column7Array.length === 5) {
       $('.column7').off('click');
+      $('.fullColumnImg').show().delay(2000).fadeOut();
     };
     UI.updateColumnArray7();
     UI.changePlayer();
     UI.checkVerticalWin();
     UI.checkHorizontalWin(column7Array.length-1);
     App.addTokensToBoard7(column7Array.length);
+    UI.checkDiagonalWin(column7Array.length-1);
     App.warningDisplay();
     App.turnDisplay();
   },
