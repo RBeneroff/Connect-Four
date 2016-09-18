@@ -44,6 +44,8 @@
 ### `checkDiagonalWin` - REACH
 1. check for diagonal wins for specific player
 
+tokenRed = `tokenR`+column1Array + rowsColumn1
+
 check right diagonal:
 for (i = 0; i < xAxis-3; i++) {
   for (j=0; j < yAxis-3; j++) {

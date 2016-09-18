@@ -6,21 +6,6 @@ var Config = {
 
 var App = {
 
-  hoverArrow: function() {
-    if($('#map')) {
-      $('.column1 area').each(function() {
-        var id= $(this).attr('id');
-        $(this).mouseover(function(e) {
-          $('.arrow1'+id).show();
-        });
-        $(this).mouseout(function() {
-          var id = $(this).attr('id');
-          $('.arrow1'+id).hide();
-        });
-      });
-    };
-  },
-
   winnerDisplay: function() {
     UI.checkVerticalWin;
     UI.checkHorizontalWin;
@@ -346,14 +331,15 @@ var App = {
     if (Config.startingPlayer) {
       $('#turnDisplayR').show();
       $('#turnDisplayB').hide();
-    } else if (currentPlayer === 'b') {
+    };
+    if (currentPlayer === 'b') {
         $('#turnDisplayB').show();
         $('#turnDisplayR').hide();
     } else if (currentPlayer === 'r') {
         $('#turnDisplayR').show();
         $('#turnDisplayB').hide();
-    }
-  }
+    };
+  },
 
 };// App closing
 
@@ -604,20 +590,12 @@ var UI = {
   checkDiagonalWin2: function() {
   },
 
-  updateWinner: function() {
-    if (checkVerticalWin == true || checkHorizontalWin == true || checkDiagonalWin1 == true || checkDiagonalWin2 == true) {
-      return App.winnerDisplay();
-    } else {
-      return false; //do nothing
-    }
-  },
-
   // Event Handlers
   onClickStart: function(event) {
     event.preventDefault();
     console.log('start game');
     swal({   title: "Ready?",   text: "",   imageUrl: "./images:font/taco.png" });
-    UI.changePlayer();
+    // UI.changePlayer();
     App.turnDisplay();
   }, //onClickStart closure
 

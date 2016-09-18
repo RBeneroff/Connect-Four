@@ -5,7 +5,7 @@
     <title>Connect Four Game</title>
     <link rel="stylesheet" href="game.css">
     <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
-    <script src="jQuery-rwdImageMaps-master/jquery.rwdImageMaps.min.js" charset="utf-8"></script>
+    <script src="jquery.rwdImageMaps.min.js" charset="utf-8"></script>
     <script type="text/javascript">
       $(document).ready(function(e) {
         $('img[usemap]').rwdImageMaps();
@@ -17,6 +17,7 @@
   <body>
     <header>
       <h1>Connect Four</h1>
+      <h4>The Vertical Checkers Game</h4>
     </header>
     <div id="game">
       <span class="boardPos">
@@ -27,33 +28,45 @@
               shape="rect"
               coords="797.07, 897.4, 978.37, 2148.6"
               onClick="$().onClickColumn1;"
-              onClick="$().addTokensToBoard;"
               item="column1token"
-              mouseOver=".arrow1"/>
+              onMouseOver="$('.arrow1').show();"
+              onMouseOut="$('.arrow1').hide();"/>
             <area class ="column2"
               shape="rect"
               coords="978.37, 897.4, 1142.92, 2148.96"
-              onClick="$().onClickColumn2;"/>
+              onClick="$().onClickColumn2;"
+              onMouseOver="$('.arrow2').show();"
+              onMouseOut="$('.arrow2').hide();"/>
             <area class ="column3"
               shape="rect"
               coords="1142.92, 897.4, 1320.24, 2148.96"
-              onClick="$().onClickColumn3;"/>
+              onClick="$().onClickColumn3;"
+              onMouseOver="$('.arrow3').show();"
+              onMouseOut="$('.arrow3').hide();"/>
             <area class ="column4"
               shape="rect"
               coords="1320.24, 897.4, 1494.79, 2148.96"
-              onClick="$().onClickColumn4;"/>
+              onClick="$().onClickColumn4;"
+              onMouseOver="$('.arrow4').show();"
+              onMouseOut="$('.arrow4').hide();"/>
             <area class ="column5"
               shape="rect"
               coords="1484.79, 897.4, 1655.97, 2148.96"
-              onClick="$().onClickColumn5;"/>
+              onClick="$().onClickColumn5;"
+              onMouseOver="$('.arrow5').show();"
+              onMouseOut="$('.arrow5').hide();"/>
             <area class ="column6"
               shape="rect"
               coords="1655.97, 897.4, 1829.33, 2148.96"
-              onClick="$().onClickColumn6;"/>
+              onClick="$().onClickColumn6;"
+              onMouseOver="$('.arrow6').show();"
+              onMouseOut="$('.arrow6').hide();"/>
             <area class ="column7"
               shape="rect"
               coords="1829.33, 897.4, 2136.33, 2228.96"
-              onClick="$().onClickColumn7;"/>
+              onClick="$().onClickColumn7;"
+              onMouseOver="$('.arrow7').show();"
+              onMouseOut="$('.arrow7').hide();"/>
           </map>
             <div id="tokenB1-1" style="display: none">
               <img src="./images:font/Sprite_ConnectFour-03.png" class="tokenBlack" alt="HTML Black" usemap="#tokenBlack"/>
@@ -815,25 +828,25 @@
       </span>
       <div class="otherGamePieces">
         <div class="arrowDiv1">
-          <img src="./images:font/Sprite_ConnectFour-03.png" class="arrow1"/>
+          <img src="./images:font/Sprite_ConnectFour-03.png" class="arrow1" style="display: none"/>
         </div>
         <div class="arrowDiv2">
-          <img src="./images:font/Sprite_ConnectFour-03.png" class="arrow2"/>
+          <img src="./images:font/Sprite_ConnectFour-03.png" class="arrow2" style="display: none"/>
         </div>
         <div class="arrowDiv3">
-          <img src="./images:font/Sprite_ConnectFour-03.png" class="arrow3"/>
+          <img src="./images:font/Sprite_ConnectFour-03.png" class="arrow3" style="display: none"/>
         </div>
         <div class="arrowDiv4">
-          <img src="./images:font/Sprite_ConnectFour-03.png" class="arrow4"/>
+          <img src="./images:font/Sprite_ConnectFour-03.png" class="arrow4" style="display: none"/>
         </div>
         <div class="arrowDiv5">
-          <img src="./images:font/Sprite_ConnectFour-03.png" class="arrow5"/>
+          <img src="./images:font/Sprite_ConnectFour-03.png" class="arrow5" style="display: none"/>
         </div>
         <div class="arrowDiv6">
-          <img src="./images:font/Sprite_ConnectFour-03.png" class="arrow6"/>
+          <img src="./images:font/Sprite_ConnectFour-03.png" class="arrow6" style="display: none"/>
         </div>
         <div class="arrowDiv7">
-          <img src="./images:font/Sprite_ConnectFour-03.png" class="arrow7"/>
+          <img src="./images:font/Sprite_ConnectFour-03.png" class="arrow7" style="display: none"/>
         </div>
     </div>
     </div>

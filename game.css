@@ -1,9 +1,20 @@
 h1 {
   text-align: center;
   font-size: 12vh;
-  background-color: #E7EAF0;
+  /*background-color: #E7EAF0;*/
   font-family: Majel;
   margin-top: 1vh;
+  padding: inherit;
+  line-height: 3vh;
+}
+
+h4 {
+  text-align: center;
+  font-size: 5vh;
+  /*background-color: #E7EAF0;*/
+  font-family: CaviarDreams;
+  padding: inherit;
+  line-height: .1vh;
 }
 
 @font-face {
@@ -11,20 +22,25 @@ h1 {
   src: url('./images:font/Majel.otf');
 }
 
+@font-face {
+  font-family: CaviarDreams;
+  src: url('./images:font/CaviarDreams.ttf');
+}
+
 .gameBoard {
   position: absolute;
-  width: 755.92px;
-  height: 569.94px;
+  width: 670.92px;
+  height: 547.94px;
   overflow: hidden;
   margin-left: 30vw;
   /*margin-top: 2vh;*/
   margin-bottom: 2vh;
-  background-color: #E7EAF0;
+  /*background-color: #E7EAF0;*/
 }
 
 .board {
   top: -963.25px;
-  left: -635px;
+  left: -600px;
   position: absolute;
   background-size: -100%;
   zoom: .4;
@@ -77,8 +93,8 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 79.6px;
-  margin-top: 417.5px;
+  margin-left: 94.6px;
+  margin-top: 416.5px;
 }
 
 .tokenBlack {
@@ -94,8 +110,8 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 83.8px;
-  margin-top: 417.5px;
+  margin-left: 97.8px;
+  margin-top: 416.5px;
 }
 
 .tokenRed{
@@ -111,8 +127,8 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 151.2px;
-  margin-top: 417px;
+  margin-left: 166.2px;
+  margin-top: 416px;
 }
 
 #tokenR2-1 {
@@ -120,8 +136,8 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 155.7px;
-  margin-top: 417px;
+  margin-left: 169.7px;
+  margin-top: 416px;
 }
 
 #tokenB3-1 {
@@ -129,8 +145,8 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 222.8px;
-  margin-top: 418px;
+  margin-left: 237.8px;
+  margin-top: 416px;
 }
 
 #tokenR3-1 {
@@ -138,8 +154,8 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 227.1px;
-  margin-top: 417px;
+  margin-left: 241.1px;
+  margin-top: 418px;
 }
 
 #tokenB4-1 {
@@ -147,7 +163,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 294.1px;
+  margin-left: 309.1px;
   margin-top: 417px;
 }
 
@@ -156,8 +172,8 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 299px;
-  margin-top: 417px;
+  margin-left: 313px;
+  margin-top: 416px;
 }
 
 #tokenB5-1 {
@@ -165,8 +181,8 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 364.8px;
-  margin-top: 418px;
+  margin-left: 379.8px;
+  margin-top: 416px;
 }
 
 #tokenR5-1 {
@@ -174,8 +190,8 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 369.2px;
-  margin-top: 418px;
+  margin-left: 383.2px;
+  margin-top: 416px;
 }
 
 #tokenB6-1 {
@@ -183,8 +199,8 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 435.4px;
-  margin-top: 417px;
+  margin-left: 450.4px;
+  margin-top: 416px;
 }
 
 #tokenR6-1 {
@@ -192,8 +208,8 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 439.9px;
-  margin-top: 417px;
+  margin-left: 453.9px;
+  margin-top: 416px;
 }
 
 #tokenB7-1 {
@@ -201,8 +217,8 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 508px;
-  margin-top: 417px;
+  margin-left: 523px;
+  margin-top: 416px;
 }
 
 #tokenR7-1 {
@@ -210,8 +226,8 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 512.4px;
-  margin-top: 417px;
+  margin-left: 526.4px;
+  margin-top: 416px;
 }
 
 #tokenB1-2 {
@@ -219,8 +235,8 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 79.6px;
-  margin-top: 346.5px;
+  margin-left: 93.6px;
+  margin-top: 344.5px;
 }
 
 #tokenR1-2 {
@@ -228,8 +244,8 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 83.8px;
-  margin-top: 346.5px;
+  margin-left: 97.8px;
+  margin-top: 344.5px;
 }
 
 #tokenB1-3 {
@@ -237,7 +253,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 79.6px;
+  margin-left: 94.6px;
   margin-top: 274px;
 }
 
@@ -246,7 +262,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 84.8px;
+  margin-left: 97.8px;
   margin-top: 273.9px;
 }
 
@@ -255,7 +271,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 79.6px;
+  margin-left: 94.6px;
   margin-top: 203.4px;
 }
 
@@ -264,7 +280,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 83.8px;
+  margin-left: 97.8px;
   margin-top: 202.9px;
 }
 
@@ -273,8 +289,8 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 79.6px;
-  margin-top: 132.4px;
+  margin-left: 94.6px;
+  margin-top: 130.4px;
 }
 
 #tokenR1-5 {
@@ -282,7 +298,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 83.8px;
+  margin-left: 97.8px;
   margin-top: 130.9px;
 }
 
@@ -291,7 +307,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 79.6px;
+  margin-left: 94.6px;
   margin-top: 60.4px;
 }
 
@@ -300,7 +316,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 83.8px;
+  margin-left: 97.8px;
   margin-top: 59.9px;
 }
 
@@ -309,7 +325,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 79.6px;
+  margin-left: 94.6px;
   margin-top: 4px;
 }
 
@@ -318,7 +334,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 83.8px;
+  margin-left: 97.8px;
   margin-top: 4px;
 }
 
@@ -327,8 +343,8 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 150.9px;
-  margin-top: 346.5px;
+  margin-left: 164.9px;
+  margin-top: 344.5px;
 }
 
 #tokenR2-2 {
@@ -336,8 +352,8 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 154.9px;
-  margin-top: 346.5px;
+  margin-left: 168.9px;
+  margin-top: 344.5px;
 }
 
 #tokenB2-3 {
@@ -345,7 +361,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 151.9px;
+  margin-left: 164.9px;
   margin-top: 273px;
 }
 
@@ -354,7 +370,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 154.9px;
+  margin-left: 168.9px;
   margin-top: 273px;
 }
 
@@ -363,7 +379,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 150.9px;
+  margin-left: 164.9px;
   margin-top: 203.4px;
 }
 
@@ -372,7 +388,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 154.9px;
+  margin-left: 168.9px;
   margin-top: 202.9px;
 }
 
@@ -381,8 +397,8 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 150.9px;
-  margin-top: 132.4px;
+  margin-left: 164.9px;
+  margin-top: 131.4px;
 }
 
 #tokenR2-5 {
@@ -390,7 +406,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 154.9px;
+  margin-left: 168.9px;
   margin-top: 131.9px;
 }
 
@@ -399,7 +415,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 150.9px;
+  margin-left: 164.9px;
   margin-top: 60.4px;
 }
 
@@ -408,7 +424,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 154.9px;
+  margin-left: 168.9px;
   margin-top: 60.9px;
 }
 
@@ -417,8 +433,8 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 222.8px;
-  margin-top: 346.5px;
+  margin-left: 236.8px;
+  margin-top: 345.5px;
 }
 
 #tokenR3-2 {
@@ -426,8 +442,8 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 227.1px;
-  margin-top: 346.5px;
+  margin-left: 240.1px;
+  margin-top: 344.5px;
 }
 
 #tokenB3-3 {
@@ -435,7 +451,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 222.8px;
+  margin-left: 237.8px;
   margin-top: 273px;
 }
 
@@ -444,7 +460,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 227.1px;
+  margin-left: 241.1px;
   margin-top: 274px;
 }
 
@@ -453,8 +469,8 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 222.8px;
-  margin-top: 203.4px;
+  margin-left: 236.8px;
+  margin-top: 202.4px;
 }
 
 #tokenR3-4 {
@@ -462,7 +478,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 227.1px;
+  margin-left: 241.1px;
   margin-top: 202.9px;
 }
 
@@ -471,8 +487,8 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 222.8px;
-  margin-top: 132.4px;
+  margin-left: 237.8px;
+  margin-top: 131.4px;
 }
 
 #tokenR3-5 {
@@ -480,7 +496,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 227.1px;
+  margin-left: 241.1px;
   margin-top: 130.9px;
 }
 
@@ -489,7 +505,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 223.1px;
+  margin-left: 237.1px;
   margin-top: 60.4px;
 }
 
@@ -498,7 +514,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 227.1px;
+  margin-left: 241.1px;
   margin-top: 60.9px;
 }
 
@@ -507,8 +523,8 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 294.1px;
-  margin-top: 346.5px;
+  margin-left: 309.1px;
+  margin-top: 345.5px;
 }
 
 #tokenR4-2 {
@@ -516,8 +532,8 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 298.5px;
-  margin-top: 346.5px;
+  margin-left: 312.5px;
+  margin-top: 345.5px;
 }
 
 #tokenB4-3 {
@@ -525,7 +541,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 294.1px;
+  margin-left: 309.1px;
   margin-top: 274px;
 }
 
@@ -534,7 +550,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 298.5px;
+  margin-left: 312.5px;
   margin-top: 274px;
 }
 
@@ -543,8 +559,8 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 293.1px;
-  margin-top: 203.4px;
+  margin-left: 309.1px;
+  margin-top: 201.4px;
 }
 
 #tokenR4-4 {
@@ -552,7 +568,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 298.5px;
+  margin-left: 312.5px;
   margin-top: 202.9px;
 }
 
@@ -561,8 +577,8 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 294.1px;
-  margin-top: 132.4px;
+  margin-left: 309.1px;
+  margin-top: 130.4px;
 }
 
 #tokenR4-5 {
@@ -570,7 +586,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 297.5px;
+  margin-left: 312.5px;
   margin-top: 130.9px;
 }
 
@@ -579,7 +595,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 295.1px;
+  margin-left: 309.1px;
   margin-top: 60.4px;
 }
 
@@ -588,7 +604,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 298.5px;
+  margin-left: 312.5px;
   margin-top: 59.9px;
 }
 
@@ -597,8 +613,8 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 364.8px;
-  margin-top: 346.5px;
+  margin-left: 379.8px;
+  margin-top: 345.5px;
 }
 
 #tokenR5-2 {
@@ -606,8 +622,8 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 369.2px;
-  margin-top: 346.5px;
+  margin-left: 383.2px;
+  margin-top: 345.5px;
 }
 
 #tokenB5-3 {
@@ -615,7 +631,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 364.8px;
+  margin-left: 379.8px;
   margin-top: 273px;
 }
 
@@ -624,7 +640,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 369.2px;
+  margin-left: 383.2px;
   margin-top: 274px;
 }
 
@@ -633,8 +649,8 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 364.8px;
-  margin-top: 203.4px;
+  margin-left: 379.8px;
+  margin-top: 202.4px;
 }
 
 #tokenR5-4 {
@@ -642,7 +658,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left:369.2px;
+  margin-left:383.2px;
   margin-top: 202.9px;
 }
 
@@ -651,8 +667,8 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 364.8px;
-  margin-top: 132.4px;
+  margin-left: 379.8px;
+  margin-top: 131.4px;
 }
 
 #tokenR5-5 {
@@ -660,7 +676,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 369.2px;
+  margin-left: 383.2px;
   margin-top: 130.9px;
 }
 
@@ -669,7 +685,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 364.8px;
+  margin-left: 379.8px;
   margin-top: 60.4px;
 }
 
@@ -678,7 +694,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 369.2px;
+  margin-left: 383.2px;
   margin-top: 60.9px;
 }
 
@@ -687,8 +703,8 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 435.4px;
-  margin-top: 346.5px;
+  margin-left: 450.4px;
+  margin-top: 345.5px;
 }
 
 #tokenR6-2 {
@@ -696,8 +712,8 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 439.9px;
-  margin-top: 346.5px;
+  margin-left: 453.9px;
+  margin-top: 345.5px;
 }
 
 #tokenB6-3 {
@@ -705,7 +721,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 435.4px;
+  margin-left: 450.4px;
   margin-top: 273px;
 }
 
@@ -714,7 +730,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 439.9px;
+  margin-left: 453.9px;
   margin-top: 273px;
 }
 
@@ -723,8 +739,8 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 435.4px;
-  margin-top: 203.4px;
+  margin-left: 450.4px;
+  margin-top: 202.4px;
 }
 
 #tokenR6-4 {
@@ -732,7 +748,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left:439.9px;
+  margin-left:453.9px;
   margin-top: 202.9px;
 }
 
@@ -741,8 +757,8 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 435.4px;
-  margin-top: 132.4px;
+  margin-left: 450.4px;
+  margin-top: 131.4px;
 }
 
 #tokenR6-5 {
@@ -750,7 +766,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 439.9px;
+  margin-left: 453.9px;
   margin-top: 130.9px;
 }
 
@@ -759,7 +775,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 435.4px;
+  margin-left: 450.4px;
   margin-top: 60.4px;
 }
 
@@ -768,7 +784,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 439.9px;
+  margin-left: 453.9px;
   margin-top: 60.9px;
 }
 
@@ -777,8 +793,8 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 508px;
-  margin-top: 346.5px;
+  margin-left: 523px;
+  margin-top: 345.5px;
 }
 
 #tokenR7-2 {
@@ -786,8 +802,8 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 512.4px;
-  margin-top: 346.5px;
+  margin-left: 526.4px;
+  margin-top: 345.5px;
 }
 
 #tokenB7-3 {
@@ -795,7 +811,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 508px;
+  margin-left: 523px;
   margin-top: 273px;
 }
 
@@ -804,7 +820,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 512.4px;
+  margin-left: 526.4px;
   margin-top: 274px;
 }
 
@@ -813,8 +829,8 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 508px;
-  margin-top: 203.4px;
+  margin-left: 522px;
+  margin-top: 202.4px;
 }
 
 #tokenR7-4 {
@@ -822,7 +838,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left:512.4px;
+  margin-left:526.4px;
   margin-top: 202.9px;
 }
 
@@ -831,7 +847,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 508px;
+  margin-left: 523px;
   margin-top: 131.4px;
 }
 
@@ -840,7 +856,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 512.4px;
+  margin-left: 526.4px;
   margin-top: 130.9px;
 }
 
@@ -849,7 +865,7 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 508px;
+  margin-left: 523px;
   margin-top: 60.4px;
 }
 
@@ -858,44 +874,43 @@ h1 {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  margin-left: 512.4px;
+  margin-left: 526.4px;
   margin-top: 60.9px;
 }
 
-
-.arrow1:hover {
+.arrow1 {
   top: -780px;
-  left: -1852px;
+  left: -1922px;
   position: absolute;
   zoom: .4;
 }
 
 .arrowDiv1 {
   position: absolute;
-  width: 124px;
+  width: 244px;
   height: 44px;
   overflow: hidden;
   margin-left: 394px;
   margin-top: 2px;
 }
 
-.arrow2:hover {
+.arrow2 {
   top: -780px;
-  left: -1852px;
+  left: -1922px;
   position: absolute;
   zoom: .4;
 }
 
 .arrowDiv2 {
   position: absolute;
-  width: 124px;
+  width: 224px;
   height: 44px;
   overflow: hidden;
   margin-left: 465px;
   margin-top: 2px;
 }
 
-.arrow3:hover {
+.arrow3 {
   top: -780px;
   left: -1852px;
   position: absolute;;
@@ -911,7 +926,7 @@ h1 {
   margin-top: 2px;
 }
 
-.arrow4:hover {
+.arrow4 {
   top: -780px;
   left: -1852px;
   position: absolute;
@@ -927,7 +942,7 @@ h1 {
   margin-top: 2px;
 }
 
-.arrow5:hover {
+.arrow5 {
   top: -780px;
   left: -1852px;
   position: absolute;
@@ -943,7 +958,7 @@ h1 {
   margin-top: 2px;
 }
 
-.arrow6:hover {
+.arrow6 {
   top: -780px;
   left: -1852px;
   position: absolute;
@@ -959,7 +974,7 @@ h1 {
   margin-top: 2px;
 }
 
-.arrow7:hover {
+.arrow7 {
   top: -780px;
   left: -1852px;
   position: absolute;
@@ -993,7 +1008,8 @@ h1 {
 
 body {
   margin: 40px;
-  background-color: #E7EAF0;
+  /*background-color: #E7EAF0;*/
+  background-image: url('./images:font/background-04.png');
 }
 
 .instructions-warning {
