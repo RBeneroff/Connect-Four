@@ -334,6 +334,21 @@ var App = {
     };
   },
 
+  turnDisplay: function() {
+    if (Config.startingPlayer) {
+      $('#turnDisplayR').show();
+      $('#turnDisplayB').hide();
+    } else if (currentPlayer === 'b') {
+        $('#turnDisplayB').show();
+        $('#turnDisplayR').hide();
+        console.log('red');
+    } else if (currentPlayer === 'r') {
+        $('#turnDisplayR').show();
+        $('#turnDisplayB').hide();
+        console.log('black');
+    };
+  }
+
 };// App closing
 
 // global variables
@@ -597,6 +612,7 @@ var UI = {
     console.log('start game');
     swal({   title: "Ready?",   text: "",   imageUrl: "./images:font/taco.png" });
     UI.changePlayer();
+    App.turnDisplay();
   }, //onClickStart closure
 
   onClickReset: function() {
@@ -630,6 +646,7 @@ var UI = {
     UI.checkHorizontalWin(column1Array.length-1);
     App.addTokensToBoard1(column1Array.length);
     App.warningDisplay();
+    App.turnDisplay();
   },
 
   onClickColumn2: function() {
@@ -643,6 +660,7 @@ var UI = {
       UI.checkHorizontalWin(column2Array.length-1);
       App.addTokensToBoard2(column2Array.length);
       App.warningDisplay();
+      App.turnDisplay();
   },
 
   onClickColumn3: function() {
@@ -656,6 +674,7 @@ var UI = {
     UI.checkHorizontalWin(column3Array.length-1);
     App.addTokensToBoard3(column3Array.length);
     App.warningDisplay();
+    App.turnDisplay();
   },
 
   onClickColumn4: function() {
@@ -669,6 +688,7 @@ var UI = {
     UI.checkHorizontalWin(column4Array.length-1);
     App.addTokensToBoard4(column4Array.length);
     App.warningDisplay();
+    App.turnDisplay();
   },
 
   onClickColumn5: function() {
@@ -682,6 +702,7 @@ var UI = {
     UI.checkHorizontalWin(column5Array.length-1);
     App.addTokensToBoard5(column5Array.length);
     App.warningDisplay();
+    App.turnDisplay();
   },
 
   onClickColumn6: function() {
@@ -695,6 +716,7 @@ var UI = {
     UI.checkHorizontalWin(column6Array.length-1);
     App.addTokensToBoard6(column6Array.length);
     App.warningDisplay();
+    App.turnDisplay();
   },
 
   onClickColumn7: function() {
@@ -708,6 +730,7 @@ var UI = {
     UI.checkHorizontalWin(column7Array.length-1);
     App.addTokensToBoard7(column7Array.length);
     App.warningDisplay();
+    App.turnDisplay();
   },
 
 }; // UI closing
@@ -730,5 +753,4 @@ window.onload = function() {
   $('.column5').on('click', UI.onClickColumn5);
   $('.column6').on('click', UI.onClickColumn6);
   $('.column7').on('click', UI.onClickColumn7);
-  // $('[item=column1token]').on('click', App.addTokensToBoard);
 };

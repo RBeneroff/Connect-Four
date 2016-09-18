@@ -1013,71 +1013,20 @@ body {
   zoom: .4;
 }
 
-.decoration {
+.turnDisplayR {
   position: absolute;
-  width: 115px;
-  height: 78px;
+  width: 70px;
+  height: 70px;
   overflow: hidden;
-  margin-left: 170px;
-  margin-top: -150px;
-  z-index: 1;
+  margin-left: 78px;
+  margin-top: 50px;
 }
 
-.tokenDec {
-  top: -320px;
-  left: -200px;
+.turnDisplayB {
   position: absolute;
-  background-size: -100%;
-  zoom: .4;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-left: 73px;
+  margin-top: 50px;
 }
-
-/*footer {
-  margin-top: 100vh;
-}*/
-
-/*.container {
-  display: grid;
-  grid-template-columns: repeat(2, [col] 150px);
-  grid-template-rows: repeat(5, [row] 100px );
-  grid-gap: 30px;
-  background-color: white;
-  color: #444;
-}*/
-
-/*.whosTurn {
-  background-color: grey;
-  color: #fff;
-  border-radius: 5px;
-  padding: 20px;
-  font-size: 150%;
-  grid-row: row;
-  grid-column: col / span 2;
-}
-
-.start {
-  background-color: grey;
-  color: #fff;
-  border-radius: 5px;
-  padding: 20px;
-  font-size: 150%;
-  grid-row: row 2;
-}
-
-.warning {
-  background-color: grey;
-  color: #fff;
-  border-radius: 5px;
-  padding: 20px;
-  font-size: 150%;
-  grid-row: row 3;
-}
-
-.gameFunctions {
-  background-color: grey;
-  color: #fff;
-  border-radius: 5px;
-  padding: 20px;
-  font-size: 150%;
-  grid-row: row 4;
-  grid-column: col / span 2;
-}*/
