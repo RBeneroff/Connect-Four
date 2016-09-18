@@ -24,8 +24,12 @@ var App = {
   winnerDisplay: function() {
     UI.checkVerticalWin;
     UI.checkHorizontalWin;
-    // window.alert('You Win ' + currentPlayer);
-    swal({   title: "Sweet",   text: "You Won!",   imageUrl: "./images:font/winning.png" });
+    if (currentPlayer === playerTwo) {
+        swal({   title: "Sweet",   text: 'Player one won!',   imageUrl: "./images:font/winning.png" });
+    }
+    if (currentPlayer === playerOne) {
+        swal({   title: "Sweet",   text: 'Player two won!',   imageUrl: "./images:font/winning.png" });
+    }
   },
 
   addTokensToBoard1: function(i) {
@@ -341,12 +345,10 @@ var App = {
     } else if (currentPlayer === 'b') {
         $('#turnDisplayB').show();
         $('#turnDisplayR').hide();
-        console.log('red');
     } else if (currentPlayer === 'r') {
         $('#turnDisplayR').show();
         $('#turnDisplayB').hide();
-        console.log('black');
-    };
+    }
   }
 
 };// App closing
